@@ -1,0 +1,31 @@
+name: 惠头条
+
+on:
+  workflow_dispatch:
+  watch:
+    types: started
+  schedule:
+    - cron: '0 21,22,23,0-14 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest       
+    steps:
+      - name: Checkout
+        run: |
+          git clone https://github.com/mantou5050/zaqi.git ~/zaqi
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: npm install
+        run: |
+          cd ~/zaqi
+          npm install
+          npm install cron
+          npm install request
+      - name: '运行 【惠头条】'
+        run: |
+          cd ~/zaqi   
+          node huitoutiao.js
+        env:
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
