@@ -12,20 +12,20 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/mantou5050/zaqi.git ~/zaqi
+          git clone https://github.com/heiwoya/lqbz.git ~/lqbz
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
       - name: npm install
         run: |
-          cd ~/zaqi
+          cd ~/lqbz
           npm install
           npm install cron
           npm install request
       - name: '运行 【惠头条】'
         run: |
-          cd ~/zaqi   
+          cd ~/lqbz   
           node huitoutiao.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
