@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/ziye12/JavaScript.git ~/JavaScript
+          git clone https://github.com/heiwoya/lqbz.git ~/lqbz
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -28,13 +28,13 @@ jobs:
       - name: npm install
         if: env.XL_URL
         run: |
-          cd ~/JavaScript
+          cd ~/lqbz
           npm install
       - name: '运行 【小乐】'
         if: env.XL_URL
         run: |
-          cd ~/JavaScript
-          node Task/xiaole.js
+          cd ~/lqbz
+          node xiaole.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
