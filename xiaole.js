@@ -246,7 +246,7 @@ function msgShow() {
       if (notifyInterval == 1) {
         $.msg($.name, ``, $.message);
       }
-      if (notifyInterval == 2 && (nowTimes.getHours() === 12 || nowTimes.getHours() === 21) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 20)) {
+      if (notifyInterval == 2 && (nowTimes.getHours() === 12 || nowTimes.getHours() === 21) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 10)) {
         $.msg($.name, ``, $.message);
       }
       if (notifyInterval == 3 && (nowTimes.getHours() === 6 || nowTimes.getHours() === 12 || nowTimes.getHours() === 18 || nowTimes.getHours() === 23) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 10)) {
