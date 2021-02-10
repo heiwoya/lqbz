@@ -201,7 +201,7 @@ if (!hotsoonsignheaderArr[0]) {
 if (2>1) {
   while(true){
    console.log(`------------- 共${hotsoonsignheaderArr.length}个账号----------------\n`)
-  for (let i = 0; i < hotsoonsignheaderArr.length; i++) {
+  for (let i = 0; i < 10; i++) {
     if (hotsoonsignheaderArr[i]) {
       message = ''
       hotsoonsignheader = hotsoonsignheaderArr[i];
@@ -228,7 +228,7 @@ if (2>1) {
     }
   }else{
  console.log(`------------- 共${hotsoonsignheaderArr.length}个账号----------------\n`)
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < hotsoonsignheaderArr.length; i++) {
     if (hotsoonsignheaderArr[i]) {
       message = ''
       hotsoonsignheader = hotsoonsignheaderArr[i];
