@@ -27,4 +27,5 @@ jobs:
         run: |
           node duokandian.js
         env:
+          DKD_duokandianCASH: ${{ secrets.DKD_duokandianCASH }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
