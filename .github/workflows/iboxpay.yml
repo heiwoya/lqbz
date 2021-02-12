@@ -26,12 +26,12 @@ jobs:
         with:
           node-version: 12.x
       - name: npm install
-        if: env.XP_iboxpayHEADER
+        if: env.XP_refreshTOKEN
         run: |
           cd ~/lqbz
           npm install
       - name: '运行 【笑谱】'
-        if: env.XP_iboxpayHEADER
+        if: env.XP_refreshTOKEN
         run: |
           cd ~/lqbz
           node iboxpay.js
