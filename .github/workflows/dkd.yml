@@ -3,7 +3,7 @@ name: dkd
 on:
   workflow_dispatch:
   schedule:
-     - cron: '5 22,23,0-15 * * *'
+     - cron: '5 0-15 * * *'
   watch:
     types: started
   repository_dispatch:
