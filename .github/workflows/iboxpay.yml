@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/mantou5050/zaqi.git ~/zaqi
+          git clone https://github.com/heiwoya/lqbz.git ~/lqbz
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -27,12 +27,12 @@ jobs:
       - name: npm install
         if: env.XP_iboxpayHEADER
         run: |
-          cd ~/zaqi
+          cd ~/lqbz
           npm install
       - name: '运行 【笑谱】'
         if: env.XP_iboxpayHEADER
         run: |
-          cd ~/zaqi
+          cd ~/lqbz
           node iboxpay.js
         env:
           
