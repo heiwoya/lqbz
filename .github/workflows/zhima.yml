@@ -27,5 +27,5 @@ jobs:
         run: |
           node zhima.js
         env:
-          ZM_zhimabody: ${{ secrets.ZM_zhimabody }}
+          ZM_COOKIES: ${{ secrets.ZM_COOKIES }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
