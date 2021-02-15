@@ -34,7 +34,7 @@ jobs:
       - name: '运行 【hssp】'
         if: env.HOTSOONSIGNKEY
         run: |
-          node task/hssp.js
+          node hssp.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
