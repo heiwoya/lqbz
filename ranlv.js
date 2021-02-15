@@ -35,7 +35,7 @@ let rlurl = $.getdata('rlurl')
 let rlheader = $.getdata('rlheader')
 let rlbody = $.getdata('rlbody')
 let tz = ($.getval('tz') || '1');//0关闭通知，1默认开启
-const invite=1;//新用户自动邀请，0关闭，1默认开启
+const invite=0;//新用户自动邀请，0关闭，1默认开启
 const logs =0;//0为关闭日志，1为开启
 var hour=''
 var minute=''
@@ -73,7 +73,7 @@ if ($.isNode()) {
   } else {
    rlheader = process.env.RLHEADER.split()
   };
-  if (process.env.RLBODY && process.env.RLBODY.indexOf('#') > -1) {
+/*  if (process.env.RLBODY && process.env.RLBODY.indexOf('#') > -1) {
    rlbody = process.env.RLBODY.split('#');
    console.log(`您选择的是用"#"隔开\n`)
   }
@@ -82,7 +82,24 @@ if ($.isNode()) {
    console.log(`您选择的是用换行隔开\n`)
   } else {
    rlbody = process.env.RLBODY.split()
-  };
+  };*/
+	
+   Object.keys(rlurl).forEach((item) => {
+        if (rlurl[item]) {
+          rlurlArr.push(rlurl[item])
+        }
+    });
+    Object.keys(rlheader).forEach((item) => {
+        if (rlheader[item]) {
+          rlheaderArr.push(rlheader[item])
+        }
+    });  	
+/*    Object.keys(rlbody).forEach((item) => {
+        if (rlbody[item]) {
+          rlbodyArr.push(rlbody[item])
+        }
+    });  */
+	
     console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
     console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
  } else {
@@ -97,7 +114,7 @@ if ($.isNode()) {
   }
 }
 !(async () => {
-if (!rlheaderArr[0] && !rlbodyArr[0] && !rlurlArr[0]) {
+if (!rlheaderArr[0]) {
     $.msg($.name, '【提示】请先获取燃旅视频一cookie')
     return;
   }
@@ -108,7 +125,7 @@ if (!rlheaderArr[0] && !rlbodyArr[0] && !rlurlArr[0]) {
       note =''
       rlurl = rlurlArr[i];
       rlheader = rlheaderArr[i];
-      rlbody = rlbodyArr[i];
+     // rlbody = rlbodyArr[i];
       $.index = i + 1;
       console.log(`\n开始【燃旅视频${$.index}】`)
       await checkVersion()
