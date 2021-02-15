@@ -36,7 +36,7 @@ jobs:
           npm install
       - name: '运行 【火山小视频极速版】'
         run: |
-          node hssp.js
+          node hotsoon.js
         env:
           HOTSOONSIGNHEADER: ${{ secrets. HOTSOONSIGNHEADER }}
           HOTSOONSIGNKEY: ${{ secrets. HOTSOONSIGNKEY }}
