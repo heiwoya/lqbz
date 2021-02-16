@@ -26,3 +26,4 @@ jobs:
               env:
                   BBBCK: ${{ secrets.BBBCK }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
+                  PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
