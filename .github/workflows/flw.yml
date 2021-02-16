@@ -31,3 +31,6 @@ jobs:
                   FL_FLWQWBODY: ${{ secrets.FL_FLWQWBODY }}
                   FL_CASH: ${{ secrets.FL_CASH }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
+                  PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
+                  PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER }}
+                  
