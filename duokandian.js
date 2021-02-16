@@ -14,6 +14,8 @@ boxjs链接  https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/ziye.
 2.11 完善判定
 2.11-2  修复视频和广告以及提现判定问题
 2.12 增加碎片显示以及兑换
+2.14 修复宝箱问题
+2.16 修复报错
 
 ⚠️一共1个位置 1个ck  👉 2条 Secrets
 多账号换行
@@ -76,7 +78,7 @@ if ($.isNode()) {
     // 没有设置 DKD_duokandianCASH 则默认为 0 不提现
     CASH = process.env.DKD_duokandianCASH || 0;
 }
-if ($.isNode() && process.env.DKD_duokandianHEADER) {
+if ($.isNode() && process.env.DKD_duokandianBODY) {
     COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
     console.log(
         `============ cookies分隔符为：${JSON.stringify(
@@ -306,6 +308,7 @@ async function all() {
                 await timeaward(); //时段奖励
                 await timeawardsss(); //时段翻倍
             }
+            await extrabox(); //宝箱刷新
             await boxaward(); //宝箱奖励
             await boxbox(); //宝箱翻倍
         }
@@ -424,8 +427,8 @@ function days(timeout = 0) {
                     if (logs) $.log(`${O}, 任务列表🚩: ${data}`);
                     $.days = JSON.parse(data);
                     if ($.days) {
-                        sp = $.days.data.list.find(item => item.id === 1 || item.id === 11);
-                        gg = $.days.data.list.find(item => item.id === 2 || item.id === 12);
+                        sp = $.days.data.list.find(item => item.pathurl === "duokandian://video");
+                        gg = $.days.data.list.find(item => item.pathurl === "duokandian://xxx");
                         yi = $.days.data.Task_comp.data.find(item => item.pro === 20);
                         er = $.days.data.Task_comp.data.find(item => item.pro === 50);
 
@@ -768,6 +771,41 @@ function timeawardsss(timeout = 0) {
         }, timeout)
     })
 }
+
+//宝箱刷新
+function extrabox(timeout = 0) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            let url = {
+                url: `http://dkd-api.dysdk.com/red/box_init`,
+                headers: duokandianheaderVal,
+                body: duokandianbodyVal,
+            }
+            $.post(url, async (err, resp, data) => {
+                try {
+                    if (logs) $.log(`${O}, 时段刷新🚩: ${data}`);
+                    $.extrabox = JSON.parse(data);
+                    if ($.extrabox.status_code == 200) {
+                        console.log(`【宝箱刷新】：刷新成功,剩余${$.extrabox.data.diff}秒\n`);
+                        $.message += `【宝箱刷新】：刷新成功,剩余${$.extrabox.data.diff}秒\n`;
+                    }
+                    if ($.extrabox.status_code == 10020) {
+                        console.log(`【宝箱刷新】：${$.extrabox.message}\n`);
+                        $.message += `【宝箱刷新】：${$.extrabox.message}\n`;
+                    }
+                } catch (e) {
+                    $.logErr(e, resp);
+                } finally {
+                    resolve()
+                }
+            })
+        }, timeout)
+    })
+}
+
+
+
+
 //宝箱奖励
 function boxaward(timeout = 0) {
     return new Promise((resolve) => {
