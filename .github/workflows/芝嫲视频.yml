@@ -30,7 +30,6 @@ jobs:
       - name: npm install
         run: |
           cd ~/lqbz
-          git checkout main
           npm install
       - name: '运行 【芝嫲视频】'
         run: |
