@@ -17,6 +17,7 @@ boxjs链接  https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zi
 2.1 修复判定,修复2
 2.2 防止黑号，兑换时间限制在10点到11点之间
 2.17 增加阅读任务以及阅读提现，20个body 0.12元，默认大于3元提现3元，请提前关注返利网官方公众号
+2.17-2 修改判定，进文章直接获取body
 
 
 ⚠️一共5个位置 5个ck  👉 6条 Secrets 
@@ -43,7 +44,7 @@ CASH  👉  FL_CASH
 设置兑换变量 可设置0 5 50 100   默认0  不兑换
 DHCASH  👉  FL_DHCASH
 
-注释header重写 点击 去阅读赚钱 看文章 获取flwydbodyVal（最多20个body）
+注释header重写 点击 首页 签到赚钱 去阅读赚钱 看文章 获取flwydbodyVal（最多20个body）
 flwydbodyVal 👉FL_flwydBODY
 
 
@@ -264,7 +265,7 @@ function GetCookie() {
   }
   
    //返利网阅读
-  if ($request && $request.url.indexOf("news") >= 0 && $request.url.indexOf("read.htm") >= 0) {
+  if ($request && $request.url.indexOf("news") >= 0 && $request.url.indexOf("validate.htm") >= 0) {
         const flwydbodyVal = $request.body
         if (flwydbodyVal) {
             let bodys = $.getdata('flwydbody' + $.idx);
