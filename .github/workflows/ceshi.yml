@@ -24,12 +24,14 @@ jobs:
       - name: npm install
         run: |
           cd ~/lqbz
+          git checkout main
           npm install
       - name: '运行 【芝麻】'
         run: |
           cd ~/lqbz
           node zhima.js
         env:
+          TZ: Asia/shanghai
           ZM_zhimabody: ${{ secrets.ZM_zhimabody }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
