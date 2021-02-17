@@ -32,6 +32,7 @@ jobs:
           npm install
       - name: '运行 【芝嫲】'
         run: |
+          cd ~/lqbz
           node zhima.js
         env:
           TZ: Asia/shanghai
