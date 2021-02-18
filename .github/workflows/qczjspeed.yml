@@ -22,7 +22,8 @@ jobs:
         QCZJ_CASH: ${{ secrets.QCZJ_CASH }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        run: |
+          git clone https://github.com/heiwoya/lqbz.git ~/lqbz
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -30,10 +31,12 @@ jobs:
       - name: npm install
         if: env.QCZJ_GetUserInfoHEADER
         run: |
+          cd ~/lqbz
           npm install
       - name: '运行 【汽车之家极速版】'
         if: env.QCZJ_GetUserInfoHEADER
         run: |
+          cd ~/lqbz
           node qczjspeed.js
         env:
           
@@ -44,5 +47,3 @@ jobs:
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-
-    
