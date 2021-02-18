@@ -6,7 +6,7 @@ name: 汽车之家极速版
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/20 * * * *'
+     - cron: '*/30 * * * *'
   watch:
     types: started
 
@@ -15,21 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        QCZJ_GetUserInfoURL: ${{ secrets.QCZJ_GetUserInfoURL }}
         QCZJ_GetUserInfoHEADER: ${{ secrets.QCZJ_GetUserInfoHEADER }}
-        QCZJ_coinBODY: ${{ secrets.QCZJ_coinBODY }}
         QCZJ_taskBODY: ${{ secrets.QCZJ_taskBODY }}		
         QCZJ_activityBODY: ${{ secrets.QCZJ_activityBODY }}	
-        QCZJ_GoldcoinBODY: ${{ secrets.QCZJ_GoldcoinBODY }}	
-        QCZJ_videoBODY: ${{ secrets.QCZJ_videoBODY }}	        
-        QCZJ_WelfarevideoBODY: ${{ secrets.QCZJ_WelfarevideoBODY }}	
-        QCZJ_WelfareBODY: ${{ secrets.QCZJ_WelfareBODY }}	
         QCZJ_addCoinBODY: ${{ secrets.QCZJ_addCoinBODY }}
         QCZJ_addCoin2BODY: ${{ secrets.QCZJ_addCoin2BODY }}
-        QCZJ_reportAssHEADER: ${{ secrets.QCZJ_reportAssHEADER }}
-        QCZJ_reportAssBODY: ${{ secrets.QCZJ_reportAssBODY }}
-        QCZJ_cointowalletBODY: ${{ secrets.QCZJ_cointowalletBODY }}
-         
+        QCZJ_CASH: ${{ secrets.QCZJ_CASH }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
