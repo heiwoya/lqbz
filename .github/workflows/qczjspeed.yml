@@ -26,7 +26,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/ziye66666/JavaScript.git ~/JavaScript
+          git clone https://github.com/heiwoya/lqbz.git ~/lqbz
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -34,13 +34,13 @@ jobs:
       - name: npm install
         if: env.QCZJ_GetUserInfoHEADER
         run: |
-          cd ~/JavaScript
+          cd ~/lqbz
           npm install
       - name: '运行 【汽车之家极速版】'
         if: env.QCZJ_GetUserInfoHEADER
         run: |
-          cd ~/JavaScript
-          node Task/qczjspeed.js
+          cd ~/lqbz
+          node qczjspeed.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
