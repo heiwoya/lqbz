@@ -21,9 +21,6 @@ jobs:
         QCZJ_addCoin2BODY: ${{ secrets.QCZJ_addCoin2BODY }}
         QCZJ_CASH: ${{ secrets.QCZJ_CASH }}
     steps:
-      - name: Checkout
-        run: |
-          git clone https://github.com/heiwoya/lqbz.git ~/lqbz
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -31,12 +28,10 @@ jobs:
       - name: npm install
         if: env.QCZJ_GetUserInfoHEADER
         run: |
-          cd ~/lqbz
           npm install
       - name: '运行 【汽车之家极速版】'
         if: env.QCZJ_GetUserInfoHEADER
         run: |
-          cd ~/lqbz
           node qczjspeed.js
         env:
           
