@@ -50,11 +50,27 @@ const $ = new Env('蜗牛吧');
 let wnburl = $.getdata('wnburl')
 let wnbhd = $.getdata('wnbhd')
 let wnbbody = $.getdata('wnbbody')
+
+if ($.isNode()) {
+
+   wnbhd = process.env.WNB_HD
+   wnbbody = process.env.WNB_BODY
+
+    console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
+    console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
+ }
+
 !(async () => {
   if (typeof $request !== "undefined") {
       await wnbck()
   } else {
 console.log(`\n蜗牛吧开始执行领金币任务！💦\n等待61秒开始领取下一个`)
+    await wnbqd();
+console.log(`\n蜗牛吧开始执行领金币任务！💦\n等待61秒开始领取下一个`)
+    await $.wait(61000);
+    await wnbqd();
+console.log(`\n蜗牛吧开始执行领金币任务！💦\n等待61秒开始领取下一个`)
+    await $.wait(61000);
     await wnbqd();
 console.log(`\n蜗牛吧开始执行领金币任务！💦\n等待61秒开始领取下一个`)
     await $.wait(61000);
@@ -68,8 +84,9 @@ for (let i = 0; i < 5; i++) {
       console.log(`\n蜗牛吧开始执行第${i+1}次领取红包！💦\n等待3秒开始领取下一个红包`)
       await wnbhb();
       await $.wait(3000);
-}await wnbxx();
-await wnbtj();
+}
+     await wnbxx();
+     //await wnbtj();
 
 
   }
@@ -96,8 +113,9 @@ function wnbhb(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'https://api.snail2020.com/api/hb/hb/receiveSystem',
-        headers : JSON.parse($.getdata('wnbhd')),
-        body :  wnbbody,}
+        headers : JSON.parse(wnbhd),
+        body :  wnbbody
+          }
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -121,9 +139,9 @@ function wnbtj(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'https://api.snail2020.com/api/user/info/bindInviteUser',
-        headers : JSON.parse($.getdata('wnbhd')),
-        body :  `inviteMobile=15894440800&countryCode=86
-`,}
+        headers : JSON.parse(wnbhd),
+        body :  `inviteMobile=15894440800&countryCode=86`
+        }
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -148,8 +166,8 @@ function wnbxx(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'https://api.snail2020.com/api/user/assets/getAssets',
-        headers : JSON.parse($.getdata('wnbhd')),
-        body :  ``,}
+        headers : JSON.parse(wnbhd)
+        }
       $.get(url, async (err, resp, data) => {
         try {
            
@@ -175,14 +193,14 @@ if(result.code == 400 || result.code == 411){
 //蜗牛吧广告金币
 function wnbqd(timeout = 0) {
   return new Promise((resolve) => {
-    setTimeout( ()=>{
+/*    setTimeout( ()=>{
       if (typeof $.getdata('wnburl') === "undefined") {
         $.msg($.name,"",'请先获取蜗牛吧数据!😓',)
         $.done()
-      }
+      }*/
 let url = {
         url : 'https://api.snail2020.com/api/hb/hb/receiveAdvGold',
-        headers : JSON.parse($.getdata('wnbhd')),
+        headers : JSON.parse(wnbhd),
         body : 'os=iOS'
 }
       $.post(url, async (err, resp, data) => {
@@ -200,7 +218,7 @@ if(result.code == 400){
         } finally {
           resolve()
         }
-      })
+//      })
     },timeout)
   })
 }
