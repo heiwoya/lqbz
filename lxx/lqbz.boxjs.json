@@ -1,48 +1,157 @@
 {
-    "id": "ziye.app.sub",
-    "name": "ziye 脚本订阅",
-    "author": "@ZIYE",
-    "icon": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/ziye.png",
-    "repo": "https://github.com/ziye66666",
+    "id": "app.sub",
+    "name": "自用羊毛脚本订阅",
+    "author": "@",
+    "icon": "https://raw.githubusercontent.com/heiwoya/lqbz/main/lxx/b7ff4672114bba99172d811ef04acb0.jpg",
+    "repo": "https://github.com/heiwoya",
     "apps": [{
-            "id": "qczjspeed",
-            "name": "汽车之家极速版",
-            "keys": ["GetUserInfoheader", "taskbody", "activitybody", "addCoinbody", "addCoin2body", "GetUserInfoheader2", "taskbody2", "activitybody2", "addCoinbody2", "addCoin2body2", "GetUserInfoheader3", "taskbody3", "activitybody3", "addCoinbody3", "addCoin2body3", "GetUserInfoheader4", "taskbody4", "activitybody4", "addCoinbody4", "addCoin2body4", "GetUserInfoheader5", "taskbody5", "activitybody5", "addCoinbody5", "addCoin2body5", "GetUserInfoheader6", "taskbody6", "activitybody6", "addCoinbody6", "addCoin2body6", "GetUserInfoheader7", "taskbody7", "activitybody7", "addCoinbody7", "addCoin2body7", "GetUserInfoheader8", "taskbody8", "activitybody8", "addCoinbody8", "addCoin2body8", "GetUserInfoheader9", "taskbody9", "activitybody9", "addCoinbody9", "addCoin2body9", "GetUserInfoheader10", "taskbody10", "activitybody10", "addCoinbody10", "addCoin2body10", "GetUserInfoheader11", "taskbody11", "activitybody11", "addCoinbody11", "addCoin2body11", "GetUserInfoheader12", "taskbody12", "activitybody12", "addCoinbody12", "addCoin2body12", "GetUserInfoheader13", "taskbody13", "activitybody13", "addCoinbody13", "addCoin2body13", "GetUserInfoheader14", "taskbody14", "activitybody14", "addCoinbody14", "addCoin2body14", "GetUserInfoheader15", "taskbody15", "activitybody15", "addCoinbody15", "addCoin2body15", "GetUserInfoheader16", "taskbody16", "activitybody16", "addCoinbody16", "addCoin2body16", "GetUserInfoheader17", "taskbody17", "activitybody17", "addCoinbody17", "addCoin2body17", "GetUserInfoheader18", "taskbody18", "activitybody18", "addCoinbody18", "addCoin2body18", "GetUserInfoheader19", "taskbody19", "activitybody19", "addCoinbody19", "addCoin2body19", "GetUserInfoheader20", "taskbody20", "activitybody20", "addCoinbody20", "addCoin2body20"],
-            "author": "@ziye",
-            "settings": [{
-                    "id": "qczjSuffix",
-                    "name": "当前账号",
-                    "val": "1",
-                    "type": "number",
-                    "desc": "当前抓取ck记录的账号序号，如：1、2、4、"
-                },
-                {
-                    "id": "qczjCount",
-                    "name": "账号个数",
-                    "val": "1",
-                    "type": "number",
-                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-                },
-                {
-                    "id": "qczjCASH",
-                    "name": "提现标准",
-                    "val": "0",
-                    "type": "number",
-                    "desc": "0不提现，可设置0 0.5 2 5 10 20 "
-                },
-                {
-                    "id": "qczjCASHTIME",
-                    "name": "提现时间",
-                    "val": "0",
-                    "type": "number",
-                    "desc": "默认0点后提现，可设置 0 ~ 23  "
-                }
-            ],
-            "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/qczjspeed.js",
-            "icons": ["https://raw.githubusercontent.com/Orz-3/task/master/qczj.png", "https://raw.githubusercontent.com/Orz-3/task/master/qczj.png"],
-            "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/qczjspeed.js"
+    "id": "ranlv",
+    "name": "燃旅视频",
+    "keys": ["rlurl", "rlheader","rlurl2","rlheader2","rlurl3","rlheader3","rlurl4","rlheader4","rlurl5", "rlheader5"],
+    "author": "@ZhiYi-N",
+    "settings": [{
+            "id": "tz",
+            "name": "静默运行",
+            "val": "1",
+            "type": "number",
+            "desc": "0为不通知，1为全部通知"
         },
-        {
+      {
+        "id": "rlstatus",
+        "name": "当前账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前账号对应"
+      },
+      {
+        "id": "rlcount",
+        "name": "账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "需要几个账号，数字为几"
+      }],
+    "repo": "https://github.com/ZhiYi-N/Private-Script/blob/master/Scripts/ranlv.js",
+    "icons": ["https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/rl-mini.png", "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/rl.png"],
+    "script": "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js"
+  },
+  {
+    "id": "hotsoon",
+    "name": "火山小视频极速版",
+    "keys": ["hotsoonsignheader", "hotsoonsignkey", "hotsoonadheader", "hotsoonadkey", "hotsoonreadheader", "hotsoonreadkey", "hotsoonsignheader2", "hotsoonsignkey2", "hotsoonadheader2", "hotsoonadkey2", "hotsoonreadheader2", "hotsoonreadkey2", "hotsoonsignheader3", "hotsoonsignkey3", "hotsoonadheader3", "hotsoonadkey3", "hotsoonreadheader3", "hotsoonreadkey3", "hotsoonsignheader4", "hotsoonsignkey4", "hotsoonadheader4", "hotsoonadkey4", "hotsoonreadheader4", "hotsoonreadkey4", "hotsoonsignheader5", "hotsoonsignkey5", "hotsoonadheader5", "hotsoonadkey5", "hotsoonreadheader5", "hotsoonreadkey5", "hotsoonsignheader6", "hotsoonsignkey6", "hotsoonadheader6", "hotsoonadkey6", "hotsoonreadheader6", "hotsoonreadkey6", "hotsoonsignheader7", "hotsoonsignkey7", "hotsoonadheader7", "hotsoonadkey7", "hotsoonreadheader7", "hotsoonreadkey7", "hotsoonsignheader8", "hotsoonsignkey8", "hotsoonadheader8", "hotsoonadkey8", "hotsoonreadheader8", "hotsoonreadkey8", "hotsoonsignheader9", "hotsoonsignkey9", "hotsoonadheader9", "hotsoonadkey9", "hotsoonreadheader9", "hotsoonreadkey9", "hotsoonsignheader10", "hotsoonsignkey10", "hotsoonadheader10", "hotsoonadkey10", "hotsoonreadheader10", "hotsoonreadkey10"],
+    "author": "@ZhiYi-N",
+    "settings": [{
+            "id": "tz",
+            "name": "静默运行",
+            "val": "1",
+            "type": "number",
+            "desc": "0为不通知，1为全部通知"
+        },
+       {
+        "id": "hotsoonsetting",
+        "name": "当前账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前账号对应"
+      },
+       {
+        "id": "hotsoonaccount",
+        "name": "支付宝账号",
+        "val": "0",
+        "type": "string",
+        "desc": "中间4位为*，例如139****0000，成功与否待测试"
+      },
+      {
+        "id": "hotsooncount",
+        "name": "账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "需要几个账号，数字为几"
+      }],
+    "repo": "https://github.com/ZhiYi-N/script/blob/master/hotsoon.js",
+    "icons": ["https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/hotsoon-mini.png", "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/hotsoon.png"],
+    "script": "https://raw.githubusercontent.com/ZhiYi-N/script/master/hotsoon.js"
+  },
+  {
+    "id": "jrtt",
+    "name": "今日头条极速版",
+    "keys": ["signurl", "signkey", "farmurl", "farmkey", "readurl", "readkey", "signurl2", "signkey2", "farmurl2", "farmkey2", "readurl2", "readkey2"],
+    "author": "@ZhiYi-N",
+    "settings": [{
+            "id": "tz",
+            "name": "静默运行",
+            "val": "1",
+            "type": "number",
+            "desc": "0为不通知，1为全部通知"
+        },
+       {
+        "id": "jrttsetting",
+        "name": "当前账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前账号对应"
+      },
+      {
+        "id": "jrttcount",
+        "name": "账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "需要几个账号，数字为几"
+      }],
+    "repo": "https://github.com/ZhiYi-N/script/blob/master/jrtt.js",
+    "icons": ["https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/jrtt-mini.png", "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/jrtt.png"],
+    "script": "https://raw.githubusercontent.com/ZhiYi-N/script/master/jrtt.js"
+  },
+  {
+	  "id": "runstep",
+	  "name": "走路赚钱",
+	  "keys": ["version", "runsteptoken", "runstepkey", "txtoken", "txkey", "runsteptoken2", "runstepkey2", "txtoken2", "txkey2", "runsteptoken3", "runstepkey3", "txtoken3", "txkey3", "runsteptoken4", "runstepkey4", "txtoken4", "txkey4"],
+	  "settings": [
+	    {
+	      "id": "version",
+	      "name": "APP版本号:更新软件,请更改。",
+	      "val": "",
+	      "type": "text",
+	      "desc": "默认1.5.1,更新APP软件,请更改。"
+	    },{
+				"id": "Suffix",
+				"name": "当前账号",
+				"val": "1",
+				"type": "number",
+				"desc": "当前抓取ck记录的账号序号，如：1、2、3、"
+			},{
+				"id": "Count",
+				"name": "账号个数",
+				"val": "1",
+				"type": "number",
+				"desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+			}
+	  ],
+	  "author": "@cenbomin",
+	  "repo": ["https://raw.githubusercontent.com/CenBoMin/GithubSync"],
+	  "script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/RUNSTEP/runstep.js",
+	  "icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/RUNSTEP/runstep120X120.png", "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/RUNSTEP/runstep120X120.png"
+	  ]
+	},
+    {
+		"id": "txstockapp",
+		"name": "腾旭自选股",
+		"keys": ["signheader", "signkey", "taskheader", "taskkey", "userheader", "userkey", "wxtaskkey","cash"],
+		"settings": [
+			{
+				"id": "cash",
+				"name": "提现开关:0,不自动提现;1，提现1元；5，提现5元",
+				"val": "",
+				"type": "number",
+				"desc": "默认为0,不自动提现"
+			}
+		],
+		"author": "@cenbomin",
+		"repo": ["https://raw.githubusercontent.com/CenBoMin/GithubSync"],
+		"script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockqx.js",
+		"icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png","https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png"
+		]
+	  },        
+      {
             "id": "xiaole",
             "name": "小乐",
             "keys": ["xiaoleurl", "xiaolehd", "xiaoleurl2", "xiaolehd2", "xiaoleurl3", "xiaolehd3", "xiaoleurl4", "xiaolehd4", "xiaoleurl5", "xiaolehd5", "xiaoleurl6", "xiaolehd6", "xiaoleurl7", "xiaolehd7", "xiaoleurl8", "xiaolehd8", "xiaoleurl9", "xiaolehd9", "xiaoleurl10", "xiaolehd10"],
