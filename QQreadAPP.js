@@ -16,7 +16,7 @@ boxjs链接  https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zi
 ⚠️一共1个位置 1个ck  👉 1条 Secrets
 多账号换行
 
-第一步 添加  hostname=iostgw6.reader.qq.com,
+第一步 添加  hostname=iostgw6.reader.qq.com,newios.reader.qq.com,
 
 第二步 添加url重写 
 登录QQ阅读APP   获取url
@@ -24,19 +24,19 @@ boxjs链接  https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zi
 QQreadurlVal 👉QQ_QQreadURL
 
 ⚠️主机名以及重写👇
-hostname=iostgw6.reader.qq.com,
+hostname=iostgw6.reader.qq.com,newios.reader.qq.com,
 
 ############## 圈x
 #QQ阅读APP获取url
-https:\/\/iostgw6\.reader\.qq\.com\/* url script-request-header https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.js   
+https:\/\/(iostgw6\.reader\.qq\.com\/*||newios\.reader\.qq\.com\/*) url script-request-header https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.js   
 
 ############## loon
 #QQ阅读APP获取url
-http-request https:\/\/iostgw6\.reader\.qq\.com\/* script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.js, requires-header=true, tag=QQ阅读APP获取url
+http-request https:\/\/(iostgw6\.reader\.qq\.com\/*||newios\.reader\.qq\.com\/*) script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.js, requires-header=true, tag=QQ阅读APP获取url
 
 ############## surge
 #QQ阅读APP获取url
-QQ阅读APP获取url = type=http-request,pattern=https:\/\/iostgw6\.reader\.qq\.com\/*,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.js
+QQ阅读APP获取url = type=http-request,pattern=https:\/\/(iostgw6\.reader\.qq\.com\/*||newios\.reader\.qq\.com\/*),script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.js
 
 */
 const $ = Env("QQ阅读APP");
@@ -98,8 +98,8 @@ if (!COOKIE.QQreadurlVal) {
 }
 
 function GetCookie() {
-    if ($request && $request.url.indexOf("ywkey") >= 0 && $request.url.indexOf("ywguid") >= 0) {
-        const QQreadurlVal = JSON.stringify($request.urls);
+    if ($request && $request.url.indexOf("userinfo") >= 0 ) {
+        const QQreadurlVal = $request.url
         if (QQreadurlVal) $.setdata(QQreadurlVal, "QQreadurl" + $.idx);
         $.log(
             `[${$.name + $.idx}] 获取QQreadurlVal✅: 成功,QQreadurlVal: ${QQreadurlVal}`
@@ -254,7 +254,7 @@ async function all() {
             "ywkey": `${ywkey}`,
             "qimei": "",
             "auditStatus": "0",
-            "Host": "iostgw6.reader.qq.com",
+            "Host": "commontgw6.reader.qq.com",
             "ywguid": `${ywguid}`,
             "Cache-Control": "no-cache",
             "server_sex": "1",
@@ -310,7 +310,7 @@ function user(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
-                url: QQreadurlVal,
+                url: `https://commontgw6.reader.qq.com/v7_5_7/nativepage/getAcctInfo`,
                 headers: QQreadheaderVal,
 
             }
@@ -319,8 +319,8 @@ function user(timeout = 0) {
                     if (logs) $.log(`${O}, 用户信息🚩: ${data}`);
                     $.user = JSON.parse(data);
                     if ($.user.code == 0) {
-                        console.log(`\n${O}\n========== 【${$.user.nickname}】 ==========\n`);
-                        $.message += `\n${O}\n========== 【${$.user.nickname}】 ==========\n`;
+                        console.log(`\n${O}\n========== 【${$.user.nick}】 ==========\n`);
+                        $.message += `\n${O}\n========== 【${$.user.nick}】 ==========\n`;
                     }
                 } catch (e) {
                     $.logErr(e, resp);
