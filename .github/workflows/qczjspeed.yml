@@ -6,7 +6,7 @@ name: 汽车之家极速版
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/30 * * * *'
+     - cron: '*/30 22,23,0-15 * * *'
   watch:
     types: started
 
@@ -37,7 +37,6 @@ jobs:
         run: |
           node qczjspeed.js
         env:
-          
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
