@@ -233,8 +233,7 @@ async function all() {
 
         ywkey = QQreadurlVal.split('&')[0].split('=')[1]
         ywguid = QQreadurlVal.split('&')[1].split('=')[1]
-        usid = QQreadurlVal.split('&')[2].split('=')[1]
-
+        
         QQreadheaderVal = {
             "Accept": "*/*",
             "qrem": "0",
@@ -245,7 +244,6 @@ async function all() {
             "net_type": "1",
             "platform": "ioswp",
             "youngerMode": "0",
-            "usid": `${usid}`,
             "loginType": "2",
             "text_type": "1",
             "version": "qqreader_7.5.70.0354_iphone",
