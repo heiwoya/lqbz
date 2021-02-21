@@ -71,25 +71,70 @@ let fqkkxh = ($.getval('fqkkxh') || '23');  // 此处修改循环次数，默认
 let fqtx = ($.getval('fqtx') || '100');  // 此处修改提现金额，0.1元等于10，默认为提现一元，也就是100
 var zz = ''
 
-
-
-let fqkkhd = process.env.FQKK_HD
-let fqkkurl = process.env.FQKK_URL
-
-    
- 
-
-
-!(async () => {
-  if (typeof $request !== "undefined") {
-    await fqkkck()
-   
-  } else {fqkkurlArr.push($.getdata('fqkkurl'))
+if ($.isNode()) {
+   if (process.env.FQKK_URL && process.env.FQKK_URL.indexOf('#') > -1) {
+   fqkkurlArr = process.env.FQKK_URL.split('#');
+   console.log(`您选择的是用"#"隔开\n`)
+  }
+  else if (process.env.FQKK_URL && process.env.FQKK_URL.indexOf('\n') > -1) {
+   fqkkurlArr = process.env.FQKK_URL.split('\n');
+   console.log(`您选择的是用换行隔开\n`)
+  } else {
+   fqkkurlArr = process.env.FQKK_URL.split()
+  };
+  if (process.env.FQKK_HD && process.env.FQKK_HD.indexOf('#') > -1) {
+   fqkkhdArr = process.env.FQKK_HD.split('#');
+   console.log(`您选择的是用"#"隔开\n`)
+  }
+  else if (process.env.FQKK_HD && process.env.FQKK_HD.indexOf('\n') > -1) {
+   fqkkhdArr = process.env.FQKK_HD.split('\n');
+   console.log(`您选择的是用换行隔开\n`)
+  } else {
+   fqkkhdArr = process.env.FQKK_HD.split()
+  };
+/*  if (process.env.RLBODY && process.env.RLBODY.indexOf('#') > -1) {
+   rlbody = process.env.RLBODY.split('#');
+   console.log(`您选择的是用"#"隔开\n`)
+  }
+  else if (process.env.RLBODY && process.env.RLBODY.indexOf('\n') > -1) {
+   rlbody = process.env.RLBODY.split('\n');
+   console.log(`您选择的是用换行隔开\n`)
+  } else {
+   rlbody = process.env.RLBODY.split()
+  };*/
+	
+ /*  Object.keys(rlurl).forEach((item) => {
+        if (rlurl[item]) {
+          rlurlArr.push(rlurl[item])
+        }
+    });
+    Object.keys(rlheader).forEach((item) => {
+        if (rlheader[item]) {
+          rlheaderArr.push(rlheader[item])
+        }
+    });  	
+    Object.keys(rlbody).forEach((item) => {
+        if (rlbody[item]) {
+          rlbodyArr.push(rlbody[item])
+        }
+    });  */
+	
+    console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
+    console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
+ } else {
+    fqkkurlArr.push($.getdata('fqkkurl'))
     fqkkhdArr.push($.getdata('fqkkhd'))
     let fqkkcount = ($.getval('fqkkcount') || '1');
   for (let i = 2; i <= fqkkcount; i++) {
     fqkkurlArr.push($.getdata(`fqkkurl${i}`))
     fqkkhdArr.push($.getdata(`fqkkhd${i}`))
+  }
+}
+
+!(async () => {
+if (!fqkkhdArr[0]) {
+    $.msg($.name, '【提示】请先获取番茄看看一cookie')
+    return;
   }
     console.log(`------------- 共${fqkkhdArr.length}个账号-------------\n`)
       for (let i = 0; i < fqkkhdArr.length; i++) {
