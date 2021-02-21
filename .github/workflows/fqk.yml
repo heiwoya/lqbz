@@ -4,7 +4,7 @@ name: fqkk
 on:
   workflow_dispatch:
   schedule:
-     - cron: '30 0-4 * * *'
+     - cron: '12 0,2,4,6 * * *'
   watch:
     types: started
 jobs:
@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        FQKK_HD: ${{ secrets.FQKK_HD }}
         FQKK_URL: ${{ secrets.FQKK_URL }}
+        FQKK_HD: ${{ secrets.FQKK_HD }}       
         TZ: Asia/shanghai
     steps:
       - name: Checkout
