@@ -113,7 +113,7 @@
     {
             "id": "ymz",
             "name": "羊毛赚",
-            "keys": ["ymzurl","ymzhd","ymzbody","ymzbody1"],
+            "keys": ["ymzurl","ymzhd","ymzbody","ymzbody1","ymzurl2","ymzhd2","ymzbody2","ymzbody2"],
             "author": "@feizao",
             "settings": [{
             "id": "ymzdsetting",
