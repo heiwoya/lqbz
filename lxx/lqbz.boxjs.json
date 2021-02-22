@@ -128,7 +128,7 @@
       "author": "@chavyleung",
       "repo": "https://github.com/chavyleung/scripts/tree/master/wps",
       "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js",
-      "icons": ["https://raw.githubusercontent.com/heiwoya/lqbz/main/lxx/wps_00001.png", "https://raw.githubusercontent.com/heiwoya/lqbz/main/lxx/wps_00001.png"]
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Color/wps.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/wps.png"]
     },
     {
     "id": "iQIYI",
@@ -154,7 +154,9 @@
     "script": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js",
     "author": "@NobyDa",
     "repo": "https://github.com/NobyDa/Script/blob/master/iQIYI-DailyBonus/iQIYI.js",
-    "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Color/iQIYI.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/iQIYI.png"]
+    "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Color/iQIYI.png",
+	      "https://raw.githubusercontent.com/Orz-3/mini/master/Color/iQIYI.png"
+	     ]
   },
     {
       "author": "@sunert", 
