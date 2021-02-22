@@ -1,6 +1,6 @@
 {
     "id": "app.sub",
-    "name": "自用羊毛",
+    "name": "羊毛大杂烩",
     "author": "@",
     "icon": "https://raw.githubusercontent.com/heiwoya/lqbz/main/lxx/b7ff4672114bba99172d811ef04acb0.jpg",
     "repo": "https://github.com/heiwoya",
@@ -120,6 +120,102 @@
         "https://raw.githubusercontent.com/58xinian/icon/master/glados_animation.gif"
       ],
       "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js"
+    },
+    {
+      "id": "WPS",
+      "name": "WPS",
+      "keys": ["chavy_signhomeurl_wps", "chavy_signhomeheader_wps"],
+      "author": "@chavyleung",
+      "repo": "https://github.com/chavyleung/scripts/tree/master/wps",
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js",
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/wps.png", "https://raw.githubusercontent.com/Orz-3/task/master/wps.png"]
+    },
+    {
+    "id": "iQIYI",
+    "name": "爱奇艺",
+    "keys": ["CookieQY"],
+    "descs_html": [
+      "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js\">脚本注释</a></h4>"
+    ],
+    "settings": [{
+      "id": "iQIYI_LogDetails",
+      "name": "响应日志",
+      "val": false,
+      "type": "boolean",
+      "desc": ""
+    }, {
+      "id": "iQIYI_TimeOut",
+      "name": "超时退出 (毫秒)",
+      "val": "",
+      "type": "number",
+      "placeholder": "默认无超时 (点击以展开说明)",
+      "desc": "按需填写, 用于由网络不稳定引起的脚本中断, 正常用户建议留空. 如QX日志出现\"JS Context timeout\"后脚本中断时, 建议填写6000"
+    }],
+    "script": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js",
+    "author": "@NobyDa",
+    "repo": "https://github.com/NobyDa/Script/blob/master/iQIYI-DailyBonus/iQIYI.js",
+    "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/iQIYI.png", "https://raw.githubusercontent.com/Orz-3/task/master/iQIYI.png"]
+  },
+    {
+      "author": "@sunert", 
+      "descs_html": [
+        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/Sunert/Scripts/raw/master/TaskConf/sina/readme.md\">配置说明</a></h4>", 
+        "<br />", 
+        "<p>其中wb_nick为账号昵称，无需另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，可选，sy_token_wb为微博签到token，必选</p>"
+      ], 
+      "keys": [
+        "sy_token_wb", 
+        "wb_cookie", 
+        "wb_nick"
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/weibo.js", 
+      "id": "weibo", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js", 
+      "name": "新浪微博", 
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png", 
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/weibo.png"
+      ]
+    },
+    {
+      "author": "@sunert", 
+      "keys": [
+        "cookie_ks"
+      ], 
+      "settings": [
+        {
+          "id": "cash_nebulaks", 
+          "val": "30", 
+          "name": "极速版提现", 
+          "type": "number", 
+          "desc": "极速版提现金额，默认30"
+        }, 
+        {
+          "id": "cash_nebulaks", 
+          "val": "30", 
+          "name": "极速版提现", 
+          "type": "radios", 
+          "items": [
+            {
+              "key": "ALIPAY", 
+              "label": "支付宝"
+            }, 
+            {
+              "key": "WECHAT", 
+              "label": "微信"
+            }
+          ], 
+          "desc": "极速版提现金额，默认30，前提是绑定支付方式"
+        }
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/kuaishou.js", 
+      "id": "kuaishou", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js", 
+      "name": "快手极速版", 
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/kuaishou.png", 
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/kuaishou.png"
+      ]
     },
     {
             "id": "fqkk",
