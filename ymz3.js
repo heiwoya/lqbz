@@ -60,11 +60,11 @@ hostname = ymz.iphonezhuan.com
 
 */
 const $ = new Env('羊毛赚');
-let ymzurl1 = $.getdata('ymzurl1')
-let ymzhd1 = $.getdata('ymzhd1')
-let ymzbody3 = $.getdata('ymzbody3')
+let ymzurl2 = $.getdata('ymzurl2')
+let ymzhd2 = $.getdata('ymzhd2')
 let ymzbody4 = $.getdata('ymzbody4')
-let ymztxbody1 = $.getdata('ymztxbody1')
+let ymzbody5 = $.getdata('ymzbody5')
+let ymztxbody2 = $.getdata('ymztxbody2')
 !(async () => {
   if (typeof $request !== "undefined") {
     await ymzck()
@@ -85,22 +85,22 @@ $.msg("","","羊毛赚任务已全部完成！")
 //羊毛赚数据获取
 function ymzck() {
    if ($request.url.indexOf("addaction") > -1&&$request.body.indexOf("taskid=1") > -1){
-  $.setdata(JSON.stringify($request.url),'ymzurl1')
-    $.log(ymzurl1)
-    $.setdata(JSON.stringify($request.headers),'ymzhd1')
-$.log(ymzhd1)
-    $.setdata($request.body,'ymzbody3')
-$.log(ymzbody3)
+  $.setdata(JSON.stringify($request.url),'ymzurl2')
+    $.log(ymzurl2)
+    $.setdata(JSON.stringify($request.headers),'ymzhd2')
+$.log(ymzhd2)
+    $.setdata($request.body,'ymzbody4')
+$.log(ymzbody4)
    $.msg($.name,"","羊毛赚广告数据获取成功！")
   }
 if ($request.url.indexOf("addaction") > -1&&$request.body.indexOf("taskid=2") > -1){
-  $.setdata($request.body,'ymzbody4')
-$.log(ymzbody4)
+  $.setdata($request.body,'ymzbody5')
+$.log(ymzbody5)
    $.msg($.name,"","羊毛赚视频数据获取成功！")
     }
 if ($request.url.indexOf("submitwithdraw") > -1){
-  $.setdata($request.body,'ymztxbody1')
-$.log(ymztxbody1)
+  $.setdata($request.body,'ymztxbody2')
+$.log(ymztxbody2)
    $.msg($.name,"","羊毛赚提现数据获取成功！")
   
 }
@@ -114,8 +114,8 @@ function ymzsp(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'http://ymz.iphonezhuan.com/addaction',
-        headers : JSON.parse($.getdata('ymzhd1')),
-        body : ymzbody4,}
+        headers : JSON.parse($.getdata('ymzhd2')),
+        body : ymzbody5,}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -142,8 +142,8 @@ function ymztx(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'http://ymz.iphonezhuan.com/submitwithdraw',
-        headers : JSON.parse($.getdata('ymzhd1')),
-        body : ymztxbody1,}
+        headers : JSON.parse($.getdata('ymzhd2')),
+        body : ymztxbody2,}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -167,14 +167,14 @@ if(result.statuscode !== 200){
 function ymzqd(timeout = 0) {
   return new Promise((resolve) => {
     setTimeout( ()=>{
-      if (typeof $.getdata('ymzbody3') === "undefined"||typeof $.getdata('ymzbody4') === "undefined") {
+      if (typeof $.getdata('ymzbody4') === "undefined"||typeof $.getdata('ymzbody5') === "undefined") {
         $.msg($.name,"",'请先获取羊毛赚广告和视频body!😓',)
         $.done()
       }
 let url = {
         url : 'http://ymz.iphonezhuan.com/addaction',
-        headers : JSON.parse($.getdata('ymzhd1')),
-        body : ymzbody3,}
+        headers : JSON.parse($.getdata('ymzhd2')),
+        body : ymzbody4,}
       $.post(url, async (err, resp, data) => {
         try {
            
