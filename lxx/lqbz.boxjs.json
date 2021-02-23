@@ -619,7 +619,7 @@
     {
             "id": "ymz",
             "name": "羊毛赚",
-            "keys": ["ymzurl","ymzhd","ymzbody","ymzbody1","ymztxbody","ymzurl1","ymzhd1","ymzbody3","ymzbody4","ymztxbody1","ymzurl2","ymzhd2","ymzbody5","ymzbody6","ymztxbody2","ymzurl3","ymzhd3","ymzbody7","ymzbody8","ymztxbody3"],
+            "keys": ["ymzurl","ymzhd","ymzbody","ymzbody1","ymztxbody","ymzurl1","ymzhd1","ymzbody3","ymzbody4","ymztxbody1","ymzurl2","ymzhd3","ymzbody5","ymzbody6","ymztxbody2","ymzurl4","ymzhd5","ymzbody7","ymzbody8","ymztxbody3"],
             "author": "@feizao",
             "settings": [{
             "id": "ymzdsetting",
