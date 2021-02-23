@@ -789,7 +789,7 @@
 	  "script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/RUNSTEP/runstep.js",
 	  "icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/RUNSTEP/runstep120X120.png", "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/RUNSTEP/runstep120X120.png"
 	  ]
-	},
+    },
     {
 		"id": "txstockapp",
 		"name": "腾旭自选股",
@@ -810,6 +810,37 @@
 		]
 	  },
 	  {
+            "id": "bububao",
+            "name": "步步宝ziye",
+            "keys": ["bububaotoken", "bububaotoken2", "bububaotoken3", "bububaotoken4", "bububaotoken5", "bububaotoken6", "bububaotoken7", "bububaotoken8", "bububaotoken9", "bububaotoken10", "bububaotoken11", "bububaotoken12", "bububaotoken13", "bububaotoken14", "bububaotoken15", "bububaotoken16", "bububaotoken17", "bububaotoken18", "bububaotoken19", "bububaotoken20"],
+            "author": "@ziye",
+            "settings": [{
+                    "id": "bububaoSuffix",
+                    "name": "当前账号",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "当前抓取ck记录的账号序号，如：1、2、3、"
+                },
+                {
+                    "id": "bububaoCount",
+                    "name": "账号个数",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+                },
+                {
+                    "id": "bububaoCASH",
+                    "name": "提现标准",
+                    "val": "0",
+                    "type": "number",
+                    "desc": "0不提现，可设置 0 0.3 50 100 200 888  设置888由上至下循环提现 "
+                }
+            ],
+            "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.js",
+            "icons": ["https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.png", "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.png"],
+            "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.js"
+        },
+	{
             "id": "qczjspeed",
             "name": "汽车之家极速版",
             "keys": ["GetUserInfoheader", "taskbody", "activitybody", "addCoinbody", "addCoin2body", "GetUserInfoheader2", "taskbody2", "activitybody2", "addCoinbody2", "addCoin2body2", "GetUserInfoheader3", "taskbody3", "activitybody3", "addCoinbody3", "addCoin2body3", "GetUserInfoheader4", "taskbody4", "activitybody4", "addCoinbody4", "addCoin2body4", "GetUserInfoheader5", "taskbody5", "activitybody5", "addCoinbody5", "addCoin2body5", "GetUserInfoheader6", "taskbody6", "activitybody6", "addCoinbody6", "addCoin2body6", "GetUserInfoheader7", "taskbody7", "activitybody7", "addCoinbody7", "addCoin2body7", "GetUserInfoheader8", "taskbody8", "activitybody8", "addCoinbody8", "addCoin2body8", "GetUserInfoheader9", "taskbody9", "activitybody9", "addCoinbody9", "addCoin2body9", "GetUserInfoheader10", "taskbody10", "activitybody10", "addCoinbody10", "addCoin2body10", "GetUserInfoheader11", "taskbody11", "activitybody11", "addCoinbody11", "addCoin2body11", "GetUserInfoheader12", "taskbody12", "activitybody12", "addCoinbody12", "addCoin2body12", "GetUserInfoheader13", "taskbody13", "activitybody13", "addCoinbody13", "addCoin2body13", "GetUserInfoheader14", "taskbody14", "activitybody14", "addCoinbody14", "addCoin2body14", "GetUserInfoheader15", "taskbody15", "activitybody15", "addCoinbody15", "addCoin2body15", "GetUserInfoheader16", "taskbody16", "activitybody16", "addCoinbody16", "addCoin2body16", "GetUserInfoheader17", "taskbody17", "activitybody17", "addCoinbody17", "addCoin2body17", "GetUserInfoheader18", "taskbody18", "activitybody18", "addCoinbody18", "addCoin2body18", "GetUserInfoheader19", "taskbody19", "activitybody19", "addCoinbody19", "addCoin2body19", "GetUserInfoheader20", "taskbody20", "activitybody20", "addCoinbody20", "addCoin2body20"],
