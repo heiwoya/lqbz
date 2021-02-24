@@ -59,9 +59,9 @@ hostname = api.hemayoudao.cn
 
 */
 const $ = new Env('陌嗨短视频');
-let mhurl = $.getdata('mhurl')
-let mhhd = $.getdata('mhhd')
-let mhbody = $.getdata('mhbody')
+let mhurl1 = $.getdata('mhurl1')
+let mhhd1 = $.getdata('mhhd1')
+let mhbody1 = $.getdata('mhbody1')
 
 
 !(async () => {
@@ -83,12 +83,12 @@ $.msg("","","陌嗨短视频广告视频已全部完成！")
 //陌嗨数据获取
 function mhck() {
    if ($request.url.indexOf("finish-task") > -1){
-  $.setdata(JSON.stringify($request.url),'mhurl')
-    $.log(mhurl)
-    $.setdata(JSON.stringify($request.headers),'mhhd')
-$.log(mhhd)
-    $.setdata($request.body,'mhbody')
-$.log(mhbody)
+  $.setdata(JSON.stringify($request.url),'mhurl1')
+    $.log(mhurl1)
+    $.setdata(JSON.stringify($request.headers),'mhhd1')
+$.log(mhhd1)
+    $.setdata($request.body,'mhbody1')
+$.log(mhbody1)
    $.msg($.name,"","陌嗨短视频数据获取成功！")
   }
 }
@@ -102,13 +102,13 @@ $.log(mhbody)
 function mhqd(timeout = 0) {
   return new Promise((resolve) => {
     setTimeout( ()=>{
-      if (typeof $.getdata('mhurl') === "undefined") {
+      if (typeof $.getdata('mhurl1') === "undefined") {
         $.msg($.name,"",'请先获取陌嗨短视频body!😓',)
         $.done()
       }
 let url = {
         url : 'https://api.hemayoudao.cn/admin-dotask/app/spirit/v1/finish-task',
-        headers : JSON.parse($.getdata('mhhd')),
+        headers : JSON.parse($.getdata('mhhd1')),
         body : `{
   "type": 1,
   "taskId": 0
