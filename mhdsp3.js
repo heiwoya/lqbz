@@ -59,9 +59,9 @@ hostname = api.hemayoudao.cn
 
 */
 const $ = new Env('陌嗨短视频');
-let mhurl2 = $.getdata('mhurl2')
-let mhhd2 = $.getdata('mhhd2')
-let mhbody2 = $.getdata('mhbody2')
+let mhurl3 = $.getdata('mhurl3')
+let mhhd3 = $.getdata('mhhd3')
+let mhbody3 = $.getdata('mhbody3')
 
 
 !(async () => {
@@ -83,12 +83,12 @@ $.msg("","","陌嗨短视频广告视频已全部完成！")
 //陌嗨数据获取
 function mhck() {
    if ($request.url.indexOf("finish-task") > -1){
-  $.setdata(JSON.stringify($request.url),'mhurl2')
-    $.log(mhurl2)
-    $.setdata(JSON.stringify($request.headers),'mhhd2')
-$.log(mhhd2)
-    $.setdata($request.body,'mhbody2')
-$.log(mhbody2)
+  $.setdata(JSON.stringify($request.url),'mhurl3')
+    $.log(mhurl3)
+    $.setdata(JSON.stringify($request.headers),'mhhd3')
+$.log(mhhd3)
+    $.setdata($request.body,'mhbody3')
+$.log(mhbody3)
    $.msg($.name,"","陌嗨短视频数据获取成功！")
   }
 }
@@ -108,7 +108,7 @@ function mhqd(timeout = 0) {
       }
 let url = {
         url : 'https://api.hemayoudao.cn/admin-dotask/app/spirit/v1/finish-task',
-        headers : JSON.parse($.getdata('mhhd2')),
+        headers : JSON.parse($.getdata('mhhd3')),
         body : `{
   "type": 1,
   "taskId": 0
