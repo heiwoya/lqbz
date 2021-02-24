@@ -3,11 +3,11 @@ hostname：ocean.shuqireader.com,
 
 
 [rewrite_local]
-https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery url script-request-body sqxsgetck.js
-https://ocean.shuqireader.com/api/activity/activity/v1/lottery/draw url script-request-body sqxsgetck.js
-https://ocean.shuqireader.com/api/activity/xapi/gold/record url script-request-body sqxsgetck.js
-https://ocean.shuqireader.com/api/prizecenter/xapi/prize/manual/receive url script-request-body sqxsgetck.js
-https://ocean.shuqireader.com/api/ad/v1/api/prize/readpage/pendant/lottery url script-request-body sqxsgetck.js
+https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery url script-request-body https://raw.githubusercontent.com/heiwoya/lqbz/main/sqxsgetck.js
+https://ocean.shuqireader.com/api/activity/activity/v1/lottery/draw url script-request-body https://raw.githubusercontent.com/heiwoya/lqbz/main/sqxsgetck.js
+https://ocean.shuqireader.com/api/activity/xapi/gold/record url script-request-body https://raw.githubusercontent.com/heiwoya/lqbz/main/sqxsgetck.js
+https://ocean.shuqireader.com/api/prizecenter/xapi/prize/manual/receive url script-request-body https://raw.githubusercontent.com/heiwoya/lqbz/main/sqxsgetck.js
+https://ocean.shuqireader.com/api/ad/v1/api/prize/readpage/pendant/lottery url script-request-body https://raw.githubusercontent.com/heiwoya/lqbz/main/sqxsgetck.js
 
 
 
