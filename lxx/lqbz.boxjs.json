@@ -670,7 +670,7 @@
     {
             "id": "mhdsp",
             "name": "陌嗨短视频 ",
-            "keys": ["mhurl", "mhhd", "mhbody", "mhurl2", "mhhd2", "mhbody2", "mhurl3", "mhhd3", "mhbody3"],
+            "keys": ["mhurl", "mhhd", "mhbody", "mhurl2", "mhhd2", "mhbody2", "mhurl3", "mhhd3", "mhbody3", "mhurl4", "mhhd4", "mhbody4", "mhurl5", "mhhd5", "mhbody5"],
             "author": "@feizao",
             "settings": [{
             "id": "mhdspsetting",
