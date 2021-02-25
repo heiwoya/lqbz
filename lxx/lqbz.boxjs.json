@@ -691,10 +691,10 @@
             "script": "https://raw.githubusercontent.com/age174/-/main/mhdsp.js"
     },
     {
-            "id": "mhdsp",
+            "id": "mhdsp2",
             "name": "陌嗨短视频2",
             "keys": ["mhurl2", "mhhd2", "mhbody2"],
-            "author": "@feizao",
+            "author": "@",
             "settings": [{
             "id": "mhdspsetting",
             "name": "当前账号",
