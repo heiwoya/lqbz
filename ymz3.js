@@ -61,7 +61,7 @@ hostname = ymz.iphonezhuan.com
 */
 const $ = new Env('羊毛赚');
 let ymzurl2 = $.getdata('ymzurl2')
-let ymzhd3 = $.getdata('ymzhd3')
+let ymzhd2 = $.getdata('ymzhd2')
 let ymzbody5 = $.getdata('ymzbody5')
 let ymzbody6 = $.getdata('ymzbody6')
 let ymztxbody2 = $.getdata('ymztxbody2')
@@ -87,7 +87,7 @@ function ymzck() {
    if ($request.url.indexOf("addaction") > -1&&$request.body.indexOf("taskid=1") > -1){
   $.setdata(JSON.stringify($request.url),'ymzurl2')
     $.log(ymzurl2)
-    $.setdata(JSON.stringify($request.headers),'ymzhd3')
+    $.setdata(JSON.stringify($request.headers),'ymzhd2')
 $.log(ymzhd3)
     $.setdata($request.body,'ymzbody5')
 $.log(ymzbody5)
@@ -114,7 +114,7 @@ function ymzsp(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'http://ymz.iphonezhuan.com/addaction',
-        headers : JSON.parse($.getdata('ymzhd3')),
+        headers : JSON.parse($.getdata('ymzhd2')),
         body : ymzbody6,}
       $.post(url, async (err, resp, data) => {
         try {
@@ -142,7 +142,7 @@ function ymztx(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'http://ymz.iphonezhuan.com/submitwithdraw',
-        headers : JSON.parse($.getdata('ymzhd3')),
+        headers : JSON.parse($.getdata('ymzhd2')),
         body : ymztxbody2,}
       $.post(url, async (err, resp, data) => {
         try {
@@ -173,7 +173,7 @@ function ymzqd(timeout = 0) {
       }
 let url = {
         url : 'http://ymz.iphonezhuan.com/addaction',
-        headers : JSON.parse($.getdata('ymzhd3')),
+        headers : JSON.parse($.getdata('ymzhd2')),
         body : ymzbody5,}
       $.post(url, async (err, resp, data) => {
         try {
