@@ -2,7 +2,7 @@
     "id": "app.sub",
     "name": "羊毛大杂烩",
     "author": "@",
-    "icon": "https://raw.githubusercontent.com/heiwoya/lqbz/main/lxx/5050.jpg",
+    "icon": "https://raw.githubusercontent.com/heiwoya/lqbz/main/boxjs/5050.jpg",
     "repo": "https://github.com/heiwoya",
     "apps": [{
       "id": "JD_Cookies",
@@ -354,8 +354,8 @@
             ],
             "repo":"https://raw.githubusercontent.com/",
             "icons":[
-                "https://raw.githubusercontent.com/heiwoya/lqbz/main/lxx/sqxs.jpg",
-                "https://raw.githubusercontent.com/heiwoya/lqbz/main/lxx/sqxs.jpg"
+                "https://raw.githubusercontent.com/heiwoya/lqbz/main/boxjs/sqxs.jpg",
+                "https://raw.githubusercontent.com/heiwoya/lqbz/main/boxjs/sqxs.jpg"
             ],
             "script":"https://raw.githubusercontent.com/"
         },
