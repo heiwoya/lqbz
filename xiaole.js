@@ -11,7 +11,7 @@ boxjs链接  https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/ziye.
 1.18 修复兑换错误
 1.20 调整为打卡满10次且大于等于0.3进行兑换
 1.25 调整签到时间为12到13点之间
-1.26 调整外部推送
+2.23 调整随机延时时长
 
 ⚠️小乐
 可以签到 10次 共0.3
@@ -64,7 +64,7 @@ const notify = $.isNode() ? require("./sendNotify") : ``;
 const COOKIE = $.isNode() ? require("./xiaoleCOOKIE") : ``;
 const logs = 0; // 0为关闭日志，1为开启
 const notifyttt = 1// 0为关闭外部推送，1为12 23 点外部推送
-const notifyInterval = 2;// 0为关闭通知，1为所有通知，2为12 21 点通知  ， 3为 6 12 18 23 点通知 
+const notifyInterval = 2;// 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
 
 let money;
 $.message = '',$.messagesss = '', $.index = '', $.clocklog = '', COOKIES_SPLIT = '';
@@ -212,8 +212,8 @@ if (!Length) {
   xiaoleheaderVal = xiaoleheaderArr[i];  
   }
 //随机时间
-do out = Math.floor(Math.random()*30);
-        while( out < 15 )
+do out = Math.floor(Math.random()*50);
+        while( out < 25 )
   O = (`${$.name + (i + 1)}🔔`);
   await console.log(`-------------------------\n\n🔔开始运行【${$.name+(i+1)}】`)      
       await coin();//账户信息
@@ -233,6 +233,7 @@ await clock();//打卡
 
 await index();//打卡信息  
 	  if (nowTimes.getHours() >= 8 &&$.integral.info &&$.clocklog.info.log.length==10 && money >=0.3){
+    await $.wait(out*500);
 	  await exchange();//兑换
 	  }
   }
@@ -246,7 +247,7 @@ function msgShow() {
       if (notifyInterval == 1) {
         $.msg($.name, ``, $.message);
       }
-      if (notifyInterval == 2 && (nowTimes.getHours() === 12 || nowTimes.getHours() === 21) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 10)) {
+      if (notifyInterval == 2 && (nowTimes.getHours() === 12 || nowTimes.getHours() === 23) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 10)) {
         $.msg($.name, ``, $.message);
       }
       if (notifyInterval == 3 && (nowTimes.getHours() === 6 || nowTimes.getHours() === 12 || nowTimes.getHours() === 18 || nowTimes.getHours() === 23) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 10)) {
