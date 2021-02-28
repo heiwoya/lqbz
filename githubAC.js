@@ -1,8 +1,8 @@
 /* ziye 
-github地址 https://github.com/ziye12
+github地址 https://github.com/ziye66666
 TG频道地址  https://t.me/ziyescript
 TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
-boxjs链接  https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/ziye.boxjs.json
+boxjs链接  https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ziye.boxjs.json
 转载请备注个名字，谢谢
 
 ⚠️github运行AC任务
@@ -12,6 +12,7 @@ boxjs链接  https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/ziye.
 2.7 增加时间控制，多js换行，boxjs手动保存会话，填写，再应用，其他填写环境变量或者githubACCOOKIE.js
 2.7-2 修正判定
 2.7-3 时间精确到5分
+1.12 修复
 
 ⚠️一共1个位置 3个ck  👉 18条 Secrets(14个时间变量) 
 多账号换行
@@ -58,16 +59,16 @@ hostname=github.com,
 ############## 圈x
 
 #githubAC获取body
-https:\/\/github\.com\/* url script-request-body https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/githubAC.js   
+https:\/\/github\.com\/* url script-request-body https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/githubAC.js   
 
 ############## loon
 #githubAC获取body
-http-request https:\/\/github\.com\/* script-path=https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/githubAC.js,requires-body=true, tag=githubAC获取body
+http-request https:\/\/github\.com\/* script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/githubAC.js,requires-body=true, tag=githubAC获取body
 
 ############## surge
 
 #githubAC获取body
-githubACbody = type=http-request,pattern=https:\/\/github\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/githubAC.js 
+githubACbody = type=http-request,pattern=https:\/\/github\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/githubAC.js 
 
 
 
@@ -104,6 +105,38 @@ let middleHHA = [];
 const HHBArr = [];
 let HHBVal = ``;
 let middleHHB = [];
+const HHCArr = [];
+let HHCVal = ``;
+let middleHHC = [];
+const HHDArr = [];
+let HHDVal = ``;
+let middleHHD = [];
+const HHEArr = [];
+let HHEVal = ``;
+let middleHHE = [];
+const HHFArr = [];
+let HHFVal = ``;
+let middleHHF = [];
+const HHGArr = [];
+let HHGVal = ``;
+let middleHHG = [];
+const HHHArr = [];
+let HHHVal = ``;
+let middleHHH = [];
+const HHIArr = [];
+let HHIVal = ``;
+let middleHHI = [];
+const HHJArr = [];
+let HHJVal = ``;
+let middleHHJ = [];
+const HHKArr = [];
+let HHKVal = ``;
+let middleHHK = [];
+const HHLArr = [];
+let HHLVal = ``;
+let middleHHL = [];
+
+
 const MMAArr = [];
 let MMAVal = ``;
 let middleMMA = [];
@@ -202,6 +235,7 @@ if ($.isNode() && process.env.GIT_githubACHEADER) {
 
 
 
+
     if (
         process.env.GIT_HHA &&
         process.env.GIT_HHA.indexOf(COOKIES_SPLIT) > -1
@@ -212,6 +246,7 @@ if ($.isNode() && process.env.GIT_githubACHEADER) {
     }
 
 
+
     if (
         process.env.GIT_HHB &&
         process.env.GIT_HHB.indexOf(COOKIES_SPLIT) > -1
@@ -220,6 +255,119 @@ if ($.isNode() && process.env.GIT_githubACHEADER) {
     } else {
         middleHHB = process.env.GIT_HHB.split();
     }
+
+
+
+    if (
+        process.env.GIT_HHC &&
+        process.env.GIT_HHC.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHC = process.env.GIT_HHC.split(COOKIES_SPLIT);
+    } else {
+        middleHHC = process.env.GIT_HHC.split();
+    }
+
+
+
+
+
+    if (
+        process.env.GIT_HHD &&
+        process.env.GIT_HHD.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHD = process.env.GIT_HHD.split(COOKIES_SPLIT);
+    } else {
+        middleHHD = process.env.GIT_HHD.split();
+    }
+
+
+
+    if (
+        process.env.GIT_HHE &&
+        process.env.GIT_HHE.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHE = process.env.GIT_HHE.split(COOKIES_SPLIT);
+    } else {
+        middleHHE = process.env.GIT_HHE.split();
+    }
+
+
+
+    if (
+        process.env.GIT_HHF &&
+        process.env.GIT_HHF.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHF = process.env.GIT_HHF.split(COOKIES_SPLIT);
+    } else {
+        middleHHF = process.env.GIT_HHF.split();
+    }
+
+    if (
+        process.env.GIT_HHG &&
+        process.env.GIT_HHG.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHG = process.env.GIT_HHG.split(COOKIES_SPLIT);
+    } else {
+        middleHHG = process.env.GIT_HHG.split();
+    }
+
+
+
+    if (
+        process.env.GIT_HHH &&
+        process.env.GIT_HHH.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHH = process.env.GIT_HHH.split(COOKIES_SPLIT);
+    } else {
+        middleHHH = process.env.GIT_HHH.split();
+    }
+
+
+
+    if (
+        process.env.GIT_HHI &&
+        process.env.GIT_HHI.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHI = process.env.GIT_HHI.split(COOKIES_SPLIT);
+    } else {
+        middleHHI = process.env.GIT_HHI.split();
+    }
+
+
+
+
+
+    if (
+        process.env.GIT_HHJ &&
+        process.env.GIT_HHJ.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHJ = process.env.GIT_HHJ.split(COOKIES_SPLIT);
+    } else {
+        middleHHJ = process.env.GIT_HHJ.split();
+    }
+
+
+
+    if (
+        process.env.GIT_HHK &&
+        process.env.GIT_HHK.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHK = process.env.GIT_HHK.split(COOKIES_SPLIT);
+    } else {
+        middleHHK = process.env.GIT_HHK.split();
+    }
+
+
+
+    if (
+        process.env.GIT_HHL &&
+        process.env.GIT_HHL.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middleHHL = process.env.GIT_HHL.split(COOKIES_SPLIT);
+    } else {
+        middleHHL = process.env.GIT_HHL.split();
+    }
+
 
 
 
@@ -289,7 +437,7 @@ if ($.isNode() && process.env.GIT_githubACHEADER) {
         middleMMF = process.env.GIT_MMF.split();
     }
 
-if (
+    if (
         process.env.GIT_MMG &&
         process.env.GIT_MMG.indexOf(COOKIES_SPLIT) > -1
     ) {
@@ -368,6 +516,17 @@ if (COOKIE.githubACurlVal) {
 
         "HHAVal": COOKIE.HHAVal.split('\n'),
         "HHBVal": COOKIE.HHBVal.split('\n'),
+        "HHCVal": COOKIE.HHCVal.split('\n'),
+        "HHDVal": COOKIE.HHDVal.split('\n'),
+        "HHEVal": COOKIE.HHEVal.split('\n'),
+        "HHFVal": COOKIE.HHFVal.split('\n'),
+        "HHGVal": COOKIE.HHGVal.split('\n'),
+        "HHHVal": COOKIE.HHHVal.split('\n'),
+        "HHIVal": COOKIE.HHIVal.split('\n'),
+        "HHJVal": COOKIE.HHJVal.split('\n'),
+        "HHKVal": COOKIE.HHKVal.split('\n'),
+        "HHLVal": COOKIE.HHLVal.split('\n'),
+
         "MMAVal": COOKIE.MMAVal.split('\n'),
         "MMBVal": COOKIE.MMBVal.split('\n'),
         "MMCVal": COOKIE.MMCVal.split('\n'),
@@ -410,16 +569,74 @@ if (!COOKIE.githubACheaderVal) {
             }
         });
 
+
         Object.keys(middleHHA).forEach((item) => {
             if (middleHHA[item]) {
-                githubACArr.push(middleHHA[item]);
+                HHAArr.push(middleHHA[item]);
             }
         });
+
         Object.keys(middleHHB).forEach((item) => {
             if (middleHHB[item]) {
                 HHBArr.push(middleHHB[item]);
             }
         });
+        Object.keys(middleHHC).forEach((item) => {
+            if (middleHHC[item]) {
+                HHCArr.push(middleHHC[item]);
+            }
+        });
+        Object.keys(middleHHD).forEach((item) => {
+            if (middleHHD[item]) {
+                HHDArr.push(middleHHD[item]);
+            }
+        });
+
+        Object.keys(middleHHE).forEach((item) => {
+            if (middleHHE[item]) {
+                HHEArr.push(middleHHE[item]);
+            }
+        });
+        Object.keys(middleHHF).forEach((item) => {
+            if (middleHHF[item]) {
+                HHFArr.push(middleHHF[item]);
+            }
+        });
+
+        Object.keys(middleHHG).forEach((item) => {
+            if (middleHHG[item]) {
+                HHGArr.push(middleHHG[item]);
+            }
+        });
+
+        Object.keys(middleHHH).forEach((item) => {
+            if (middleHHH[item]) {
+                HHHArr.push(middleHHH[item]);
+            }
+        });
+        Object.keys(middleHHI).forEach((item) => {
+            if (middleHHI[item]) {
+                HHIArr.push(middleHHI[item]);
+            }
+        });
+        Object.keys(middleHHJ).forEach((item) => {
+            if (middleHHJ[item]) {
+                HHJArr.push(middleHHJ[item]);
+            }
+        });
+
+        Object.keys(middleHHK).forEach((item) => {
+            if (middleHHK[item]) {
+                HHKArr.push(middleHHK[item]);
+            }
+        });
+        Object.keys(middleHHL).forEach((item) => {
+            if (middleHHL[item]) {
+                HHLArr.push(middleHHL[item]);
+            }
+        });
+
+
         Object.keys(middleMMA).forEach((item) => {
             if (middleMMA[item]) {
                 MMAArr.push(middleMMA[item]);
@@ -452,8 +669,8 @@ if (!COOKIE.githubACheaderVal) {
                 MMFArr.push(middleMMF[item]);
             }
         });
-		
-		        Object.keys(middleMMG).forEach((item) => {
+
+        Object.keys(middleMMG).forEach((item) => {
             if (middleMMG[item]) {
                 MMGArr.push(middleMMG[item]);
             }
@@ -492,13 +709,23 @@ if (!COOKIE.githubACheaderVal) {
         githubACbodyArr.push($.getdata("githubACbody"));
         HHAArr.push($.getdata("HHA"));
         HHBArr.push($.getdata("HHB"));
+        HHCArr.push($.getdata("HHC"));
+        HHDArr.push($.getdata("HHD"));
+        HHEArr.push($.getdata("HHE"));
+        HHFArr.push($.getdata("HHF"));
+        HHGArr.push($.getdata("HHG"));
+        HHHArr.push($.getdata("HHH"));
+        HHIArr.push($.getdata("HHI"));
+        HHJArr.push($.getdata("HHJ"));
+        HHKArr.push($.getdata("HHK"));
+        HHLArr.push($.getdata("HHL"));
         MMAArr.push($.getdata("MMA"));
         MMBArr.push($.getdata("MMB"));
         MMCArr.push($.getdata("MMC"));
         MMDArr.push($.getdata("MMD"));
         MMEArr.push($.getdata("MME"));
         MMFArr.push($.getdata("MMF"));
-		MMGArr.push($.getdata("MMG"));
+        MMGArr.push($.getdata("MMG"));
         MMHArr.push($.getdata("MMH"));
         MMIArr.push($.getdata("MMI"));
         MMJArr.push($.getdata("MMJ"));
@@ -515,13 +742,23 @@ if (!COOKIE.githubACheaderVal) {
                 githubACbodyArr.push($.getdata(`githubACbody${i}`));
                 HHAArr.push($.getdata(`HHA${i}`));
                 HHBArr.push($.getdata(`HHB${i}`));
+                HHCArr.push($.getdata(`HHC${i}`));
+                HHDArr.push($.getdata(`HHD${i}`));
+                HHEArr.push($.getdata(`HHE${i}`));
+                HHFArr.push($.getdata(`HHF${i}`));
+                HHGArr.push($.getdata(`HHG${i}`));
+                HHHArr.push($.getdata(`HHH${i}`));
+                HHIArr.push($.getdata(`HHI${i}`));
+                HHJArr.push($.getdata(`HHJ${i}`));
+                HHKArr.push($.getdata(`HHK${i}`));
+                HHLArr.push($.getdata(`HHL${i}`));
                 MMAArr.push($.getdata(`MMA${i}`));
                 MMBArr.push($.getdata(`MMB${i}`));
                 MMCArr.push($.getdata(`MMC${i}`));
                 MMDArr.push($.getdata(`MMD${i}`));
                 MMEArr.push($.getdata(`MME${i}`));
                 MMFArr.push($.getdata(`MMF${i}`));
-				MMGArr.push($.getdata(`MMG${i}`));
+                MMGArr.push($.getdata(`MMG${i}`));
                 MMHArr.push($.getdata(`MMH${i}`));
                 MMIArr.push($.getdata(`MMI${i}`));
                 MMJArr.push($.getdata(`MMJ${i}`));
@@ -609,7 +846,7 @@ M = (nowTimes.getMonth() + 1 < 10 ? '0' + (nowTimes.getMonth() + 1) : nowTimes.g
 D = (nowTimes.getDate() + 1 < 10 ? '0' + (nowTimes.getDate()) : nowTimes.getMonth());
 ddtime = Y + M + D;
 console.log(ddtime)
-//当前时间戳
+
 function tts(inputTime) {
     if ($.isNode()) {
         TTS = Math.round(new Date().getTime() +
@@ -618,6 +855,9 @@ function tts(inputTime) {
         new Date().getTimezoneOffset() * 60 * 1000 + 8 * 60 * 60 * 1000).toString();
     return TTS;
 };
+
+
+
 //当前10位时间戳
 function ts(inputTime) {
     if ($.isNode()) {
@@ -638,7 +878,12 @@ function daytime(inputTime) {
 };
 //时间戳格式化日期
 function time(inputTime) {
-    var date = new Date(inputTime);
+
+    if ($.isNode()) {
+        var date = new Date(inputTime + 8 * 60 * 60 * 1000);
+    } else var date = new Date(inputTime);
+
+
     Y = date.getFullYear() + '-';
     M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
     D = date.getDate() + ' ';
@@ -684,6 +929,16 @@ async function all() {
             githubACbodyVal = GIT_COOKIES.githubACbodyVal[i];
             HHAVal = GIT_COOKIES.HHAVal[i];
             HHBVal = GIT_COOKIES.HHBVal[i];
+            HHCVal = GIT_COOKIES.HHCVal[i];
+            HHDVal = GIT_COOKIES.HHDVal[i];
+            HHEVal = GIT_COOKIES.HHEVal[i];
+            HHFVal = GIT_COOKIES.HHFVal[i];
+            HHGVal = GIT_COOKIES.HHGVal[i];
+            HHHVal = GIT_COOKIES.HHHVal[i];
+            HHIVal = GIT_COOKIES.HHIVal[i];
+            HHJVal = GIT_COOKIES.HHJVal[i];
+            HHKVal = GIT_COOKIES.HHKVal[i];
+            HHLVal = GIT_COOKIES.HHLVal[i];
             MMAVal = GIT_COOKIES.MMAVal[i];
             MMBVal = GIT_COOKIES.MMBVal[i];
             MMCVal = GIT_COOKIES.MMCVal[i];
@@ -709,9 +964,19 @@ async function all() {
             githubACurlVal = githubACurlArr[i];
             githubACheaderVal = githubACheaderArr[i];
             githubACbodyVal = githubACbodyArr[i];
-
+			
             HHAVal = HHAArr[i];
             HHBVal = HHBArr[i];
+            HHCVal = HHCArr[i];
+            HHDVal = HHDArr[i];
+            HHEVal = HHEArr[i];
+            HHFVal = HHFArr[i];
+            HHGVal = HHGArr[i];
+            HHHVal = HHHArr[i];
+            HHIVal = HHIArr[i];
+            HHJVal = HHJArr[i];
+            HHKVal = HHKArr[i];
+            HHLVal = HHLArr[i];
             MMAVal = MMAArr[i];
             MMBVal = MMBArr[i];
             MMCVal = MMCArr[i];
@@ -734,16 +999,19 @@ async function all() {
         O = (`${$.name + (i + 1)}🔔`);
         await console.log(`-------------------------\n\n🔔开始运行${$.name+(i+1)}【${githubACnameVal}】`)
 
-        $.message += `【${githubACnameVal}】从${HHAVal}点到${HHBVal}点的 ${MMAVal} ${MMBVal} ${MMCVal} ${MMDVal} ${MMEVal} ${MMFVal} ${MMGVal} ${MMHVal} ${MMIVal} ${MMJVal} ${MMKVal} ${MMLVal} 分运行\n`
-        if ((nowTimes.getHours() >= HHAVal && nowTimes.getHours() <= HHBVal) && (nowTimes.getMinutes() == MMAVal || nowTimes.getMinutes() == MMBVal || nowTimes.getMinutes() == MMCVal || nowTimes.getMinutes() == MMDVal || nowTimes.getMinutes() == MMEVal || nowTimes.getMinutes() == MMFVal ||nowTimes.getMinutes() == MMGVal || nowTimes.getMinutes() == MMHVal || nowTimes.getMinutes() == MMIVal || nowTimes.getMinutes() == MMJVal || nowTimes.getMinutes() == MMKVal || nowTimes.getMinutes() == MMLVal)) {
+        $.message += `【${githubACnameVal}】${HHAVal}-${HHBVal} ${HHCVal}-${HHDVal} ${HHEVal}-${HHFVal} ${HHGVal}-${HHHVal} ${HHIVal}-${HHJVal} ${HHKVal}-${HHLVal} 的 ${MMAVal} ${MMBVal} ${MMCVal} ${MMDVal} ${MMEVal} ${MMFVal} ${MMGVal} ${MMHVal} ${MMIVal} ${MMJVal} ${MMKVal} ${MMLVal} 分运行\n`
+        
+        if (((nowTimes.getHours() >= HHAVal && nowTimes.getHours() <= HHBVal) || (nowTimes.getHours() >= HHCVal && nowTimes.getHours() <= HHDVal) || (nowTimes.getHours() >= HHEVal && nowTimes.getHours() <= HHFVal) || (nowTimes.getHours() >= HHGVal && nowTimes.getHours() <= HHHVal) || (nowTimes.getHours() >= HHIVal && nowTimes.getHours() <= HHJVal) || (nowTimes.getHours() >= HHKVal && nowTimes.getHours() <= HHLVal)) && (nowTimes.getMinutes() == MMAVal || nowTimes.getMinutes() == MMBVal || nowTimes.getMinutes() == MMCVal || nowTimes.getMinutes() == MMDVal || nowTimes.getMinutes() == MMEVal || nowTimes.getMinutes() == MMFVal || nowTimes.getMinutes() == MMGVal || nowTimes.getMinutes() == MMHVal || nowTimes.getMinutes() == MMIVal || nowTimes.getMinutes() == MMJVal || nowTimes.getMinutes() == MMKVal || nowTimes.getMinutes() == MMLVal)) {
 
             await githubAC(); //运行
 
         } else {
-            console.log(`${githubACnameVal}:时间未到\n`)
-            $.message += `${githubACnameVal}:时间未到\n`
+            console.log(`${githubACnameVal}:时间未到\n\n`)
+            $.message += `${githubACnameVal}:时间未到\n\n`
 
         }
+
+
 
 
     }
@@ -783,11 +1051,11 @@ function githubAC(timeout = 0) {
                 try {
                     if (logs) $.log(`${O}, 运行🚩: ${data}`);
                     if (data.match(/github.com/g)) {
-                        console.log(githubACnameVal + `${time(Number(tts()))}运行成功\n`)
-                        $.message += githubACnameVal + `${time(Number(tts()))}运行成功\n`
-                    }else {
-                        console.log(githubACnameVal + `请检查github的Action是否开启\n`)
-                        $.message += githubACnameVal + `请检查github的Action是否开启\n`
+                        console.log(githubACnameVal + `${time(Number(tts()))}运行成功\n\n`)
+                        $.message += githubACnameVal + `${time(Number(tts()))}运行成功\n\n`
+                    } else {
+                        console.log(githubACnameVal + `请检查github的Action是否开启\n\n`)
+                        $.message += githubACnameVal + `请检查github的Action是否开启\n\n`
                     }
                 } catch (e) {
                     $.logErr(e, resp);
