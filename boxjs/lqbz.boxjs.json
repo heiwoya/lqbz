@@ -936,7 +936,45 @@
 		"icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png","https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png"
 		]
 	  },
-	  {
+      {
+            "id": "ymzhuan",
+            "name": "羊毛赚APP",
+           "keys": ["ymzhuanggbody", "ymzhuanspbody", "ymzhuantxbody",  "ymzhuanggbody2", "ymzhuanspbody2", "ymzhuantxbody2", "ymzhuanggbody3", "ymzhuanspbody3", "ymzhuantxbody3", "ymzhuanggbody4", "ymzhuanspbody4", "ymzhuantxbody4",  "ymzhuanggbody5", "ymzhuanspbody5", "ymzhuantxbody5", "ymzhuanggbody6", "ymzhuanspbody6", "ymzhuantxbody6",  "ymzhuanggbody7", "ymzhuanspbody7", "ymzhuantxbody7",  "ymzhuanggbody8", "ymzhuanspbody8", "ymzhuantxbody8",  "ymzhuanggbody9", "ymzhuanspbody9", "ymzhuantxbody9",  "ymzhuanggbody10", "ymzhuanspbody10", "ymzhuantxbody10",  "ymzhuanggbody11", "ymzhuanspbody11", "ymzhuantxbody11",  "ymzhuanggbody12", "ymzhuanspbody12", "ymzhuantxbody12", "ymzhuanggbody13", "ymzhuanspbody13", "ymzhuantxbody13", "ymzhuanggbody14", "ymzhuanspbody14", "ymzhuantxbody14", "ymzhuanggbody15", "ymzhuanspbody15", "ymzhuantxbody15",  "ymzhuanggbody16", "ymzhuanspbody16", "ymzhuantxbody16", "ymzhuanggbody17", "ymzhuanspbody17", "ymzhuantxbody17",  "ymzhuanggbody18", "ymzhuanspbody18", "ymzhuantxbody18",  "ymzhuanggbody19", "ymzhuanspbody19", "ymzhuantxbody19", "ymzhuanggbody20", "ymzhuanspbody20", "ymzhuantxbody20"],
+            "author": "@ziye",
+            "settings": [{
+                    "id": "ymzhuanSuffix",
+                    "name": "当前账号",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "当前抓取ck记录的账号序号，如：1、2、3、"
+                },
+                {
+                    "id": "ymzhuanCount",
+                    "name": "账号个数",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+                },
+                {
+                    "id": "ymzhuanCASH",
+                    "name": "提现标准",
+                    "val": "0",
+                    "type": "number",
+                    "desc": "0不提现，可设置 0 3 10 20 50 100 888  设置888由上至下循环提现 "
+                },
+                {
+                    "id": "ymzhuanUSERID",
+                    "name": "模拟登录",
+                    "val": "0",
+                    "type": "number",
+                    "desc": "0不使用，输入id模拟登录，一般为4位"
+                }
+            ],
+            "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.js",
+            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/ymzhuan.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/ymzhuan.png"],
+            "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.js"
+        },
+	    {
             "id": "bububao",
             "name": "步步宝ziye",
             "keys": ["bububaotoken", "bububaotoken2", "bububaotoken3", "bububaotoken4", "bububaotoken5", "bububaotoken6", "bububaotoken7", "bububaotoken8", "bububaotoken9", "bububaotoken10", "bububaotoken11", "bububaotoken12", "bububaotoken13", "bububaotoken14", "bububaotoken15", "bububaotoken16", "bububaotoken17", "bububaotoken18", "bububaotoken19", "bububaotoken20"],
@@ -964,7 +1002,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.js",
-            "icons": ["https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.png", "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/bububao.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/bububao.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.js"
         },
 	{
@@ -1026,7 +1064,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/xiaole.js",
-            "icons": ["https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/xiaole.png", "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/xiaole.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/xiaole.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/xiaole.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/xiaole.js"
         },
         {
@@ -1078,7 +1116,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.js",
-            "icons": ["https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.png", "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/iboxpay.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/iboxpay.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.js"
         },
         {
@@ -1116,7 +1154,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js",
-            "icons": ["https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.png", "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/flw.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/flw.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js"
         },
         {
@@ -1202,7 +1240,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js",
-            "icons": ["https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.png", "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/zhima_.jpg", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/zhima_.jpg"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js"
         },
 	{
@@ -1226,7 +1264,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.js",
-            "icons": ["https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.png", "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/QQread.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/QQread.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/QQread.js"
         }
     ]
