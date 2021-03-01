@@ -1,70 +1,58 @@
 /* ziye 
-github地址 https://github.com/ziye66666
+github地址 https://github.com/ziye11
 TG频道地址  https://t.me/ziyescript
 TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
-boxjs链接  https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ziye.boxjs.json
+boxjs链接  https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/ziye.boxjs.json
 
 转载请备注个名字，谢谢
 
 ⚠️羊毛赚
 点击 http://share.xiaoniuaso.com/43?invitecode=10008933   下载APP  
-
 邀请码 10008933  谢谢支持
-
 
 2.26 制作
 2.27 完成
 2.28 调整运行时长
+3.1 修复提现问题
 
 ⚠️ 时间设置    0 8,12 * * *    每天1次以上就行   
 
-
 ⚠️一共3个位置 3个ck  👉 4条 Secrets 
-多账号换行
 
+多账号换行
 第一步 添加  hostname=ymz.iphonezhuan.com,
 
 第二步 ⚠️添加羊毛赚获取BODY重写  
-
 登录羊毛赚  手动完成一次任务获取body  提现一次获取提现body
+
 ymzhuanggbodyVal 👉YMZ_ymzhuanggBODY
 ymzhuanspbodyVal 👉YMZ_ymzhuanspBODY
 ymzhuantxbodyVal 👉YMZ_ymzhuantxBODY
-
 BODY👉 ymzhuanUSERID   boxjs里填写4位数id即可模拟登陆(感谢蔡徐坤大佬提供模拟登录方法)
-
 (勿打开重写注册，请提前注册，注册不了，请打开关闭 隐私跟踪)
 
 CASH  👉  YMZ_CASH     可设置0 3 10 20 50 100  默认0关闭提现，设置888由上至下循环提现
-
-
 ⚠️主机名以及重写👇
+
 hostname=ymz.iphonezhuan.com,
 
 ############## 圈x
 #羊毛赚获取BODY
-http:\/\/ymz\.iphonezhuan\.com\/* url script-request-body http://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.js
-
+http:\/\/ymz\.iphonezhuan\.com\/* url script-request-body http://raw.githubusercontent.com/ziye11/JavaScript/main/Task/ymzhuan.js
 #羊毛赚模拟登录
-http:\/\/ymz\.iphonezhuan\.com\/* url script-response-body http://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.js
-
-
+http:\/\/ymz\.iphonezhuan\.com\/* url script-response-body http://raw.githubusercontent.com/ziye11/JavaScript/main/Task/ymzhuan.js
 
 ############## loon
 #羊毛赚获取BODY
-http-request http:\/\/ymz\.iphonezhuan\.com\/* script-path=http://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.js, requires-body=1,max-size=0, tag=羊毛赚获取BODY
-
+http-request http:\/\/ymz\.iphonezhuan\.com\/* script-path=http://raw.githubusercontent.com/ziye11/JavaScript/main/Task/ymzhuan.js, requires-body=1,max-size=0, tag=羊毛赚获取BODY
 #羊毛赚模拟登录BODY
-http-response http:\/\/ymz\.iphonezhuan\.com\/* script-path=http://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.js, requires-body=1,max-size=0, tag=羊毛赚获取BODY
-
+http-response http:\/\/ymz\.iphonezhuan\.com\/* script-path=http://raw.githubusercontent.com/ziye11/JavaScript/main/Task/ymzhuan.js, requires-body=1,max-size=0, tag=羊毛赚获取BODY
 
 ############## surge
 #羊毛赚获取BODY
-羊毛赚获取BODY = type=http-request,pattern=https:\/\/ymz\.iphonezhuan\.com\/*,script-path=http://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.js
-
+羊毛赚获取BODY = type=http-request,pattern=https:\/\/ymz\.iphonezhuan\.com\/*,script-path=http://raw.githubusercontent.com/ziye11/JavaScript/main/Task/ymzhuan.js
 #羊毛赚获取BODY
-羊毛赚模拟登录BODY = type=http-response,pattern=https:\/\/ymz\.iphonezhuan\.com\/*,script-path=http://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.js
-
+羊毛赚模拟登录BODY = type=http-response,pattern=https:\/\/ymz\.iphonezhuan\.com\/*,script-path=http://raw.githubusercontent.com/ziye11/JavaScript/main/Task/ymzhuan.js
 
 */
 
@@ -85,7 +73,6 @@ let middleymzhuanspBODY = [];
 const ymzhuantxbodyArr = [];
 let ymzhuantxbodyVal = ``;
 let middleymzhuantxBODY = [];
-
 if ($.isNode()) {
     // 没有设置 YMZ_CASH 则默认为 0 不兑换
     CASH = process.env.YMZ_CASH || 0;
@@ -122,7 +109,6 @@ if ($.isNode() && process.env.YMZ_ymzhuanggBODY) {
         middleymzhuantxBODY = process.env.YMZ_ymzhuantxBODY.split();
     }
 }
-
 if (COOKIE.ymzhuanggbodyVal) {
     YMZ_COOKIES = {
         "ymzhuanggbodyVal": COOKIE.ymzhuanggbodyVal.split('\n'),
@@ -130,9 +116,6 @@ if (COOKIE.ymzhuanggbodyVal) {
         "ymzhuantxbodyVal": COOKIE.ymzhuantxbodyVal.split('\n'),
     }
     Length = YMZ_COOKIES.ymzhuanggbodyVal.length;
-
-
-
 }
 if (!COOKIE.ymzhuanggbodyVal) {
     if ($.isNode()) {
@@ -165,104 +148,51 @@ if (!COOKIE.ymzhuanggbodyVal) {
                 ymzhuanggbodyArr.push($.getdata(`ymzhuanggbody${i}`));
                 ymzhuanspbodyArr.push($.getdata(`ymzhuanspbody${i}`));
                 ymzhuantxbodyArr.push($.getdata(`ymzhuantxbody${i}`));
-
             }
         }
     }
     if (ymzhuanggbodyArr == '') {
         Length = 0
     } else Length = ymzhuanggbodyArr.length
-
 }
-
 function GetCookie() {
-
-
     if ($response && $request.url.indexOf("verifyidentity") >= 0) {
         let BODY = {
             "msg": "ok",
             "statuscode": 200
         }
-
         $.log(
             `[${$.name + $.idx}] 设备验证✅: 通过`
         );
         $.msg($.name + $.idx, `设备验证: 通过🎉`, ``);
-
         $.done({
             body: JSON.stringify(BODY)
         });
     }
-
-
  if ($response && $request.url.indexOf("login") >= 0) {
-
         USERID = Number($.getval("ymzhuanUSERID"));
-
 if (typeof USERID === 'undefined' || USERID == 0) { $.log(
-            `[${$.name + $.idx}] 请设置USERID或者关闭重写，进入软件后开启`
+            `[${$.name + $.idx}] 未设置USERID直接登录`
         );
-        $.msg($.name + $.idx, `请设置USERID或者关闭重写，进入软件后开启`, ``);
-        $.done();
+        $.msg($.name + $.idx, `未设置USERID直接登录`, ``);
+  $.done({
+            body: body
+        });
     }else {
-
-
-
-        let BODY = {
-            "timestamp": `${ddtime}`,
-            "result": {
-                "id": 0,
-                "invitecode": "",
-                "status": 1,
-                "integral": 350,
-                "pid": 0,
-                "pinvitecode": "",
-                "cellphone": "",
-                "alipayaccount": "",
-                "alipayname": "",
-                "bannertime": 180,
-                "bannerclkratio": "0##8",
-                "cpvideo": 5,
-                "cpratio": 10,
-                "appinstallratio": "75##0##25",
-                "appsigntime": 60,
-                "leastbanner": 2,
-                "qqgroup": "935826100",
-                "shareurl": "",
-                "appurl1": "",
-                "appurl2": "",
-                "nickname": "",
-                "icon": ""
-            },
-            "msg": "ok",
-            "statuscode": 200
-        }
-   
+console.log($response.body)
+ BODY=JSON.parse($response.body)
+console.log(JSON.parse($response.body).result.id)
         BODY.result.id = USERID
         BODY.result.invitecode = `${USERID + 10000000}`
-
-invitecode=BODY.result.invitecode
-
         $.log(
             `[${$.name + $.idx}] 模拟登陆✅: 成功,USERID: ${USERID}`
         );
         $.msg($.name + $.idx, `模拟登陆: 成功,USERID: ${USERID}🎉`, ``);
-
-
-
-        $.done({
+ $.done({
             body: JSON.stringify(BODY)
         });
-
-
-
    }
-
     }
-
-
-
-
     if ($request && $request.body.indexOf("taskid=1") >= 0&& $request.body.indexOf("sign=") >= 0) {
         const ymzhuanggbodyVal = $request.body;
         if (ymzhuanggbodyVal) $.setdata(ymzhuanggbodyVal, "ymzhuanggbody" + $.idx);
@@ -271,8 +201,6 @@ invitecode=BODY.result.invitecode
         );
         $.msg($.name + $.idx, `获取ymzhuanggbodyVal: 成功🎉`, ``);
     }
-
-
     if ($request && $request.body.indexOf("taskid=2") >= 0&& $request.body.indexOf("sign=") >= 0) {
         const ymzhuanspbodyVal = $request.body;
         if (ymzhuanspbodyVal) $.setdata(ymzhuanspbodyVal, "ymzhuanspbody" + $.idx);
@@ -281,8 +209,7 @@ invitecode=BODY.result.invitecode
         );
         $.msg($.name + $.idx, `获取ymzhuanspbodyVal: 成功🎉`, ``);
     }
-
-    if ($request && $request.body.indexOf("account") >= 0 && $request.body.indexOf("money") >= 0) {
+    if ($request && $request.body.indexOf("cellphone") < 0&& $request.body.indexOf("account") >= 0 && $request.body.indexOf("money") >= 0) {
         const ymzhuantxbodyVal = $request.body;
         if (ymzhuantxbodyVal) $.setdata(ymzhuantxbodyVal, "ymzhuantxbody" + $.idx);
         $.log(
@@ -290,8 +217,6 @@ invitecode=BODY.result.invitecode
         );
         $.msg($.name + $.idx, `获取ymzhuantxbodyVal: 成功🎉`, ``);
     }
-
-
 }
 console.log(
     `================== 脚本执行 - 北京时间(UTC+8)：${new Date(
@@ -388,27 +313,22 @@ function decodeUnicode(str) {
     str = str.replace(/\\/g, "%");
     return unescape(str);
 }
-
 //将中文格式转换成utf8
 function zhutf8(str) {
     strs = encodeURIComponent(str);
     return strs;
 }
-
 //将utf8格式转换成中文
 function utf8zh(str) {
     strs = decodeURIComponent(str);
     return strs;
 }
-
-
 let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {
     GetCookie()
     $.done();
 } else {
     !(async () => {
-
         await all();
         //await $.wait(1000)
         await msgShow();
@@ -424,9 +344,9 @@ async function all() {
     if (!Length) {
         $.msg(
             $.name,
-            '提示：⚠️请点击前往获取http://ymz.yichengw.cn/?id=529742\n',
-            'http://ymz.yichengw.cn/?id=529742', {
-                "open-url": "http://ymz.yichengw.cn/?id=529742"
+            '提示：⚠️请点击前往获取http://share.xiaoniuaso.com/43?invitecode=10008933\n',
+            'http://share.xiaoniuaso.com/43?invitecode=10008933', {
+                "open-url": "http://share.xiaoniuaso.com/43?invitecode=10008933"
             }
         );
         return;
@@ -452,46 +372,27 @@ async function all() {
             "Host": "ymz.iphonezhuan.com",
             "User-Agent": "%E7%BE%8A%E6%AF%9B%E8%8B%B1%E6%B1%89%E8%AF%8D%E5%85%B8/1.03 CFNetwork/1206 Darwin/20.1.0",
         }
-
-        
-
 uid = decodeUnicode(ymzhuanggbodyVal.split('uid=')[1].split('&')[0])
-
         O = (`${$.name + (i + 1)}🔔`);
-
-
         await user(); //用户名
         await console.log(`-------------------------\n\n🔔开始运行【${$.name+(i+1)}】`)
         let cookie_is_live = await task(); //用户名
         if (!cookie_is_live) {
             continue;
         }
-
-
         if (gg.status == 0) {
             await ggrw() //广告任务
           await $.wait(4 * 33000)
-
         }
-
-
-        
-
         if (sp.status == 0) {
             await sprw() //视频任务
 await $.wait(5 * 33000)
-
         }
         await signinfo() //签到
-
-
-        if (CASH > 0 && nowTimes.getHours() >= 8 && nowTimes.getHours() <= 20) {
-
+        if (CASH > 0 && nowTimes.getHours() >= 8 && nowTimes.getHours() < 20) {
             if (CASH <= 100 && $.task.integral / 100 >= CASH) {
                 await tixian() //提现
             }
-
-
             if (CASH == 888) {
                 if ($.task.integral / 100 >= 100) {
                     CASH = 100
@@ -508,12 +409,7 @@ await $.wait(5 * 33000)
                     await tixian() //提现
                 }
             }
-
         }
-
-
-
-
     }
 }
 //通知
@@ -538,14 +434,9 @@ function msgShow() {
 }
 //用户名
 function user() {
-
     console.log(`\n${O}\n========== ${uid} ==========\n`)
     $.message += `\n${O}\n========== 【${uid}】 ==========\n`;
-
-
 }
-
-
 //任务列表
 function task(timeout = 0) {
     return new Promise((resolve) => {
@@ -558,13 +449,11 @@ function task(timeout = 0) {
             $.post(url, async (err, resp, data) => {
                 try {
                     if (logs) $.log(`${O}, 任务列表🚩: ${data}`);
-
                     $.task = JSON.parse(data);
                     if ($.task.statuscode == 200) {
                         gg = $.task.result.find(item => item.action === "banner://");
                         sp = $.task.result.find(item => item.action === "video://");
-                        
-                        console.log(`现金余额:${$.task.integral/100}元\n${sp.name}:${sp.nowcount}/${sp.count}\n${gg.name}:${gg.nowcount}/${gg.count}\n${sp.name}:${sp.nowcount}/${sp.count}\n`)
+                        console.log(`现金余额:${$.task.integral/100}元\n${gg.name}:${gg.nowcount}/${gg.count}\n${sp.name}:${sp.nowcount}/${sp.count}\n`)
                         $.message += `【现金余额】:${$.task.integral/100}元\n【${gg.name}】:${gg.nowcount}/${gg.count}\n【${sp.name}】:${sp.nowcount}/${sp.count}\n`
                         resolve(true);
                     }
@@ -584,7 +473,6 @@ function task(timeout = 0) {
         }, timeout)
     })
 }
-
 //广告任务
 function ggrw(timeout = 0) {
     return new Promise(async (resolve) => {
@@ -603,7 +491,6 @@ function ggrw(timeout = 0) {
                                 if ($.ggrw.statuscode == 200) {
                                     console.log(`${gg.name+(i+1)}：执行成功\n`);
                                     $.message += `【${gg.name+(i+1)}】：执行成功\n`;
-
                                 }
                             } catch (e) {
                                 $.logErr(e, resp);
@@ -617,7 +504,6 @@ function ggrw(timeout = 0) {
             timeout)
     })
 }
-
 //视频任务
 function sprw(timeout = 0) {
     return new Promise(async (resolve) => {
@@ -636,7 +522,6 @@ function sprw(timeout = 0) {
                                 if ($.sprw.statuscode == 200) {
                                     console.log(`${sp.name+(i+1)}：执行成功\n`);
                                     $.message += `【${sp.name+(i+1)}】：执行成功\n`;
-
                                 }
                             } catch (e) {
                                 $.logErr(e, resp);
@@ -666,7 +551,6 @@ function sign(timeout = 0) {
                     if ($.sign.statuscode == 200) {
                         console.log(`每日签到：${$.sign.msg},获得${$.sign.result.nowintegrals/100}元\n`);
                         $.message += `【每日签到】：${$.sign.msg},获得${$.sign.result.nowintegrals/100}元\n`;
-
                     }
                 } catch (e) {
                     $.logErr(e, resp);
@@ -677,7 +561,6 @@ function sign(timeout = 0) {
         }, timeout)
     })
 }
-
 //签到列表
 function signinfo(timeout = 0) {
     return new Promise((resolve) => {
@@ -692,14 +575,11 @@ function signinfo(timeout = 0) {
                     if (logs) $.log(`${O}, 签到列表🚩: ${data}`);
                     $.signinfo = JSON.parse(data);
                     if ($.signinfo.statuscode == 200) {
-
                         daysign = $.signinfo.result.days[$.signinfo.result.days.length - 1]
                         if ($.signinfo.result.days.length) {
                             console.log(`签到列表：已签到${$.signinfo.result.days.length}天\n`);
                             $.message += `【签到列表】：已签到${$.signinfo.result.days.length}天\n`;
                         }
-
-
                         if (!daysign || daysign < nowTimes.getDate()) {
                             await sign() //签到
                         }
@@ -713,15 +593,13 @@ function signinfo(timeout = 0) {
         }, timeout)
     })
 }
-
 //现金提现
 function tixian(timeout = 0) {
     return new Promise((resolve) => {
-
 money = ymzhuantxbodyVal.split('money=')[1].split('&')[0]
-
+timestamp = ymzhuantxbodyVal.split('timestamp=')[1].split('&')[0]
         setTimeout(() => {
-            ymzhuantxbody = ymzhuantxbodyVal.replace(`money=${money}`, `money=${CASH}`)
+            ymzhuantxbody = ymzhuantxbodyVal.replace(`money=${money}`, `money=${CASH}`).replace(`timestamp=${timestamp}`, `timestamp=${tts()}`)
             let url = {
                 url: `http://ymz.iphonezhuan.com/submitwithdraw`,
                 headers: header,
