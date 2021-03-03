@@ -3,7 +3,7 @@
     "name": "羊毛大杂烩",
     "author": "@",
     "icon": "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/5050.jpg",
-    "repo": "https://github.com/heiwoya",
+    "repo": "https://gitee.com/the-eldest-is-xu/beiyong",
     "apps": [{
       "id": "JD_Cookies",
       "name": "京东多账号 Ck 管理",
@@ -585,6 +585,29 @@
       ]
     },
     {
+            "id": "ysm",
+            "name": "云扫码",
+            "keys": ["ysmurl", "ysmhd","ysmbody","ysm2body", "ysmtx","ysmurl2", "ysmhd2","ysmbody2","ysm2body2", "ysmtx2","ysmurl3", "ysmhd3","ysmbody3","ysm2body3","ysmtx3","ysmurl4", "ysmhd4","ysmbody4","ysm2body4","ysmtx4","ysmurl5", "ysmhd5","ysmbody5","ysm2body5","ysmtx5","ysmurl6", "ysmhd6","ysmbody6","ysm2body6","ysmtx6","ysmurl7", "ysmhd7","ysmbody7","ysm2body7","ysmtx7","ysmurl8", "ysmhd8","ysmbody8","ysm2body8","ysmtx8","ysmurl9", "ysmhd9","ysmbody9","ysm2body9","ysmtx9"],
+            "author": "@feizao",
+            "settings": [{
+            "id": "ysmstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前账号对应"
+    },
+    {
+            "id": "ysmcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "需要几个账号，数字为几"
+    }],
+            "repo": "https://github.com/age174/-/blob/main/ysm.js",
+            "icons": ["https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yunsaoma.png", "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yunsaoma.png"],
+            "script": "https://raw.githubusercontent.com/age174/-/main/ysm.js"
+    },
+    {
             "id": "rxm",
             "name": "任性猫",
             "keys": ["rxmurl", "rxmhd","rxmurl2","rxmhd2","rxmurl3","rxmhd3","rxmurl4","rxmhd4","rxmurl5", "rxmhd5","rxmurl6", "rxmhd6","rxmurl7", "rxmhd7","rxmurl8", "rxmhd8","rxmurl9", "rxmhd9","rxmurl10", "rxmhd10","rxmurl11", "rxmhd11","rxmurl12", "rxmhd12","rxmurl13", "rxmhd13","rxmurl14", "rxmhd14","rxmurl15", "rxmhd15","rxmurl16", "rxmhd16","rxmurl17", "rxmhd17","rxmurl18", "rxmhd18","rxmurl19", "rxmhd19","rxmurl20", "rxmhd20","rxmurl21", "rxmhd21","rxmurl22", "rxmhd22"],
@@ -936,7 +959,7 @@
 		"icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png","https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png"
 		]
 	  },
-	  {
+      {
             "id": "yuedongzu",
             "name": "悦动族APP",
             "keys": ["yuedongzutoken", "yuedongzutoken2", "yuedongzutoken3", "yuedongzutoken4", "yuedongzutoken5", "yuedongzutoken6", "yuedongzutoken7", "yuedongzutoken8", "yuedongzutoken9", "yuedongzutoken10", "yuedongzutoken11", "yuedongzutoken12", "yuedongzutoken13", "yuedongzutoken14", "yuedongzutoken15", "yuedongzutoken16", "yuedongzutoken17", "yuedongzutoken18", "yuedongzutoken19", "yuedongzutoken20"],
