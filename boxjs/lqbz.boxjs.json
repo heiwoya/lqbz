@@ -495,7 +495,7 @@
       "author": "@chavyleung",
       "repo": "https://github.com/chavyleung/scripts/tree/master/wps",
       "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js",
-      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Color/wps.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/wps.png"]
+      "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/Wps.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/Wps.png"]
     },
     {
     "id": "iQIYI",
@@ -687,7 +687,7 @@
             "desc": "需要几个账号，数字为几"
     }],
             "repo": "https://github.com/age174/-/blob/main/ysm.js",
-            "icons": ["https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yunsaoma.png", "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yunsaoma.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/Yunsaoma.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/Yunsaoma.png"],
             "script": "https://raw.githubusercontent.com/age174/-/main/ysm.js"
     },
     {
@@ -710,7 +710,7 @@
             "desc": "需要几个账号，数字为几"
     }],
             "repo": "https://github.com/age174/-/blob/main/rxm.js",
-            "icons": ["https://raw.githubusercontent.com/shoujiqiyuan/PokemonGOforQuanX/master/IconSet/Z005.png", "https://raw.githubusercontent.com/shoujiqiyuan/PokemonGOforQuanX/master/IconSet/Z005.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/rxm.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/rxm.png"],
             "script": "https://raw.githubusercontent.com/age174/-/main/rxm.js"
     },
     {
@@ -802,7 +802,7 @@
             "desc": "需要几个账号，数字为几"
     }],
             "repo": "https://raw.githubusercontent.com/age174/-/main/jqb.js",
-            "icons": ["https://github.com/Patrick0108/qx/raw/master/jqb.png", "https://github.com/Patrick0108/qx/raw/master/jqb.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/jqb.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/jqb.png"],
             "script": "https://raw.githubusercontent.com/age174/-/main/jqb.js"
     },
     {
@@ -869,7 +869,7 @@
         "desc": "需要几个账号，数字为几"
       }],
     "repo": "https://github.com/ZhiYi-N/script/blob/master/hotsoon.js",
-    "icons": ["https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/hotsoon-mini.png", "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/hotsoon.png"],
+    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/hotsoon.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/hotsoon.png"],
     "script": "https://raw.githubusercontent.com/ZhiYi-N/script/master/hotsoon.js"
   },
   {
@@ -980,7 +980,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/qmyd.js",
-            "icons": ["https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/qmyd.png", "https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/qmyd.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/qmyd.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/qmyd.png"],
             "script": "https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/yuedongzu.js"
         },
         {
@@ -1011,7 +1011,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/yuedongzu.js",
-            "icons": ["https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/yuedongzu.png", "https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/yuedongzu.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/Yuedongzu.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/Yuedongzu.png"],
             "script": "https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/yuedongzu.js"
         },
         {
@@ -1080,7 +1080,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.js",
-            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/bububao.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/bububao.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/Bububao.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/Bububao.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.js"
         },
 	{
@@ -1232,7 +1232,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js",
-            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/flw.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/flw.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/Fanli.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/Fanli.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js"
         },
         {
@@ -1287,7 +1287,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js",
-            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/zhima_.jpg", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/zhima_.jpg"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/Zhimashipin.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/Zhimashipin.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js"
         },
 	{
