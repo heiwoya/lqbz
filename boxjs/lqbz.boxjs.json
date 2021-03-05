@@ -26,8 +26,8 @@
         }
       ],
       "icons": [
-        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png",
-        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/jd.png",
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/jd.png"
       ],
       "author": "@dompling",
       "repo": "https://github.com/dompling/Script",
@@ -233,7 +233,7 @@
     }],
     "author": "@NobyDa",
     "repo": "https://github.com/NobyDa/Script/tree/master/JD-DailyBonus",
-    "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/jd.png", "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"]
+    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/jd.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/jd.png"]
   },
   {
       "id": "jx_tokens",
@@ -258,8 +258,8 @@
       "repo": "https://github.com/whyour/hundun/blob/master/quanx/jx_tokens.js",
       "script": "https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js",
       "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign.png"
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/jx_sign.png",
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/jx_sign.png"
       ]
     },
     {
@@ -368,7 +368,7 @@
             "keys": ["ttwksignurl", "ttwksignheader"],
             "author": "@yangtingxiao",
             "repo": "https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js",
-            "icons": ["https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/image/ttwk.png", "https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/image/ttwk.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/ttwkxcx.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/ttwkxcx.png"],
             "script": "https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js"
         },
         {
@@ -437,8 +437,8 @@
       "author": "@Neurogram, @evilbutcher",
       "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/glados",
       "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/glados_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/glados_animation.gif"
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/glados.png",
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/glados_animation.gif"
       ],
       "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js"
     },
@@ -521,7 +521,7 @@
     "script": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js",
     "author": "@NobyDa",
     "repo": "https://github.com/NobyDa/Script/blob/master/iQIYI-DailyBonus/iQIYI.js",
-    "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Color/iQIYI.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/iQIYI.png"]
+    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/iQIYI.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/iQIYI.png"]
   },
     {
       "author": "@sunert", 
@@ -540,8 +540,8 @@
       "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js", 
       "name": "新浪微博", 
       "icons": [
-        "https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png", 
-        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/weibo.png"
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/sinanews.png", 
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/sinanews.png"
       ]
     },
     {
@@ -580,9 +580,32 @@
       "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js", 
       "name": "快手极速版", 
       "icons": [
-        "https://raw.githubusercontent.com/Orz-3/mini/master/kuaishou.png", 
-        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/kuaishou.png"
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/kuaishou.png", 
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/kuaishou.png"
       ]
+    },
+    {
+            "id": "zmsp",
+            "name": "芝嫲视频肥皂",
+            "keys": ["zmurl", "zmhd", "zmbody"],
+            "author": "@feizao",
+            "settings": [{
+            "id": "zmspsetting",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前账号对应"
+    },
+    {
+            "id": "zmspcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "需要几个账号，数字为几"
+    }],
+            "repo": "https://raw.githubusercontent.com/age174/-/main/zmsp.js",
+            "icons": ["https://s3.ax1x.com/2021/02/06/yYzeWn.png", "https://s3.ax1x.com/2021/02/06/yYzeWn.png"],
+            "script": "https://raw.githubusercontent.com/age174/-/main/zmsp.js"
     },
     {
             "id": "ddxq",
@@ -625,6 +648,20 @@
             "val": "1",
             "type": "number",
             "desc": "需要几个账号，数字为几"
+    },
+    {
+            "id": "xsmmhb",
+            "name": "红包兑换id",
+            "val": "11",
+            "type": "number",
+            "desc": "兑换红包id，id 11 代表兑换0.3元，12代表兑换2元，13代表兑换20元，14代表兑换50元，这里可以自己手动修改兑换id。默认兑换id 11 也就是0.3元"
+    },
+    {
+            "id": "xsmmdh",
+            "name": "提现金额id",
+            "val": "14",
+            "type": "number",
+            "desc": "提现id，14代表提现0.3元,15代表提现10元,16代表提现20元,17代表提现50元,18代表提现100元,19代表提现200元，模式提现id 14 提现0.3元，不想看广告想提现其他额度自己修改提现id运行脚本就可以了，提现需要确保自己账户里有余额金豆余额"
     }],
             "repo": "https://github.com/age174/-/blob/main/xsmm.js",
             "icons": ["https://s3.ax1x.com/2021/03/03/6E17fU.jpg", "https://s3.ax1x.com/2021/03/03/6E17fU.jpg"],
@@ -719,7 +756,7 @@
             "desc": "需要几个账号，数字为几"
     }],
             "repo": "https://github.com/age174/-/blob/main/mhdsp.js",
-            "icons": ["https://raw.githubusercontent.com/usrnb/options/main/QuantumultX/icons/task/mhdsp.png", "https://raw.githubusercontent.com/usrnb/options/main/QuantumultX/icons/task/mhdsp.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/mhdsp.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/mhdsp.png"],
             "script": "https://raw.githubusercontent.com/age174/-/main/mhdsp.js"
     },
     {
@@ -795,7 +832,7 @@
         "desc": "需要几个账号，数字为几"
       }],
     "repo": "https://github.com/ZhiYi-N/Private-Script/blob/master/Scripts/ranlv.js",
-    "icons": ["https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/rl-mini.png", "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/rl.png"],
+    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/rl.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/rl.png"],
     "script": "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js"
   },
   {
@@ -862,7 +899,7 @@
         "desc": "需要几个账号，数字为几"
       }],
     "repo": "https://github.com/ZhiYi-N/script/blob/master/jrtt.js",
-    "icons": ["https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/jrtt-mini.png", "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/img/jrtt.png"],
+    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/jrtt.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/jrtt.png"],
     "script": "https://raw.githubusercontent.com/ZhiYi-N/script/master/jrtt.js"
   },
   {
@@ -912,7 +949,7 @@
 		"author": "@cenbomin",
 		"repo": ["https://raw.githubusercontent.com/CenBoMin/GithubSync"],
 		"script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockqx.js",
-		"icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png","https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png"
+		"icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/TencentStock.png","https://gitee.com/the-eldest-is-xu/color/raw/master/TencentStock.png"
 		]
 	  },
       {
@@ -1081,7 +1118,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/qczjspeed.js",
-            "icons": ["https://raw.githubusercontent.com/Orz-3/task/master/qczj.png", "https://raw.githubusercontent.com/Orz-3/task/master/qczj.png"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/qczj.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/qczj.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/qczjspeed.js"
         },
          {
