@@ -27,7 +27,7 @@ jobs:
           npm install
       - name: '运行 【bbb】'
         run: |
-          node bububao.js
+          node ziye/bububao.js
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
