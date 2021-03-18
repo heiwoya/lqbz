@@ -27,7 +27,7 @@ jobs:
       - name: '运行 【bububao】'
         if: env.BBB_bububaoTOKEN
         run: |
-          node ziye/bububao.js
+          node bububao.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
