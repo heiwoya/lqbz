@@ -709,7 +709,7 @@
      {
             "id": "wdwhd",
             "name": "我的网红店",
-            "keys": ["wdwhdbody","wdwhdhd", "wdwhdspbody"],
+            "keys": ["wdwhdbody","wdwhdhd", "wdwhdspbody","wdwhdbody2","wdwhdhd2", "wdwhdspbody2","wdwhdbody3","wdwhdhd3", "wdwhdspbody3","wdwhdbody4","wdwhdhd4", "wdwhdspbody4","wdwhdbody5","wdwhdhd5", "wdwhdspbody5","wdwhdbody6","wdwhdhd6", "wdwhdspbody6","wdwhdbody7","wdwhdhd7", "wdwhdspbody7","wdwhdbody8","wdwhdhd8", "wdwhdspbody8","wdwhdbody9","wdwhdhd9", "wdwhdspbody9","wdwhdbody10","wdwhdhd10", "wdwhdspbody10","wdwhdbody11","wdwhdhd11", "wdwhdspbody11","wdwhdbody12","wdwhdhd12", "wdwhdspbody12","wdwhdbody13","wdwhdhd13", "wdwhdspbody13"],
             "author": "@feizao",
             "settings": [{
             "id": "wdwhdstatus",
@@ -726,7 +726,7 @@
             "desc": "需要几个账号，数字为几"
     }],
             "repo": "https://github.com/age174/-/blob/main/zzsy.js",
-            "icons": ["https://ae01.alicdn.com/kf/Ub0056a0721e94c9a85a8bbeb2f2aed6fn.jpg", "https://ae01.alicdn.com/kf/Ub0056a0721e94c9a85a8bbeb2f2aed6fn.jpg"],
+            "icons": ["", ""],
             "script": "https://raw.githubusercontent.com/age174/-/main/zzsy.js"
     },    
 	    
