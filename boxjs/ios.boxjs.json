@@ -607,29 +607,6 @@
       ]
     },
     {
-            "id": "cgwz",
-            "name": "猜歌王者",
-            "keys": ["cgwzurl", "cgwzhd", "cgwzurl2", "cgwzhd2", "cgwzurl3", "cgwzhd3", "cgwzurl4", "cgwzhd4", "cgwzurl5", "cgwzhd5"],
-            "author": "",
-            "settings": [{
-            "id": "cgwzstatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "cgwzcount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "https://gitee.com/the-eldest-is-xu/beiyong/raw/master/zqzb/cgwz.js",
-            "icons": [""],
-            "script": "https://gitee.com/the-eldest-is-xu/beiyong/raw/master/zqzb/cgwz.js" 
-    },
-    {
    "id": "scdyjsign",
    "name": "食材大冲关APP",
    "keys": ["normalheader","normalbody","scdcgheader","scdcgbody","normalheader2","normalbody2","scdcgheader2","scdcgbody2","normalheader3","normalbody3","scdcgheader3","scdcgbody3","normalheader4","normalbody4","scdcgheader4","scdcgbody4","normalheader5","normalbody5","scdcgheader5","scdcgbody5","normalheader6","normalbody6","scdcgheader6","scdcgbody6","normalheader7","normalbody7","scdcgheader7","scdcgbody7","normalheader8","normalbody8","scdcgheader8","scdcgbody8","normalheader9","normalbody9","scdcgheader9","scdcgbody9","normalheader10","normalbody10","scdcgheader10","scdcgbody10","normalheader11","normalbody11","scdcgheader11","scdcgbody11"],
@@ -939,29 +916,6 @@
             "script": "https://raw.githubusercontent.com/age174/-/main/ysm.js"
     },
     {
-            "id": "mh",
-            "name": "陌嗨视频",
-            "keys": ["mhurl", "mhhd","mhurl2","mhhd2","mhurl3","mhhd3","mhurl4","mhhd4","mhurl5", "mhhd5"],
-            "author": "@feizao",
-            "settings": [{
-            "id": "mhstatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "mhcount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "https://github.com/age174/-/blob/main/mhdsp.js",
-            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/mhdsp.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/mhdsp.png"],
-            "script": "https://raw.githubusercontent.com/age174/-/main/mhdsp.js"
-    },
-    {
     "id": "dyjsb",
     "name": "抖音极速版",
     "keys": ["signheader", "signcookie", "stepheader", "stepkey", "readheader", "readkey","signheader2", "signcookie2", "stepheader2", "stepkey2", "readheader2", "readkey2"],
@@ -1181,6 +1135,31 @@
 		"icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/hlb.png",
 			"https://gitee.com/the-eldest-is-xu/color/raw/master/hlb.png"
 		]
+	},
+	{
+		"id": "PushBoxjsCookie",
+		"name": "elecV2p推送Cookie",
+		"keys": ["v2purl","v2token"],
+		"settings": [
+			{
+				"id": "v2purl",
+				"name": "主页地址",
+				"val": "",
+				"type": "text",
+				"desc": "请到设置查询,例子:http://192.168.1.102:12521"
+			},
+			{
+				"id": "v2token",
+				"name": "WEBHOOK TOKEN",
+				"val": "",
+				"type": "text",
+				"desc": "请到设置查询,例子:a8c259b2-67fe-D-7bfdf1f55cb3"
+			}
+		],
+		"author": "@cenbomin",
+		"repo": ["https://raw.githubusercontent.com/CenBoMin/GithubSync"],
+		"script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELECV2PJS/PushBoxjsCookie_elecV2p.js",
+		"icons": ["https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/elecv2p-mini.png", "https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/elecv2p.png"]
 	},
   {
 		"id": "chonghauapp",
