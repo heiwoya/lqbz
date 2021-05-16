@@ -520,26 +520,26 @@
             "script": "http://nm66.top/fhxz.js"
     },
     {
-      "id": "qmdff",
-      "name": "全名大丰收",
-      "keys": ["qmdffheader", "qmdffurl","qmdffheader2", "qmdffurl2","qmdffheader3", "qmdffurl3","qmdffheader4", "qmdffurl4","qmdffheader5", "qmdffurl5","qmdffheader6", "qmdffurl6","qmdffheader7", "qmdffurl7","qmdffheader8", "qmdffurl8","qmdffheader9", "qmdffurl9","qmdffheader10", "qmdffurl10","qmdffheader11", "qmdffurl11","qmdffheader12", "qmdffurl12","qmdffheader13", "qmdffurl13"],
+      "id": "qygd",
+      "name": "企业咕咚",
+      "keys": ["gdhd", "gdurl","gdhd2", "gdurl2","gdhd3", "gdurl3","gdhd4", "gdurl4","gdhd5", "gdurl5","gdhd6", "gdurl6","gdhd7", "gdurl7","gdhd8", "gdurl8","gdhd9", "gdurl9","gdhd10", "gdurl10","gdhd11", "gdurl11"],
       "author": "@ningmeng",
       "settings": [{
-            "id": "qmdffstatus",
+            "id": "gdstatus",
             "name": "当前账号",
             "val": "1",
             "type": "number",
             "desc": "当前账号对应"
     },
     {
-            "id": "qmdffcount",
+            "id": "gdcount",
             "name": "账号个数",
             "val": "1",
             "type": "number",
             "desc": "需要几个账号，数字为几"
     }],
             "repo": "http://nm66.top/fhxz.js",
-            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/fhxz.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/fhxz.png"],
+            "icons": ["", ""],
             "script": "http://nm66.top/fhxz.js"
     },
     {
