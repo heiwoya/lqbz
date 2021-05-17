@@ -630,37 +630,6 @@
       ]
     },
     {
-   "id": "scdyjsign",
-   "name": "食材大冲关APP",
-   "keys": ["normalheader","normalbody","scdcgheader","scdcgbody","normalheader2","normalbody2","scdcgheader2","scdcgbody2","normalheader3","normalbody3","scdcgheader3","scdcgbody3","normalheader4","normalbody4","scdcgheader4","scdcgbody4","normalheader5","normalbody5","scdcgheader5","scdcgbody5","normalheader6","normalbody6","scdcgheader6","scdcgbody6","normalheader7","normalbody7","scdcgheader7","scdcgbody7","normalheader8","normalbody8","scdcgheader8","scdcgbody8","normalheader9","normalbody9","scdcgheader9","scdcgbody9","normalheader10","normalbody10","scdcgheader10","scdcgbody10","normalheader11","normalbody11","scdcgheader11","scdcgbody11"],
-   "author": "@dd",
-   "settings": [{
-   "id": "scdyjSuffix",
-   "name": "当前账号",
-   "val": "1",
-   "type": "number",
-   "desc": "当前获取cookie记录的账号，多账号例如：1、2、3、目前最多10个账号"
-   },
-   {
-   "id": "scdyjCount",
-   "name": "账号个数",
-   "val": "1",
-   "type": "number",
-   "desc": "指定几个账号,跑几个账号的任务,最多跑10个账号"
-   },
-   {
-   "id": "NOLOG",
-   "name": "系统通知",
-   "val": "3",
-   "type": "number",
-   "desc": "1为所有通知 2为11小时通知一次 3为3小时通知一次 4为5小时通知一次 默认3小时通知一下"
-   }
-   ],
-   "repo": "https://github.com/DD-D1/Script/blob/main/bubusign.js",
-   "icons": ["https://raw.githubusercontent.com/DD-D1/XIAOPU/main/xiaopu/scdyj.png","https://raw.githubusercontent.com/DD-D1/XIAOPU/main/xiaopu/scdyj.png"],
-   "script": "https://raw.githubusercontent.com/DD-D1/Script/main/bubusign.js"
-   },
-   {
             "id": "fkzc",
             "name": "疯狂找茬",
             "keys": ["gdfkurl","gdfkhd"],
@@ -682,29 +651,6 @@
             "repo": "https://github.com/age174/-/blob/main/skjh.js",
             "icons": ["", ""],
             "script": "https://raw.githubusercontent.com/age174/-/main/skjh.js"
-    },
-    {
-            "id": "xfyjc",
-            "name": "幸福养鸡场",
-            "keys": ["xfyjchd"],
-            "author": "@feizao",
-            "settings": [{
-            "id": "xfyjcstatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "xfyjccount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "https://github.com/age174/-/blob/main/xfyjc.js",
-            "icons": ["https://ae01.alicdn.com/kf/Ue110888eddad48a8a78d99284e599b134.jpg", "https://ae01.alicdn.com/kf/Ue110888eddad48a8a78d99284e599b134.jpg"],
-            "script": "https://raw.githubusercontent.com/age174/-/main/xfyjc.js"
     },
     {
             "id": "qlp",
