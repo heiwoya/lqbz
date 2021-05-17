@@ -522,7 +522,7 @@
     {
       "id": "qygd",
       "name": "企业咕咚",
-      "keys": ["gdhd", "gdurl","gdhd2", "gdurl2","gdhd3", "gdurl3","gdhd4", "gdurl4","gdhd5", "gdurl5","gdhd6", "gdurl6","gdhd7", "gdurl7","gdhd8", "gdurl8","gdhd9", "gdurl9","gdhd10", "gdurl10","gdhd11", "gdurl11"],
+      "keys": ["gdhd", "gdurl","gdhd2", "gdurl2","gdhd3", "gdurl3","gdhd4", "gdurl4","gdhd5", "gdurl5","gdhd6", "gdurl6","gdhd7", "gdurl7","gdhd8", "gdurl8","gdhd9", "gdurl9","gdhd10", "gdurl10","gdhd11", "gdurl11","gdhd12", "gdurl12"],
       "author": "@ningmeng",
       "settings": [{
             "id": "gdstatus",
