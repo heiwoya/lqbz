@@ -499,7 +499,7 @@
     {
       "id": "fhxz",
       "name": "富豪小镇",
-      "keys": ["fhxzurl", "fhxzhd","fhxzurl2", "fhxzhd2","fhxzurl3", "fhxzhd3","fhxzurl4", "fhxzhd4","fhxzurl5", "fhxzhd5","fhxzurl6", "fhxzhd6","fhxzurl7", "fhxzhd7","fhxzurl8", "fhxzhd8","fhxzurl9", "fhxzhd9","fhxzurl10", "fhxzhd10","fhxzurl11", "fhxzhd11","fhxzurl12", "fhxzhd12"],
+      "keys": ["fhxzurl", "fhxzhd","fhxzurl2", "fhxzhd2","fhxzurl3", "fhxzhd3","fhxzurl4", "fhxzhd4","fhxzurl5", "fhxzhd5","fhxzurl6", "fhxzhd6","fhxzurl7", "fhxzhd7","fhxzurl8", "fhxzhd8","fhxzurl9", "fhxzhd9","fhxzurl10", "fhxzhd10","fhxzurl11", "fhxzhd11","fhxzurl12", "fhxzhd12","fhxzurl13", "fhxzhd13"],
       "author": "@ningmeng",
       "settings": [{
             "id": "fhxzstatus",
