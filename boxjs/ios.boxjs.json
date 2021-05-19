@@ -653,29 +653,6 @@
             "script": "https://raw.githubusercontent.com/age174/-/main/skjh.js"
     },
     {
-            "id": "qlp",
-            "name": "考状元娶老婆二合一",
-            "keys": ["qlphd","kzyhd", "qlphd2","kzyhd2", "qlphd3","kzyhd3", "qlphd4","kzyhd4", "qlphd5","kzyhd5", "qlphd6","kzyhd6", "qlphd7","kzyhd7", "qlphd8","kzyhd8", "qlphd9","kzyhd9", "qlphd10","kzyhd10", "qlphd11","kzyhd11", "qlphd12","kzyhd12", "qlphd13","kzyhd13", "qlphd14","kzyhd14", "qlphd15","kzyhd15", "qlphd16","kzyhd16", "qlphd17","kzyhd17", "qlphd18","kzyhd18", "qlphd19","kzyhd19", "qlphd20","kzyhd20", "qlphd21","kzyhd21", "qlphd22","kzyhd22", "qlphd23","kzyhd23", "qlphd24","kzyhd24", "qlphd25","kzyhd25", "qlphd26","kzyhd26", "qlphd27","kzyhd27", "qlphd28","kzyhd28", "qlphd29","kzyhd29", "qlphd30","kzyhd30", "qlphd31","kzyhd31", "qlphd32","kzyhd32", "qlphd33","kzyhd33", "qlphd34","kzyhd34"],
-            "author": "@feizao",
-            "settings": [{
-            "id": "qlpstatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "qlpcount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "https://github.com/age174/-/blob/main/qlp.js",
-            "icons": ["https://ae01.alicdn.com/kf/Uc2775b8f4abf41788ba89df0317e58050.jpg", "https://ae01.alicdn.com/kf/Uc2775b8f4abf41788ba89df0317e58050.jpg"],
-            "script": "https://raw.githubusercontent.com/age174/-/main/qlp.js"
-    },
-     {
             "id": "wdwhd",
             "name": "我的网红店",
             "keys": ["wdwhdbody","wdwhdhd", "wdwhdspbody","wdwhdbody2","wdwhdhd2", "wdwhdspbody2","wdwhdbody3","wdwhdhd3", "wdwhdspbody3","wdwhdbody4","wdwhdhd4", "wdwhdspbody4","wdwhdbody5","wdwhdhd5", "wdwhdspbody5","wdwhdbody6","wdwhdhd6", "wdwhdspbody6","wdwhdbody7","wdwhdhd7", "wdwhdspbody7","wdwhdbody8","wdwhdhd8", "wdwhdspbody8","wdwhdbody9","wdwhdhd9", "wdwhdspbody9","wdwhdbody10","wdwhdhd10", "wdwhdspbody10","wdwhdbody11","wdwhdhd11", "wdwhdspbody11","wdwhdbody12","wdwhdhd12", "wdwhdspbody12","wdwhdbody13","wdwhdhd13", "wdwhdspbody13"],
