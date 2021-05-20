@@ -458,6 +458,31 @@
       "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js"
     },
     {
+      "id": "didi_fruit",
+      "name": "滴滴橙心果园",
+      "keys": [
+        "ddtoken"
+      ],
+      "descs_html": [
+        "填写token,多账号用英文逗号(,)分开"
+      ],
+      "settings": [
+        {
+          "id": "ddtoken",
+          "name": "token",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "token"
+        }
+      ],
+      "icons": [
+        "https://gitee.com/passerby-b/javascript/raw/master/icon/didi.png",
+        "https://gitee.com/passerby-b/javascript/raw/master/icon/didi.png"
+      ],
+    },
+    {
       "id": "jkd",
       "name": "聚看点",
       "keys": ["CookiesJKD2","JKD_WITHDRAW","JKDUA", "JKD_MSG"],
