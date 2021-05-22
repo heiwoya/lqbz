@@ -543,29 +543,6 @@
             "script": "http://nm66.top/fhxz.js"
     },
     {
-      "id": "qygd",
-      "name": "企业咕咚",
-      "keys": ["gdhd", "gdurl","gdhd2", "gdurl2","gdhd3", "gdurl3","gdhd4", "gdurl4","gdhd5", "gdurl5","gdhd6", "gdurl6","gdhd7", "gdurl7","gdhd8", "gdurl8","gdhd9", "gdurl9","gdhd10", "gdurl10","gdhd11", "gdurl11","gdhd12", "gdurl12"],
-      "author": "@ningmeng",
-      "settings": [{
-            "id": "gdstatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "gdcount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "http://nm66.top/fhxz.js",
-            "icons": ["", ""],
-            "script": "http://nm66.top/fhxz.js"
-    },
-    {
     "id": "iQIYI",
     "name": "爱奇艺",
     "keys": ["CookieQY"],
