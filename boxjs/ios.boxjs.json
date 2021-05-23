@@ -653,29 +653,6 @@
       ]
     },
     {
-            "id": "fkzc",
-            "name": "疯狂找茬",
-            "keys": ["gdfkurl","gdfkhd"],
-            "author": "@",
-            "settings": [{
-            "id": "gdfkstatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "gdfkcount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "https://github.com/age174/-/blob/main/skjh.js",
-            "icons": ["", ""],
-            "script": "https://raw.githubusercontent.com/age174/-/main/skjh.js"
-    },
-    {
             "id": "wdwhd",
             "name": "我的网红店",
             "keys": ["wdwhdbody","wdwhdhd", "wdwhdspbody","wdwhdbody2","wdwhdhd2", "wdwhdspbody2","wdwhdbody3","wdwhdhd3", "wdwhdspbody3","wdwhdbody4","wdwhdhd4", "wdwhdspbody4","wdwhdbody5","wdwhdhd5", "wdwhdspbody5","wdwhdbody6","wdwhdhd6", "wdwhdspbody6","wdwhdbody7","wdwhdhd7", "wdwhdspbody7","wdwhdbody8","wdwhdhd8", "wdwhdspbody8","wdwhdbody9","wdwhdhd9", "wdwhdspbody9","wdwhdbody10","wdwhdhd10", "wdwhdspbody10","wdwhdbody11","wdwhdhd11", "wdwhdspbody11","wdwhdbody12","wdwhdhd12", "wdwhdspbody12","wdwhdbody13","wdwhdhd13", "wdwhdspbody13"],
