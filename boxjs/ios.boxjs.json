@@ -520,6 +520,29 @@
       "script": "https://raw.githubusercontent.com/shylocks/Loon/main/jkd.js"
     },
     {
+      "id": "chxx",
+      "name": "彩虹消消消",
+      "keys": ["kkjhd", "kkjurl","kkjh2d", "kkjurl2","kkjhd3", "kkjurl3","kkjhd4", "kkjurl4","kkjhd5", "kkjurl5","kkjhd6", "kkjurl6","kkjhd7", "kkjurl7","kkjhd8", "kkjurl8","kkjhd9", "kkjurl9","kkjhd10", "kkjurl10","kkjhd11", "kkjurl11","kkjhd12", "kkjurl12","kkjhd13", "kkjurl13"],
+      "author": "@ningmeng",
+      "settings": [{
+            "id": "kkjstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前账号对应"
+    },
+    {
+            "id": "kkjcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "需要几个账号，数字为几"
+    }],
+            "repo": "http://nm66.top/fhxz.js",
+            "icons": ["", ""],
+            "script": "http://nm66.top/fhxz.js"
+    },
+    {
       "id": "fhxz",
       "name": "富豪小镇",
       "keys": ["fhxzurl", "fhxzhd","fhxzurl2", "fhxzhd2","fhxzurl3", "fhxzhd3","fhxzurl4", "fhxzhd4","fhxzurl5", "fhxzhd5","fhxzurl6", "fhxzhd6","fhxzurl7", "fhxzhd7","fhxzurl8", "fhxzhd8","fhxzurl9", "fhxzhd9","fhxzurl10", "fhxzhd10","fhxzurl11", "fhxzhd11","fhxzurl12", "fhxzhd12","fhxzurl13", "fhxzhd13"],
