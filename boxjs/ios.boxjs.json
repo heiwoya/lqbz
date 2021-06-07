@@ -699,82 +699,6 @@
             "script": "https://raw.githubusercontent.com/age174/-/main/zzsy.js"
     },
     {
-            "id": "zzsy",
-            "name": "招招",
-            "keys": ["zzsyhd","zzsybody", "zzsyhd2","zzsybody2","zzsyhd3","zzsybody3","zzsyhd4","zzsybody4","zzsyhd5","zzsybody5","zzsyhd6","zzsybody6","zzsyhd7","zzsybody7","zzsyhd8","zzsybody8","zzsyhd9","zzsybody9","zzsyhd10","zzsybody10"],
-            "author": "@feizao",
-            "settings": [{
-            "id": "zzsystatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "zzsycount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "https://github.com/age174/-/blob/main/zzsy.js",
-            "icons": ["https://ae01.alicdn.com/kf/Ub0056a0721e94c9a85a8bbeb2f2aed6fn.jpg", "https://ae01.alicdn.com/kf/Ub0056a0721e94c9a85a8bbeb2f2aed6fn.jpg"],
-            "script": "https://raw.githubusercontent.com/age174/-/main/zzsy.js"
-    },
-    {
-            "id": "lhws",
-            "name": "落花无生",
-            "keys": ["lhwsurl", "lhwshd", "lhwsbody", "lhwsurl2", "lhwshd2", "lhwsbody2","lhwsurl3", "lhwshd3", "lhwsbody3","lhwsurl4", "lhwshd4", "lhwsbody4","lhwsurl5", "lhwshd5", "lhwsbody6","lhwsurl7", "lhwshd7", "lhwsbody7","lhwsurl8", "lhwshd8", "lhwsbody8","lhwsurl9", "lhwshd9", "lhwsbody9"],
-            "author": "@feizao",
-            "settings": [{
-            "id": "lhwsstatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "lhwscount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "https://github.com/age174/-/blob/main/lhws.js",
-            "icons": ["https://ae01.alicdn.com/kf/U7f67ec3bd2d848a59d72a1807dc9e324r.jpg", "https://ae01.alicdn.com/kf/U7f67ec3bd2d848a59d72a1807dc9e324r.jpg"],
-            "script": "https://raw.githubusercontent.com/age174/-/main/lhws.js"
-    },
-    {
-            "id": "hlyy",
-            "name": "葫芦音乐",
-            "keys": ["hlyyurl", "hlyyhd", "hlyyurl2", "hlyyhd2","hlyyurl3", "hlyyhd3","hlyyurl4", "hlyyhd4","hlyyurl5", "hlyyhd5","hlyyurl6", "hlyyhd6","hlyyurl7", "hlyyhd7","hlyyurl8", "hlyyhd8","hlyyurl9", "hlyyhd9","hlyyurl10", "hlyyhd10"],
-            "author": "@feizao",
-            "settings": [{
-            "id": "hlyystatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "hlyycount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    },
-    {
-            "id": "hltxje",
-            "name": "提现金额",
-            "val": "1",
-            "type": "number",
-            "desc": "填入1为提现1元,2为2元,3为5元,4为50元,5为100元,默认提现一元"
-    }],
-            "repo": "https://github.com/age174/-/blob/main/hlyy.js",
-            "icons": ["https://ae01.alicdn.com/kf/U49d941738c0c41569f7db55825943375f.jpg", "https://ae01.alicdn.com/kf/U49d941738c0c41569f7db55825943375f.jpg"],
-            "script": "https://raw.githubusercontent.com/age174/-/main/hlyy.js"
-    },
-    {
             "id": "lgyy",
             "name": "朗果英语",
             "keys": ["lgyyurl", "lgyyhd", "lgyybody", "lgyyurl2", "lgyyhd2", "lgyybody2","lgyyurl3", "lgyyhd3", "lgyybody3","lgyyurl4", "lgyyhd4", "lgyybody4","lgyyurl5", "lgyyhd5", "lgyybody5","lgyyurl6", "lgyyhd6", "lgyybody6","lgyyurl7", "lgyyhd7", "lgyybody7","lgyyurl8", "lgyyhd8", "lgyybody8","lgyyurl9", "lgyyhd9", "lgyybody9","lgyyurl10", "lgyyhd10", "lgyybody10","lgyyurl11", "lgyyhd11", "lgyybody11","lgyyurl12", "lgyyhd12", "lgyybody12"],
@@ -819,93 +743,6 @@
             "repo": "https://github.com/age174/-/blob/main/ximei.js",
             "icons": ["https://ae01.alicdn.com/kf/Ucd02ea79ef22473daf3576486d134509Q.jpg", "https://ae01.alicdn.com/kf/Ucd02ea79ef22473daf3576486d134509Q.jpg"],
             "script": "https://raw.githubusercontent.com/age174/-/main/ximei.js"
-    },
-    {
-            "id": "fqkk",
-            "name": "番茄看看",
-            "keys": ["fqkk"],
-            "author": "@feizao",
-            "settings": [{
-                "id": "fqkkCkMove",
-                "val": "",
-                "name": "迁移旧数据",
-                "type": "boolean",
-                "desc": "开启该选项，执行一次脚本可将原有ck转换为此脚本可用的格式"
-              }, {
-                "id": "fqkkBanfirstTask",
-                "val": "",
-                "name": "限制脚本跑每日首次任务",
-                "type": "boolean",
-                "desc": "开启该选项时，每需手动阅读一次文章后脚本才能正常执行任务，尽量避免因脚本跑首次任务遭微信限制的情况"
-              }, {
-                "id": "fqkkConcurrency",
-                "val": "1",
-                "name": "并发执行账号数",
-                "type": "text",
-                "desc": "默认单账号跑任务，指定大于1的数值时，将并发执行多个账号的任务，请勿设置过大，避免NE工具崩溃（太大估计会崩溃吧）"
-              }, {
-                "id": "fqtx",
-                "name": "提现金额",
-                "val": "100",
-                "type": "number",
-                "desc": "需要自动提现多少，数字为金额的一百倍，如提现0.3元填写30，默认100为提现1元,最低提现额度为0.3元"
-              }, {
-                "id": "fqkk",
-                "name": "CK 列表",
-                "val": "",
-                "type": "textarea",
-                "autoGrow": true,
-                "rows": 8,
-                "desc": "番茄看看CK 列表 (JSON 格式)"
-              }],
-            "repo": "https://github.com/age174/-/blob/main/fqkk.js",
-            "icons": ["https://ftp.bmp.ovh/imgs/2021/02/f8306006536eb49c.jpeg", "https://ftp.bmp.ovh/imgs/2021/02/f8306006536eb49c.jpeg"],
-            "script": "https://raw.githubusercontent.com/age174/-/main/fqkk.js"
-    },
-    {
-            "id": "ysm",
-            "name": "云扫码",
-            "keys": ["ysm"],
-            "author": "@feizao",
-            "descs_html": [
-              "优化后的脚本存储ck的数据结构跟原先的不同，需要转换下或重新抓数据",
-              "转换步骤：1、NE工具（QX、Loon、Surge）中进入脚本编辑界面，手动修改变量 moveData=1 后直接执行一次即可",
-              "抓包备注：1、脚本已根据ck数据中的账户特征做区分，无需指定抓包账户及账户个数；2、扫码进入云扫码主页面后即可抓到脚本所需的全部数据"
-            ],
-            "settings": [{
-                "id": "ysmNotice",
-                "val": "",
-                "name": "是否通知",
-                "type": "boolean",
-                "desc": "开启该选项时，脚本执行完会发通知，否则只打印日志"
-              }, {
-                "id": "ysmBanfirstTask",
-                "val": "",
-                "name": "限制脚本跑每日首次任务",
-                "type": "boolean",
-                "desc": "开启该选项时，每需手动阅读一次文章后脚本才能正常执行任务，尽量避免因脚本跑首次任务遭微信限制的情况"
-              }, {
-                "id": "ysmBanhalfTask",
-                "val": "",
-                "name": "限制脚本跑每日第50篇任务",
-                "type": "boolean",
-                "desc": "开启该选项时，脚本做完第50篇任务时会自动结束任务，可手动去阅读2篇避免被限制或再次运行脚本可继续做其余任务"
-              }, {
-                "id": "ysmConcurrency",
-                "val": "1",
-                "name": "并发执行账号数",
-                "type": "text",
-                "desc": "默认单账号跑任务，指定大于1的数值时，将并发执行多个账号的任务，请勿设置过大，避免NE工具崩溃（太大估计会崩溃吧）"
-              }, {
-                "id": "ysmtxAmt",
-                "name": "提现金额",
-                "val": "0",
-                "type": "number",
-                "desc": "需要自动提现多少，数字为金额的一万倍，如提现1元填写10000，默认0不提现,最低提现额度为0.3元"
-              }],
-            "repo": "https://github.com/age174/-/blob/main/ysm.js",
-            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/Yunsaoma.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/Yunsaoma.png"],
-            "script": "https://raw.githubusercontent.com/age174/-/main/ysm.js"
     },
     {
     "id": "dyjsb",
@@ -957,29 +794,6 @@
     "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/dyjsb.js",
     "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/dyjsb.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/dyjsb.png"],
     "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js"
-    },
-    {
-            "id": "cglm",
-            "name": "猜歌联萌",
-            "keys": ["cglmheader","cglmheader2","cglmheader3","cglmheader4","cglmheader5","cglmheader6","cglmheader7","cglmheader8","cglmheader9","cglmheader10","cglmheader11","cglmheader12"],
-            "author": "@ZhiYi-N",
-            "settings": [{
-            "id": "cglmstatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "cglmcount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "https://github.com/age174/-/blob/main/skjh.js",
-            "icons": ["", ""],
-            "script": "https://raw.githubusercontent.com/age174/-/main/skjh.js"
     },
     {
     "id": "kkd",
@@ -1128,26 +942,6 @@
 	  ]
 	},
   {
-		"id": "helpbang",
-		"name": "互利帮",
-		"keys": ["helpbang","helpbangkey"],
-		"settings": [
-			{
-				"id": "helpbang",
-				"name": "Cookie数据",
-				"val": "",
-				"type": "textarea",
-				"desc": "JSON 格式"
-			}
-		],
-		"author": "@cenbomin",
-		"repo": ["https://raw.githubusercontent.com/CenBoMin/GithubSync"],
-		"script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/CONGHUA/chonghua.js",
-		"icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/hlb.png",
-			"https://gitee.com/the-eldest-is-xu/color/raw/master/hlb.png"
-		]
-	},
-	{
 		"id": "PushBoxjsCookie",
 		"name": "elecV2p推送Cookie",
 		"keys": ["v2purl","v2token"],
