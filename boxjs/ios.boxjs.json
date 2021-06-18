@@ -481,68 +481,6 @@
       "script": "http://nm66.top/fhxz.js"
     },
     {
-      "id": "jkd",
-      "name": "聚看点",
-      "keys": ["CookiesJKD2","JKD_WITHDRAW","JKDUA", "JKD_MSG"],
-      "author": "@shylocks",
-      "repo": "https://github.com/shylocks/Loon/blob/main/jkd.js",
-      "settings": [
-        {
-          "id": "CookiesJKD2",
-          "name": "聚看点cookie",
-          "val": "",
-          "type": "number",
-          "placeholder": "",
-          "desc": "格式：['ck1','ck2']，括号和引号都要填写"
-        },{
-          "id": "JKD_WITHDRAW",
-          "name": "提现金额",
-          "val": "",
-          "type": "number",
-          "placeholder": "默认不提现",
-          "desc": "仅允许填入数字，建议30提现"
-        },{
-          "id": "JKD_MSG",
-          "name": "是否通知",
-          "val": "",
-          "type": "number",
-          "placeholder": "0或者不填为不通知，1为通知",
-          "desc": ""
-        },{
-          "id": "JKDUA",
-          "name": "user agent",
-          "val": "",
-          "type": "string",
-          "placeholder": "不填则为ios端ua",
-          "desc": ""
-        }],
-      "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/jkd.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/jkd.png"],
-      "script": "https://raw.githubusercontent.com/shylocks/Loon/main/jkd.js"
-    },
-    {
-      "id": "chxx",
-      "name": "彩虹消消消",
-      "keys": ["kkjhd", "kkjurl","kkjhd2", "kkjurl2","kkjhd3", "kkjurl3","kkjhd4", "kkjurl4","kkjhd5", "kkjurl5","kkjhd6", "kkjurl6","kkjhd7", "kkjurl7","kkjhd8", "kkjurl8","kkjhd9", "kkjurl9","kkjhd10", "kkjurl10","kkjhd11", "kkjurl11","kkjhd12", "kkjurl12","kkjhd13", "kkjurl13"],
-      "author": "@ningmeng",
-      "settings": [{
-            "id": "kkjstatus",
-            "name": "当前账号",
-            "val": "1",
-            "type": "number",
-            "desc": "当前账号对应"
-    },
-    {
-            "id": "kkjcount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "需要几个账号，数字为几"
-    }],
-            "repo": "http://nm66.top/fhxz.js",
-            "icons": ["", ""],
-            "script": "http://nm66.top/fhxz.js"
-    },
-    {
       "id": "fhxz",
       "name": "富豪小镇",
       "keys": ["fhxzurl", "fhxzhd","fhxzurl2", "fhxzhd2","fhxzurl3", "fhxzhd3","fhxzurl4", "fhxzhd4","fhxzurl5", "fhxzhd5","fhxzurl6", "fhxzhd6","fhxzurl7", "fhxzhd7","fhxzurl8", "fhxzhd8","fhxzurl9", "fhxzhd9","fhxzurl10", "fhxzhd10","fhxzurl11", "fhxzhd11","fhxzurl12", "fhxzhd12","fhxzurl13", "fhxzhd13"],
@@ -1162,58 +1100,6 @@
             "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/xiaole.js",
             "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/xiaole.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/xiaole.png"],
             "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/xiaole.js"
-        },
-        {
-            "id": "iboxpay",
-            "name": "笑谱",
-            "keys": ["refreshtoken", "iboxpayvideoheader", "iboxpayvideobody", "refreshtoken2", "iboxpayvideoheader2", "iboxpayvideobody2", "refreshtoken3", "iboxpayvideoheader3", "iboxpayvideobody3", "refreshtoken4", "iboxpayvideoheader4", "iboxpayvideobody4", "refreshtoken5", "iboxpayvideoheader5", "iboxpayvideobody5", "refreshtoken6", "iboxpayvideoheader6", "iboxpayvideobody6", "refreshtoken7", "iboxpayvideoheader7", "iboxpayvideobody7", "refreshtoken8", "iboxpayvideoheader8", "iboxpayvideobody8", "refreshtoken9", "iboxpayvideoheader9", "iboxpayvideobody9"],
-            "author": "@ziye",
-            "settings": [{
-                    "id": "iboxpaySuffix",
-                    "name": "当前账号",
-                    "val": "1",
-                    "type": "number",
-                    "desc": "当前抓取ck记录的账号序号，如：1、2、4、"
-                },
-                {
-                    "id": "iboxpayCount",
-                    "name": "账号个数",
-                    "val": "1",
-                    "type": "number",
-                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-                },
-                {
-                    "id": "iboxpayLIVE",
-                    "name": "任务控制",
-                    "val": "1",
-                    "type": "number",
-                    "desc": "默认为1开启直播，视频请获取ck，设置2关闭视频，新人请设置888"
-                },
-                {
-                    "id": "iboxpayCASH",
-                    "name": "提现标准",
-                    "val": "0",
-                    "type": "number",
-                    "desc": "0不提现，可设置 0 1 15 30 100 888 设置888，由大至小循环提现 "
-                },
-                {
-                    "id": "iboxpayphone",
-                    "name": "手机号",
-                    "val": "0",
-                    "type": "number",
-                    "desc": "请输入完整手机号"
-                },
-                {
-                    "id": "iboxpaysms",
-                    "name": "验证码",
-                    "val": "0",
-                    "type": "number",
-                    "desc": "输入短信验证码，默认为0，不启动获取token功能"
-                }
-            ],
-            "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.js",
-            "icons": ["https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/iboxpay.png", "https://gitee.com/the-eldest-is-xu/lqbz/raw/master/png/iboxpay.png"],
-            "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.js"
         },
         {
             "id": "flw",
