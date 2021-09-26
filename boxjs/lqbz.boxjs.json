@@ -706,6 +706,37 @@
 		"icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/TencentStock.png","https://gitee.com/the-eldest-is-xu/color/raw/master/TencentStock.png"
 		]
 	  },
+	    {
+    "id": "elongcash",
+    "name": "同程小猪",
+    "keys": ["elongcash", "elongcashkey", "elongcashTaskGid", "elongcashBuyNum"],
+    "settings": [{
+        "id": "elongcashTaskGid",
+        "name": "夺宝任务ID",
+        "val": "4",
+        "type": "number",
+        "desc": "可先不输入执行脚本查看任务清单"
+      },
+      {
+        "id": "elongcashBuyNum",
+        "name": "夺宝码购买数量",
+        "val": "1",
+        "type": "number",
+        "desc": ""
+      },
+      {
+        "id": "elongcash",
+        "name": "Cookie数据",
+        "val": "",
+        "type": "textarea",
+        "desc": "JSON 格式"
+      }
+    ],
+    "author": "@cenbomin",
+    "repo": ["https://raw.githubusercontent.com/CenBoMin/GithubSync"],
+    "script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELONGCASH/elongcash.js",
+    "icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELONGCASH/120.png", "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELONGCASH/120.png"]
+  },
       {
             "id": "githubAC",
             "name": "githubAC",
