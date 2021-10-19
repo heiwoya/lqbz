@@ -987,7 +987,8 @@
             "name": "成语极速版",
             "keys": ["chyubody", "chyutoken", "chyubody2", "chyutoken2", "chyubody3", "chyutoken3", 
                     "chyubody4", "chyutoken4", "chyubody5", "chyutoken5", "chyubody6", "chyutoken6", 
-		    "chyubody7", "chyutoken7", "chyubody8", "chyutoken8", "chyubody9", "chyutoken9"],
+		    "chyubody7", "chyutoken7", "chyubody8", "chyutoken8", "chyubody9", "chyutoken9", 
+		    "chyubody10", "chyutoken10", "chyubody11", "chyutoken11", "chyubody12", "chyutoken12"],
             "author": "@laoguilin",
             "settings": [
                 {
