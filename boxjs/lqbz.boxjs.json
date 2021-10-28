@@ -957,7 +957,7 @@
    {
     "id": "qkhq",
     "name": "趣看行情",
-    "keys": ["qkhqheader","qkhqheader2","qkhqheader3","qkhqheader4","qkhqheader5"],
+    "keys": ["qkhqheader","qkhqheader2","qkhqheader3","qkhqheader4","qkhqheader5","qkhqheader6","qkhqheader7","qkhqheader8","qkhqheader9","qkhqheader10"],
     "author": "@tom",
     "settings": [{
       "id": "qkhqSuffix",
