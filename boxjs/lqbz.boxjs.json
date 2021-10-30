@@ -1011,38 +1011,33 @@
             "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/zfxs.js"
   },
    {
-            "id": "ttcg",
-            "name": "天天猜歌",
-            "keys": ["ttcgbody", "ttcgtoken", "ttcgbody2", "ttcgtoken2", "ttcgbody3", "ttcgtoken3", 
-                    "ttcgbody4", "ttcgtoken4", "ttcgbody5", "ttcgtoken5", "ttcgbody6", "ttcgtoken6"],
-            "author": "@YaphetS0903",
-            "settings": [
-                {
-                    "id": "ttcgstatus",
-                    "name": "当前账号",
-                    "val": "1",
-                    "type": "number",
-                    "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
-                },
-                {
-                    "id": "ttcgcount",
-                    "name": "账号个数",
-                    "val": "1",
-                    "type": "number",
-                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-                },
-                {
-                    "id": "tz",
-                    "name": "通知",
-                    "val": "0",
-                    "type": "number",
-                    "desc": "0关闭通知，1打开通知"
-                }
-            ],
-            "repo": "https://github.com/YaphetS0903/JStest/blob/main/ttcg.js",
-            "icons": ["https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg","https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg"],
-            "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/ttcg.js"
-        },
+    "id": "flg",
+        "name": "返利购",
+            "keys": ["flgReferer","flgReferer2","flgReferer3","flgReferer4","flgReferer5","flgReferer6","flgReferer7","flgReferer8","flgReferer9","flgReferer10"],
+                "author": "@YaphetS0903",
+                    "settings": [{
+                        "id": "flgstatus",
+                        "name": "当前账号",
+                        "val": "1",
+                        "type": "number",
+                        "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+                    }, {
+                        "id": "flgcount",
+                        "name": "账号个数",
+                        "val": "1",
+                        "type": "number",
+                        "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+                    }, {
+                        "id": "tz",
+                        "name": "通知",
+                        "val": "1",
+                        "type": "number",
+                        "desc": "0关闭通知，1打开通知"
+                    }],
+                        "repo": "https://github.com/YaphetS0903/JStest/blob/main/flg.js",
+            "icons": ["https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg", "https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg"],
+            "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flg.js"
+  },
    {
     "id": "qkhq",
     "name": "趣看行情",
