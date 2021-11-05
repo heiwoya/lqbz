@@ -1099,7 +1099,7 @@
     {
         "id": "ygyapp",
         "name": "御果园APP",
-        "keys": ["ygyPhone","ygyPhone2"],
+        "keys": ["kdzyPhone","kdzyPhone2"],
         "settings": [{
             "id": "ygycount",
             "name": "账号个数",
@@ -1107,14 +1107,14 @@
             "type": "number",
             "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
         }, {
-            "id": "ygyPhone",
+            "id": "kdzyPhone",
             "name": "御果园APP账户密码1",
             "val": "",
             "type": "text",
             "desc": "手机账户#密码"
         }
   , {
-            "id": "ygyPhone2",
+            "id": "kdzyPhone2",
             "name": "御果园APP账户密码2",
             "val": "",
             "type": "text",
