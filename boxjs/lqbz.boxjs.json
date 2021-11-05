@@ -1097,25 +1097,25 @@
     "script": "https://raw.githubusercontent.com/xl2101200/-/main/qkhq.js"
    },
     {
-        "id": "ygyapp",
-        "name": "御果园APP",
+        "id": "kdzyapp",
+        "name": "口袋庄园",
         "keys": ["kdzyPhone","kdzyPhone2"],
         "settings": [{
-            "id": "ygycount",
+            "id": "kdzycount",
             "name": "账号个数",
             "val": "1",
             "type": "number",
             "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
         }, {
             "id": "kdzyPhone",
-            "name": "御果园APP账户密码1",
+            "name": "口袋庄园账户密码1",
             "val": "",
             "type": "text",
             "desc": "手机账户#密码"
         }
   , {
             "id": "kdzyPhone2",
-            "name": "御果园APP账户密码2",
+            "name": "口袋庄园账户密码2",
             "val": "",
             "type": "text",
             "desc": "手机账户#密码"
