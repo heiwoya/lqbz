@@ -951,7 +951,7 @@
                         "desc": "0关闭通知，1打开通知"
                     }],
                         "repo": "https://github.com/YaphetS0903/JStest/blob/main/ysy.js",
-            "icons": ["https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg", "https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/ysy.jpg", "https://gitee.com/the-eldest-is-xu/color/raw/master/ysy.jpg"],
             "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/ysy.js"
   },
    {
@@ -1035,7 +1035,7 @@
                         "desc": "0关闭通知，1打开通知"
                     }],
                         "repo": "https://github.com/YaphetS0903/JStest/blob/main/flg.js",
-            "icons": ["https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg", "https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg"],
+            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/flg.jpg", "https://gitee.com/the-eldest-is-xu/color/raw/master/flg.jpg"],
             "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flg.js"
   },
    {
