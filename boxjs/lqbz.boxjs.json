@@ -337,34 +337,6 @@
         }
       ]
     },
-    {
-      "id": "JD_jr_Cookies",
-      "name": "金融领豆",
-      "keys": ["@jd_jr.cookies", "@jd_jr.bodys"],
-      "descs_html": [
-        "请勿随意在输入框修改内容，只能通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ，或点击右上角按钮🔘进行校验(如有弹窗提示则为异常JSON)）。",
-        "仅能修改phoneNumber内容",
-        "JSON示例：[{phoneNumber: \"13348751678\", username: \"yaya\" }]"
-      ],
-      "settings": [
-        {
-          "id": "@jd_jr.cookies",
-          "name": "CK 列表",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 8,
-          "desc": "CK 列表 (JSON 格式)"
-        }
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
-        "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
-      ],
-      "author": "@dompling",
-      "repo": "https://github.com/dompling/Script/blob/master/jd/jd_jr_cookie.js",
-      "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_jr_sign.js"
-    },
   {
       "id": "jd_SuperMarket_Reawrd",
       "name": "东东超市兑换奖品",
@@ -427,34 +399,6 @@
         "https://gitee.com/the-eldest-is-xu/color/raw/master/jx_sign.png",
         "https://gitee.com/the-eldest-is-xu/color/raw/master/jx_sign.png"
       ]
-    },
-    {
-      "id": "jddj_fruit",
-      "name": "京东到家果园任务",
-      "keys": [
-        "jddj_cookies"
-      ],
-      "descs_html": [
-        "多个用逗号分开"
-      ],
-      "settings": [
-        {
-          "id": "jddj_cookies",
-          "name": "CK列表",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 8,
-          "desc": "CK 列表 "
-        }
-      ],
-      "icons": [
-        "https://gitee.com/the-eldest-is-xu/color/raw/master/jddj.png",
-        "https://gitee.com/the-eldest-is-xu/color/raw/master/jddj.png"
-      ],
-      "author": "@passerby-b",
-      "repo": "https://gitee.com/passerby-b/javascript/raw/master/JD/passerby-b.boxjs.json",
-      "script": "https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_fruit.js"
     },
     {
             "id": "ttwk",
