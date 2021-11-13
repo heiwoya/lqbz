@@ -1204,7 +1204,7 @@
     {
         "id": "shapp",
         "name": "苏汇APP",
-        "keys": ["shPhone","shPhone2"],
+        "keys": ["shPhone","shPhone2","shPhone3","shPhone4"],
         "settings": [{
             "id": "shcount",
             "name": "账号个数",
@@ -1221,6 +1221,20 @@
 		, {
             "id": "shPhone2",
             "name": "苏汇APP账户密码2",
+            "val": "",
+            "type": "text",
+            "desc": "手机账户#密码"
+        }
+                , {
+            "id": "shPhone3",
+            "name": "苏汇APP账户密码3",
+            "val": "",
+            "type": "text",
+            "desc": "手机账户#密码"
+        }
+		, {
+            "id": "shPhone4",
+            "name": "苏汇APP账户密码4",
             "val": "",
             "type": "text",
             "desc": "手机账户#密码"
