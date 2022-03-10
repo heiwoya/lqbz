@@ -1,4 +1,4 @@
-/* ziye 
+/* ziye 000000
 github地址 https://github.com/6Svip120apk69
 TG频道地址  https://t.me/ziyescript
 TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
