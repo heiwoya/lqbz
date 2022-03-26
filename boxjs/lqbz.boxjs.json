@@ -2,7 +2,7 @@
     "id": "app",
     "name": "羊毛大杂烩",
     "author": "@我",
-    "icon": "https://gitee.com/the-eldest-is-xu/color/raw/master/tkr.gif",
+    "icon": "https://gitee.com/the-eldest-is-xu/color/raw/master/tubiao.jpg",
     "repo": "https://gitee.com",
     "apps": [
         {
@@ -238,88 +238,6 @@
     "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/jd.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/jd.png"]
   },
    {
-      "id": "JD_Cookies_remark",
-      "name": "登陆助手",
-      "keys": ["@jd_ck_remark.remark", "@jd_ck_remark.mute"],
-      "descs_html": [
-        "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ，或点击右上角按钮🔘进行校验(如有弹窗提示则为异常JSON)）。",
-        "脚本地址【<a href=\"https://jdsharedresourcescdn.azureedge.net/jdresource/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置",
-        "可以修改的字段，nickname,mobile",
-        "示例：[{username:\"yaya\",nickname:\"I'm YaYa man\",mobile:\"1234567890\"}]",
-        "可以根据 下标、username、nickname、status 字段检索京东多账号 ck"
-      ],
-      "settings": [
-        {
-          "id": "@jd_ck_remark.mute",
-          "name": "静音",
-          "val": false,
-          "type": "boolean",
-          "desc": "不会执行通知提示"
-        },
-        {
-          "id": "@jd_ck_remark.keyword",
-          "name": "检索条件",
-          "val": null,
-          "type": "text",
-          "autoGrow": false,
-          "rows": 2,
-          "placeholder": "下标（0）、username、nickname、status 的值"
-        },
-        {
-          "id": "@jd_ck_remark.remark",
-          "name": "CK 备注列表",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": false,
-          "rows": 8,
-          "desc": "CK 备注列表 (JSON 格式)"
-        }
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
-        "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
-      ],
-      "author": "@dompling",
-      "repo": "https://github.com/dompling/Script/blob/master/jd/jd_cookie_search.js",
-      "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_cookie_search.js"
-    },
-    {
-      "id": "jd_SuperMarket_Reawrd",
-      "name": "东东超市兑换奖品",
-      "keys": [
-        "coinToBeans"
-      ],
-      "desc": "默认不兑换奖品,例如:兑换20京豆输入20,兑换1000京豆输入1000,兑换 柠檬果香洗手液， 输入 柠檬果香洗手液。其他详细的奖品名称去东东超市活动页面查看",
-      "settings": [
-        {
-          "id": "jdSuperMarketRewardNotify",
-          "name": "静默运行",
-          "val": false,
-          "type": "boolean",
-          "desc": "开启后成功兑换到奖品不发出系统弹窗通知"
-        },
-        {
-          "id": "coinToBeans",
-          "name": "兑换奖品（默认不兑换）",
-          "val": "0",
-          "type": "text",
-          "desc": "输入兑换奖品名称(默认不兑换奖品)"
-        }
-      ],
-      "author": "@lxk0301",
-      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "scripts": [
-        {
-          "name" : "东东超市兑换奖品",
-          "script" : "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_blueCoin.js"
-        }
-      ],
-      "icons": [
-        "https://gitee.com/the-eldest-is-xu/color/raw/master/jxc.png",
-        "https://gitee.com/the-eldest-is-xu/color/raw/master/jxc.png"
-      ]
-    },
-    {
       "id": "jx_tokens",
       "name": "京喜tokens",
       "keys": ["jx_tokens"],
@@ -502,27 +420,6 @@
     "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/iQIYI.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/iQIYI.png"]
   },
   {
-      "author": "@sunert", 
-      "descs_html": [
-        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/Sunert/Scripts/raw/master/TaskConf/sina/readme.md\">配置说明</a></h4>", 
-        "<br />", 
-        "<p>其中wb_nick为账号昵称，无需另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，可选，sy_token_wb为微博签到token，必选</p>"
-      ], 
-      "keys": [
-        "sy_token_wb", 
-        "wb_cookie", 
-        "wb_nick"
-      ], 
-      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/weibo.js", 
-      "id": "weibo", 
-      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js", 
-      "name": "新浪微博", 
-      "icons": [
-        "https://gitee.com/the-eldest-is-xu/color/raw/master/weibo.png", 
-        "https://gitee.com/the-eldest-is-xu/color/raw/master/weibo.png"
-      ]
-    },
-    {
     "id": "ks_js",
     "name": "快手极速版",
     "keys": ["kshd","kshd2","kshd3","kshd4","kshd5","kshd6","kshd7","kshd8","kshd9","kshd10","kshd11","kshd12","kshd13","kshd14","kshd15","kshd16","kshd17","kshd18","kshd19","kshd20"],
@@ -584,247 +481,7 @@
               "https://gitee.com/the-eldest-is-xu/color/raw/master/kuaishou.png" 
             ]
           },
-    {
-    "id": "dyjsb",
-    "name": "抖音极速版",
-    "keys": ["signheader", "signcookie", "stepheader", "stepkey", "readheader", "readkey","signheader2", "signcookie2", "stepheader2", "stepkey2", "readheader2", "readkey2"],
-    "author": "@Ariszy",
-    "settings": [{
-            "id": "dyhost",
-            "name": "抖音极速版域名",
-            "val": "",
-            "type": "string",
-            "desc": ""
-        },
-         {
-        "id": "dyjsbaccount0",
-        "name": "支付宝账号1",
-        "val": "0",
-        "type": "number",
-        "desc": "测试的为手机号，邮箱不知道（为适应for循环，被迫命名dyjsbaccount0）"
-      },
           {
-        "id": "dyjsbaccount1",
-        "name": "支付宝账号2",
-        "val": "0",
-        "type": "number",
-        "desc": "测试的为手机号，邮箱不知道"
-      },
-         {
-            "id": "tz",
-            "name": "静默运行",
-            "val": "1",
-            "type": "number",
-            "desc": "0为不通知，1为全部通知"
-        },
-      {
-        "id": "dyjsbsetting",
-        "name": "当前账号",
-        "val": "1",
-        "type": "number",
-        "desc": "当前账号对应"
-      }, 
-      {
-        "id": "dyjsbcount",
-        "name": "账号个数",
-        "val": "1",
-        "type": "number",
-        "desc": "需要几个账号，数字为几"
-      }],
-    "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/dyjsb.js",
-    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/dyjsb.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/dyjsb.png"],
-    "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js"
-    },
-    {
-    "id": "ranlv",
-    "name": "燃旅视频",
-    "keys": ["rlurl", "rlheader","rlurl2","rlheader2","rlurl3","rlheader3","rlurl4","rlheader4","rlurl5", "rlheader5"],
-    "author": "@ZhiYi-N",
-    "settings": [{
-            "id": "tz",
-            "name": "静默运行",
-            "val": "1",
-            "type": "number",
-            "desc": "0为不通知，1为全部通知"
-        },
-      {
-        "id": "rlstatus",
-        "name": "当前账号",
-        "val": "1",
-        "type": "number",
-        "desc": "当前账号对应"
-      },
-      {
-        "id": "rlcount",
-        "name": "账号个数",
-        "val": "1",
-        "type": "number",
-        "desc": "需要几个账号，数字为几"
-      }],
-    "repo": "https://github.com/ZhiYi-N/Private-Script/blob/master/Scripts/ranlv.js",
-    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/rl.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/rl.png"],
-    "script": "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js"
-  },
-  {
-    "id": "jrtt",
-    "name": "今日头条极速版",
-    "keys": ["signurl", "signkey", "farmurl", "farmkey", "readurl", "readkey", "signurl2", "signkey2", "farmurl2", "farmkey2", "readurl2", "readkey2", "signurl3", "signkey3", "farmurl3", "farmkey3", "readurl3", "readkey3", "signurl4", "signkey4", "farmurl4", "farmkey4", "readurl4", "readkey4", "signurl5", "signkey5", "farmurl5", "farmkey5", "readurl5", "readkey5", "signurl6", "signkey6", "farmurl6", "farmkey6", "readurl6", "readkey6", "signurl7", "signkey7", "farmurl7", "farmkey7", "readurl7", "readkey7", "signurl8", "signkey8", "farmurl8", "farmkey8", "readurl8", "readkey8", "signurl9", "signkey9", "farmurl9", "farmkey9", "readurl9", "readkey9", "signurl10", "signkey10", "farmurl10", "farmkey10", "readurl10", "readkey10", "signurl11", "signkey11", "farmurl11", "farmkey11", "readurl11", "readkey11", "signurl12", "signkey12", "farmurl12", "farmkey12", "readurl12", "readkey12", "signurl13", "signkey13", "farmurl13", "farmkey13", "readurl13", "readkey13"],
-    "author": "@Ariszy",
-    "settings": [{
-            "id": "tz",
-            "name": "静默运行",
-            "val": "1",
-            "type": "number",
-            "desc": "0为不通知，1为全部通知"
-        },
-       {
-        "id": "jrttsetting",
-        "name": "当前账号",
-        "val": "1",
-        "type": "number",
-        "desc": "当前账号对应"
-      },
-      {
-        "id": "jrttcount",
-        "name": "账号个数",
-        "val": "1",
-        "type": "number",
-        "desc": "需要几个账号，数字为几"
-      }],
-    "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/jrtt.js",
-    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/jrtt.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/jrtt.png"],
-    "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/jrtt.js"
-  },
-  {
-    "id": "kkd",
-    "name": "快看点",
-    "keys": ["kkdheader", "kkdcookie", "kkdsign", "kkdheader2", "kkdcookie2","kkdsign2", "kkdheader3", "kkdcookie3","kkdsign3", "kkdheader4", "kkdcookie4","kkdsign4", "kkdheader5", "kkdcookie5","kkdsign5"],
-    "author": "@Ariszy",
-    "settings": [{
-            "id": "tz",
-            "name": "静默运行",
-            "val": "1",
-            "type": "number",
-            "desc": "0为不通知，1为全部通知"
-        },
-      {
-        "id": "kkdsetting",
-        "name": "当前账号",
-        "val": "1",
-        "type": "number",
-        "desc": "当前账号对应"
-      },
-      {
-        "id": "kkdcount",
-        "name": "账号个数",
-        "val": "1",
-        "type": "number",
-        "desc": "需要几个账号，数字为几"
-      }],
-    "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/kkd.js",
-    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/kkd.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/kkd.png"],
-    "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js"
-  },
-  {
-    "id": "fqxs",
-    "name": "番茄小说",
-    "keys": ["fqxsurl", "fqxs","fqxsurl2","fqxs2","fqxsurl3","fqxs3","fqxsurl4","fqxs4","fqxsurl5","fqxs5","fqxsurl6","fqxs6","fqxsurl7","fqxs7","fqxsurl8","fqxs8","fqxsurl9","fqxs9","fqxsurl10","fqxs10","fqxsurl11","fqxs11","fqxsurl12","fqxs12","fqxsurl13","fqxs13","fqxsurl14","fqxs14","fqxsurl15","fqxs15","fqxsurl16","fqxs16","fqxsurl17","fqxs17","fqxsurl18","fqxs18","fqxsurl19","fqxs19","fqxsurl20","fqxs20"],
-    "author": "@Ariszy",
-    "settings": [{
-            "id": "tz",
-            "name": "静默运行",
-            "val": "1",
-            "type": "number",
-            "desc": "0为不通知，1为全部通知"
-        },
-      {
-        "id": "fqxsstatus",
-        "name": "当前账号",
-        "val": "1",
-        "type": "number",
-        "desc": "当前账号对应"
-      },    
-      {
-        "id": "fqxscount",
-        "name": "账号个数",
-        "val": "1",
-        "type": "number",
-        "desc": "需要几个账号，数字为几"
-      },
-       {
-        "id": "host",
-        "name": "host",
-        "val": "ib.snssdk.com",
-        "type": "string",
-        "desc": "当前版本host"
-      } ],
-    "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/fqxs.js",
-    "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/fqxs.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/fqxs.png"],
-    "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/fqxs.js"
-  },
-  {
-    "id": "xjaxc",
-    "name": "小鸡爱消除",
-    "keys": ["xjheaders", "xjheaders2", "xjheaders3", "xjheaders4", "xjheaders5", "xjheaders6", "xjheaders7", "xjheaders8", "xjheaders9", "xjheaders10"],
-    "author": "@Ariszy",
-    "settings": [{
-            "id": "tz",
-            "name": "静默运行",
-            "val": "1",
-            "type": "number",
-            "desc": "0为不通知，1为全部通知"
-        },
-       {
-        "id": "xjsetting",
-        "name": "当前账号",
-        "val": "1",
-        "type": "number",
-        "desc": "当前账号对应"
-      },
-      {
-        "id": "xjcount",
-        "name": "账号个数",
-        "val": "1",
-        "type": "number",
-        "desc": "需要几个账号，数字为几"
-      }],
-    "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/xjaxc.js",
-    "icons": ["https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/xjaxc-mini.png", "https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/xjaxc.png"],
-    "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/xjaxc.js"
-  },
-  {
-		"id": "shuqiapp",
-		"name": "舒淇想说",
-		"keys": ["readuploadbody","readuploadkey","boxtaskbody","boxtaskkey","loadresourcebody","loadresourcekey","sploadresourcebody","sploadresourcekey","withdrawbody","bubblebody","receivebody","signinactionbody","readlotterybody","videolotterybody","luckylotterybody","luckyredurl","luckyredbody","sharebody","booktaskurl","booktaskbody","spsigninactionbody","spreadcoinurl","spreadcoinbody","sp1videocoinbody","sp2videocoinbody","spsharebody","lotteryinfourl","videoinfourl","spvideoinfourl","readuploadbody2","readuploadkey2","boxtaskbody2","boxtaskkey2","loadresourcebody2","loadresourcekey2","sploadresourcebody2","sploadresourcekey2","withdrawbody2","bubblebody2","receivebody2","signinactionbody2","readlotterybody2","videolotterybody2","luckylotterybody2","luckyredurl2","luckyredbody2","sharebody2","booktaskurl2","booktaskbody2","spsigninactionbody2","spreadcoinurl2","spreadcoinbody2","sp1videocoinbody2","sp2videocoinbody2","spsharebody2","lotteryinfourl2","videoinfourl2","spvideoinfourl2","readuploadbody3","readuploadkey3","boxtaskbody3","boxtaskkey3","loadresourcebody3","loadresourcekey3","sploadresourcebody3","sploadresourcekey3","withdrawbody3","bubblebody3","receivebody3","signinactionbody3","readlotterybody3","videolotterybody3","luckylotterybody3","luckyredurl3","luckyredbody3","sharebody3","booktaskurl3","booktaskbody3","spsigninactionbody3","spreadcoinurl3","spreadcoinbody3","sp1videocoinbody3","sp2videocoinbody3","spsharebody3","lotteryinfourl3","videoinfourl3","spvideoinfourl3","readuploadbody4","readuploadkey4","boxtaskbody4","boxtaskkey4","loadresourcebody4","loadresourcekey4","sploadresourcebody4","sploadresourcekey4","withdrawbody4","bubblebody4","receivebody4","signinactionbody4","readlotterybody4","videolotterybody4","luckylotterybody4","luckyredurl4","luckyredbody4","sharebody4","booktaskurl4","booktaskbody4","spsigninactionbody4","spreadcoinurl4","spreadcoinbody4","sp1videocoinbody4","sp2videocoinbody4","spsharebody4","lotteryinfourl4","videoinfourl4","spvideoinfourl4","readuploadbody5","readuploadkey5","boxtaskbody5","boxtaskkey5","loadresourcebody5","loadresourcekey5","sploadresourcebody5","sploadresourcekey5","withdrawbody5","bubblebody5","receivebody5","signinactionbody5","readlotterybody5","videolotterybody5","luckylotterybody5","luckyredurl5","luckyredbody5","sharebody5","booktaskurl5","booktaskbody5","spsigninactionbody5","spreadcoinurl5","spreadcoinbody5","sp1videocoinbody5","sp2videocoinbody5","spsharebody5","lotteryinfourl5","videoinfourl5","spvideoinfourl5","readuploadbody6","readuploadkey6","boxtaskbody6","boxtaskkey6","loadresourcebody6","loadresourcekey6","sploadresourcebody6","sploadresourcekey6","withdrawbody6","bubblebody6","receivebody6","signinactionbody6","readlotterybody6","videolotterybody6","luckylotterybody6","luckyredurl6","luckyredbody6","sharebody6","booktaskurl6","booktaskbody6","spsigninactionbody6","spreadcoinurl6","spreadcoinbody6","sp1videocoinbody6","sp2videocoinbody6","spsharebody6","lotteryinfourl6","videoinfourl6","spvideoinfourl6","readuploadbody7","readuploadkey7","boxtaskbody7","boxtaskkey7","loadresourcebody7","loadresourcekey7","sploadresourcebody7","sploadresourcekey7","withdrawbody7","bubblebody7","receivebody7","signinactionbody7","readlotterybody7","videolotterybody7","luckylotterybody7","luckyredurl7","luckyredbody7","sharebody7","booktaskurl7","booktaskbody7","spsigninactionbody7","spreadcoinurl7","spreadcoinbody7","sp1videocoinbody7","sp2videocoinbody7","spsharebody7","lotteryinfourl7","videoinfourl7","spvideoinfourl7","readuploadbody8","readuploadkey8","boxtaskbody8","boxtaskkey8","loadresourcebody8","loadresourcekey8","sploadresourcebody8","sploadresourcekey8","withdrawbody8","bubblebody8","receivebody8","signinactionbody8","readlotterybody8","videolotterybody8","luckylotterybody8","luckyredurl8","luckyredbody8","sharebody8","booktaskurl8","booktaskbody8","spsigninactionbody8","spreadcoinurl8","spreadcoinbody8","sp1videocoinbody8","sp2videocoinbody8","spsharebody8","lotteryinfourl8","videoinfourl8","spvideoinfourl8","readuploadbody9","readuploadkey9","boxtaskbody9","boxtaskkey9","loadresourcebody9","loadresourcekey9","sploadresourcebody9","sploadresourcekey9","withdrawbody9","bubblebody9","receivebody9","signinactionbody9","readlotterybody9","videolotterybody9","luckylotterybody9","luckyredurl9","luckyredbody9","sharebody9","booktaskurl9","booktaskbody9","spsigninactionbody9","spreadcoinurl9","spreadcoinbody9","sp1videocoinbody9","sp2videocoinbody9","spsharebody9","lotteryinfourl9","videoinfourl9","spvideoinfourl9","readuploadbody10","readuploadkey10","boxtaskbody10","boxtaskkey10","loadresourcebody10","loadresourcekey10","sploadresourcebody10","sploadresourcekey10","withdrawbody10","bubblebody10","receivebody10","signinactionbody10","readlotterybody10","videolotterybody10","luckylotterybody10","luckyredurl10","luckyredbody10","sharebody10","booktaskurl10","booktaskbody10","spsigninactionbody10","spreadcoinurl10","spreadcoinbody10","sp1videocoinbody10","sp2videocoinbody10","spsharebody10","lotteryinfourl10","videoinfourl10","spvideoinfourl10","readuploadbody11","readuploadkey11","boxtaskbody11","boxtaskkey11","loadresourcebody11","loadresourcekey11","sploadresourcebody11","sploadresourcekey11","withdrawbody11","bubblebody11","receivebody11","signinactionbody11","readlotterybody11","videolotterybody11","luckylotterybody11","luckyredurl11","luckyredbody11","sharebody11","booktaskurl11","booktaskbody11","spsigninactionbody11","spreadcoinurl11","spreadcoinbody11","sp1videocoinbody11","sp2videocoinbody11","spsharebody11","lotteryinfourl11","videoinfourl11","spvideoinfourl11","readuploadbody12","readuploadkey12","boxtaskbody12","boxtaskkey12","loadresourcebody12","loadresourcekey12","sploadresourcebody12","sploadresourcekey12","withdrawbody12","bubblebody12","receivebody12","signinactionbody12","readlotterybody12","videolotterybody12","luckylotterybody12","luckyredurl12","luckyredbody12","sharebody12","booktaskurl12","booktaskbody12","spsigninactionbody12","spreadcoinurl12","spreadcoinbody12","sp1videocoinbody12","sp2videocoinbody12","spsharebody12","lotteryinfourl12","videoinfourl12","spvideoinfourl12","readuploadbody13","readuploadkey13","boxtaskbody13","boxtaskkey13","loadresourcebody13","loadresourcekey13","sploadresourcebody13","sploadresourcekey13","withdrawbody13","bubblebody13","receivebody13","signinactionbody13","readlotterybody13","videolotterybody13","luckylotterybody13","luckyredurl13","luckyredbody13","sharebody13","booktaskurl13","booktaskbody13","spsigninactionbody13","spreadcoinurl13","spreadcoinbody13","sp1videocoinbody13","sp2videocoinbody13","spsharebody13","lotteryinfourl13","videoinfourl13","spvideoinfourl13"],
-		"settings": [
-
-      {
-				"id": "shuqiappSuffix",
-				"name": "当前账号",
-				"val": "1",
-				"type": "number",
-				"desc": "当前抓取ck记录的账号序号，如：1、2、3、"
-			},{
-				"id": "shuqiappCount",
-				"name": "账号个数",
-				"val": "1",
-				"type": "number",
-				"desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-			},{
- 	      "id": "mymaxtime",
- 	      "name": "阅读时长最大值:阅读挑战赛建议设置360。",
- 	      "val": "",
- 	      "type": "text",
- 	      "desc": "默认180,需要突破限制请添加数字。"
- 	    }
-		],
-		"author": "@cenbomin",
-		"repo": ["https://raw.githubusercontent.com/CenBoMin/GithubSync"],
-		"script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqi.js",
-		"icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/sq.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/sq.png"
-		]
-	},
-    {
 		"id": "txstockapp",
 		"name": "腾旭自选股",
 		"keys": ["cash", "signheader","signkey", "taskheader", "taskkey", "userheader", "userkey", "wxtaskkey", "cashheader", "cowkey"],
@@ -844,37 +501,6 @@
 		]
 	  },
 	    {
-    "id": "elongcash",
-    "name": "同程小猪",
-    "keys": ["elongcash", "elongcashkey", "elongcashTaskGid", "elongcashBuyNum"],
-    "settings": [{
-        "id": "elongcashTaskGid",
-        "name": "夺宝任务ID",
-        "val": "4",
-        "type": "number",
-        "desc": "可先不输入执行脚本查看任务清单"
-      },
-      {
-        "id": "elongcashBuyNum",
-        "name": "夺宝码购买数量",
-        "val": "1",
-        "type": "number",
-        "desc": ""
-      },
-      {
-        "id": "elongcash",
-        "name": "Cookie数据",
-        "val": "",
-        "type": "textarea",
-        "desc": "JSON 格式"
-      }
-    ],
-    "author": "@cenbomin",
-    "repo": ["https://raw.githubusercontent.com/CenBoMin/GithubSync"],
-    "script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELONGCASH/elongcash.js",
-    "icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELONGCASH/120.png", "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELONGCASH/120.png"]
-  },
-  {
     "id": "ucpigapp",
     "name": "UC小猪",
     "keys": ["ucpigapp", "ucpigappkey"],
@@ -891,44 +517,6 @@
     "icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/UCPIG/120.png", "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/UCPIG/120.png"]
   },
     {
-            "id": "flw",
-            "name": "返利网",
-            "keys": ["flwurl", "flwheader", "flwspbody", "flwqwbody", "flwydbody", "flwurl2", "flwheader2", "flwspbody2", "flwqwbody2", "flwydbody2", "flwurl3", "flwheader3", "flwspbody3", "flwqwbody3", "flwydbody3", "flwurl4", "flwheader4", "flwspbody4", "flwqwbody4", "flwydbody4", "flwurl5", "flwheader5", "flwspbody5", "flwqwbody5", "flwydbody5", "flwurl6", "flwheader6", "flwspbody6", "flwqwbody6", "flwydbody6", "flwurl7", "flwheader7", "flwspbody7", "flwqwbody7", "flwydbody7", "flwurl8", "flwheader8", "flwspbody8", "flwqwbody8", "flwydbody8", "flwurl9", "flwheader9", "flwspbody9", "flwqwbody9", "flwydbody9", "flwurl10", "flwheader10", "flwspbody10", "flwqwbody10", "flwydbody10"],
-            "author": "@ziye",
-            "settings": [{
-                    "id": "flwSuffix",
-                    "name": "当前账号",
-                    "val": "1",
-                    "type": "number",
-                    "desc": "当前抓取ck记录的账号序号，如：1、2、3、"
-                },
-                {
-                    "id": "flwCount",
-                    "name": "账号个数",
-                    "val": "1",
-                    "type": "number",
-                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-                },
-                {
-                    "id": "flwCASH",
-                    "name": "天天领现金提现标准",
-                    "val": "0",
-                    "type": "number",
-                    "desc": "默认0，设置0.3及以上时启动天天领现金模块，且大于等于此值时自动提现"
-                },
-                {
-                    "id": "flwDHCASH",
-                    "name": "兑换标准",
-                    "val": "0",
-                    "type": "number",
-                    "desc": "默认0，可设置设置 0 5 50 100"
-                }
-            ],
-            "repo": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js",
-            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/Fanli.png", "https://gitee.com/the-eldest-is-xu/color/raw/master/Fanli.png"],
-            "script": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js"
-        },
-	 {
             "id": "rl",
             "name": "燃旅视频",
             "keys": ["rlurl", "rlurl2", "rlurl3", "rlurl4", "rlurl5", "rlurl6", "rlurl7", "rlurl8", "rlurl9", "rlurl10", "rlurl11", "rlurl12", "rlurl13", "rlurl14", "rlurl15", "rlurl16", "rlurl17", "rlurl18", "rlurl19", "rlurl20"],
@@ -987,64 +575,6 @@
             "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/rl.js"
         },
         {
-            "id": "tcdb",
-            "name": "同城夺宝",
-            "keys": ["tcdbheader", "tcdbheader2", "tcdbheader3", "tcdbheader4", "tcdbheader5", "tcdbheader6", "tcdbheader7", "tcdbheader8", "tcdbheader9", "tcdbheader10", "tcdbheader11", "tcdbheader12", "tcdbheader13", "tcdbheader14", "tcdbheader15", "tcdbheader16", "tcdbheader17", "tcdbheader18", "tcdbheader19", "tcdbheader20"],
-            "author": "@ziye",
-            "settings": [{
-                "id": "tcdbSuffix",
-                "name": "当前账号",
-                "val": "1",
-                "type": "number",
-                "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
-            }, {
-                "id": "tcdbCount",
-                "name": "账号个数",
-                "val": "1",
-                "type": "number",
-                "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-            }, {
-                "id": "tcdbXYZ",
-                "name": "运行概率",
-                "val": "100",
-                "type": "number",
-                "desc": "0关闭，1打开，默认关闭"
-            }, {
-                "id": "tcdbXH",
-                "name": "循环获取ck",
-                "val": "0",
-                "type": "number",
-                "desc": "0关闭，1打开，默认关闭"
-            }, {
-                "id": "tcdbTX",
-                "name": "自动提现",
-                "val": "100",
-                "type": "number",
-                "desc": "0关闭，1打开，默认关闭"
-            }, {
-                "id": "tcdbnotifyttt",
-                "name": "推送控制",
-                "val": "1",
-                "type": "number",
-                "desc": "0关闭，1推送,默认12点以及23点推送"
-            }, {
-                "id": "tcdbnotifyInterval",
-                "name": "通知控制",
-                "val": "2",
-                "type": "number",
-                "desc": "0关闭，1为 所有通知，2为 12，23 点通知，3为 6，12，18，23 点通知"
-            }, {
-                "id": "tcdbMinutes",
-                "name": "推送-通知 分钟控制",
-                "val": "10",
-                "type": "number",
-                "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-            }],
-            "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/tcdb.js",
-            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/tcxz.jpg", "https://gitee.com/the-eldest-is-xu/color/raw/master/tcxz.jpg"],
-            "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/tcdb.js"
-        },
-        {
     "id": "ysy",
         "name": "萤石云",
             "keys": ["ysyhd","ysybody","cookie","txbody","ysyhd2","ysybody2","cookie2","txbody2","ysyhd3","ysybody3","cookie3","txbody3","ysyhd4","ysybody4","cookie4","txbody4","ysyhd5","ysybody5","cookie5","txbody5","ysyhd6","ysybody6","cookie6","txbody6","ysyhd7","ysybody7","cookie7","txbody7","ysyhd8","ysybody8","cookie8","txbody8","ysyhd9","ysybody9","cookie9","txbody9","ysyhd10","ysybody10","cookie10","txbody10"],
@@ -1101,37 +631,9 @@
             "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/djxs.js"
   },
    {
-    "id": "zfxs",
-        "name": "追疯小说",
-            "keys": ["zfxshd","zfxshd2","zfxshd3","zfxshd4","zfxshd5","zfxshd6","zfxshd7","zfxshd8","zfxshd9","zfxshd10"],
-                "author": "@YaphetS0903",
-                    "settings": [{
-                        "id": "zfxsstatus",
-                        "name": "当前账号",
-                        "val": "1",
-                        "type": "number",
-                        "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
-                    }, {
-                        "id": "zfxscount",
-                        "name": "账号个数",
-                        "val": "1",
-                        "type": "number",
-                        "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-                    }, {
-                        "id": "tz",
-                        "name": "通知",
-                        "val": "1",
-                        "type": "number",
-                        "desc": "0关闭通知，1打开通知"
-                    }],
-                        "repo": "https://github.com/YaphetS0903/JStest/blob/main/zfxs.js",
-            "icons": ["https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg", "https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg"],
-            "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/zfxs.js"
-  },
-   {
     "id": "flg",
         "name": "返利购",
-            "keys": ["flgReferer","flgReferer2","flgReferer3","flgReferer4","flgReferer5","flgReferer6","flgReferer7","flgReferer8","flgReferer9","flgReferer10"],
+            "keys": ["flgReferer","flgReferer2","flgReferer3","flgReferer4","flgReferer5","flgReferer6","flgReferer7","flgReferer8","flgReferer9","flgReferer10","flgReferer11","flgReferer12","flgReferer13"],
                 "author": "@YaphetS0903",
                     "settings": [{
                         "id": "flgstatus",
@@ -1157,286 +659,6 @@
             "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flg.js"
   },
    {
-    "id": "flhs",
-        "name": "返利好省",
-            "keys": ["flhsCookie","flhsCookie2","flhsCookie3","flhsCookie4","flhsCookie5","flhsCookie6","flhsCookie7","flhsCookie8","flhsCookie9","flhsCookie10"],
-                "author": "@YaphetS0903",
-                    "settings": [{
-                        "id": "flhsstatus",
-                        "name": "当前账号",
-                        "val": "1",
-                        "type": "number",
-                        "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
-                    }, {
-                        "id": "flhscount",
-                        "name": "账号个数",
-                        "val": "1",
-                        "type": "number",
-                        "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-                    }, {
-                        "id": "tz",
-                        "name": "通知",
-                        "val": "1",
-                        "type": "number",
-                        "desc": "0关闭通知，1打开通知"
-                    }],
-                        "repo": "https://github.com/YaphetS0903/JStest/blob/main/flhs.js",
-            "icons": ["https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg", "https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg"],
-            "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flhs.js"
-  },
-   {
-    "id": "qkhq",
-    "name": "趣看行情",
-    "keys": ["qkhqheader","qkhqheader2","qkhqheader3","qkhqheader4","qkhqheader5","qkhqheader6","qkhqheader7","qkhqheader8","qkhqheader9","qkhqheader10"],
-    "author": "@tom",
-    "settings": [{
-      "id": "qkhqSuffix",
-      "name": "当前账号",
-      "val": "1",
-      "type": "number",
-      "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
-    }, {
-      "id": "qkhqCount",
-      "name": "账号个数",
-      "val": "1",
-      "type": "number",
-      "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-    }, {
-      "id": "qkhqXH",
-      "name": "循环获取ck",
-      "val": "0",
-      "type": "number",
-      "desc": "0关闭，1打开，默认关闭"
-    }, {
-      "id": "qkhqTXTX",
-      "name": "txtx",
-      "val": "0",
-      "type": "number",
-      "desc": "0关闭，1打开，默认关闭"
-    }, {
-      "id": "qkhqSC",
-      "name": "sc",
-      "val": "0",
-      "type": "number",
-      "desc": "0关闭，1打开，默认关闭"
-    }, {
-      "id": "qkhqnotifyttt",
-      "name": "推送控制",
-      "val": "1",
-      "type": "number",
-      "desc": "0关闭，1推送,默认12点以及23点推送"
-    }, {
-      "id": "qkhqnotifyInterval",
-      "name": "通知控制",
-      "val": "2",
-      "type": "number",
-      "desc": "0关闭，1为 所有通知，2为 12，23 点通知，3为 6，12，18，23 点通知"
-    }, {
-      "id": "qkhqMinutes",
-      "name": "推送-通知 分钟控制",
-      "val": "10",
-      "type": "number",
-      "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-    }],
-    "repo": "https://raw.githubusercontent.com/xl2101200/-/main/qkhq.js",
-    "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg", "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
-    "script": "https://raw.githubusercontent.com/xl2101200/-/main/qkhq.js"
-   },
-   {
-                                "id": "sjb",
-                                "name": "睡觉宝",
-                                "keys": ["sjbheader", "sjbheader2", "sjbheader3", "sjbheader4", "sjbheader5", "sjbheader6", "sjbheader7", "sjbheader8", "sjbheader9", "sjbheader10", "sjbheader11", "sjbheader12", "sjbheader13", "sjbheader14", "sjbheader15", "sjbheader16", "sjbheader17", "sjbheader18", "sjbheader19", "sjbheader20"],
-                                "author": "@tom",
-                                "settings": [{
-                                    "id": "sjbSuffix",
-                                    "name": "当前账号",
-                                    "val": "1",
-                                    "type": "number",
-                                    "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
-                                }, {
-                                    "id": "sjbCount",
-                                    "name": "账号个数",
-                                    "val": "1",
-                                    "type": "number",
-                                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-                                }, {
-                                    "id": "sjbXH",
-                                    "name": "循环获取ck",
-                                    "val": "0",
-                                    "type": "number",
-                                    "desc": "0关闭，1打开，默认关闭"
-                                }, {
-                                    "id": "sjbTXTX",
-                                    "name": "txtx",
-                                    "val": "0",
-                                    "type": "number",
-                                    "desc": "0关闭，1打开，默认关闭"
-                                }, {
-                                    "id": "sjbSC",
-                                    "name": "sc",
-                                    "val": "0",
-                                    "type": "number",
-                                    "desc": "0关闭，1打开，默认关闭"
-                                }, {
-                                    "id": "sjbnotifyttt",
-                                    "name": "推送控制",
-                                    "val": "1",
-                                    "type": "number",
-                                    "desc": "0关闭，1推送,默认12点以及23点推送"
-                                }, {
-                                    "id": "sjbnotifyInterval",
-                                    "name": "通知控制",
-                                    "val": "2",
-                                    "type": "number",
-                                    "desc": "0关闭，1为 所有通知，2为 12，23 点通知，3为 6，12，18，23 点通知"
-                                }, {
-                                    "id": "sjbMinutes",
-                                    "name": "推送-通知 分钟控制",
-                                    "val": "10",
-                                    "type": "number",
-                                    "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-                                }],
-                                "repo": "https://gitee.com/tom210120/tom/raw/master/SJB/sjb.js",
-                                "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/sjb.jpg", "https://gitee.com/the-eldest-is-xu/color/raw/master/sjb.jpg"],
-                                "script": "https://gitee.com/tom210120/tom/raw/master/SJB/sjb.js",
-                                "icon": "https://gitee.com/tom210120/tom/raw/master/Tom/Tom.jpg"
-    },
-    {
-        "id": "kdzyapp",
-        "name": "口袋庄园",
-        "keys": ["kdzyPhone","kdzyPhone2"],
-        "settings": [{
-            "id": "kdzycount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-        }, {
-            "id": "kdzyPhone",
-            "name": "口袋庄园账户密码1",
-            "val": "",
-            "type": "text",
-            "desc": "手机账户#密码"
-        }
-  , {
-            "id": "kdzyPhone2",
-            "name": "口袋庄园账户密码2",
-            "val": "",
-            "type": "text",
-            "desc": "手机账户#密码"
-        }],
-        "icons": [
-            "https://www.yoo-woo.com/favicon.ico",
-            "https://www.yoo-woo.com/favicon.ico"],
-        "author": "@byxiaopeng",
-        "repo": "https://github.com/byxiaopeng/myscripts",
-        "script": "https://raw.fastgit.org/byxiaopeng/myscripts/main/ygyapp.js"
-    },
-    {
-        "id": "shapp",
-        "name": "苏汇APP",
-        "keys": ["shPhone","shPhone2","shPhone3","shPhone4"],
-        "settings": [{
-            "id": "shcount",
-            "name": "账号个数",
-            "val": "1",
-            "type": "number",
-            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值。"
-        }, 
-	{
-            "id": "shPhone",
-            "name": "苏汇APP账户密码1",
-            "val": "",
-            "type": "text",
-            "desc": "手机账户#密码"
-        }
-		, {
-            "id": "shPhone2",
-            "name": "苏汇APP账户密码2",
-            "val": "",
-            "type": "text",
-            "desc": "手机账户#密码"
-        }
-                , {
-            "id": "shPhone3",
-            "name": "苏汇APP账户密码3",
-            "val": "",
-            "type": "text",
-            "desc": "手机账户#密码"
-        }
-		, {
-            "id": "shPhone4",
-            "name": "苏汇APP账户密码4",
-            "val": "",
-            "type": "text",
-            "desc": "手机账户#密码"
-        }],
-        "icons": [
-            "https://xashangdian.com/favicon.ico",
-            "https://xashangdian.com/favicon.ico"],
-        "author": "@byxiaopeng",
-        "repo": "https://github.com/byxiaopeng/myscripts",
-        "script": "https://raw.fastgit.org/byxiaopeng/myscripts/main/shapp.js"
-    },
-    {
-      "id": "jztt",
-  "name": "九章头条",
-  "keys": ["jztturl", "jztturl2", "jztturl3", "jztturl4", "jztturl5", "jztturl6", "jztturl7", "jztturl8", "jztturl9", "jztturl10", "jztturl11", "jztturl12", "jztturl13", "jztturl14", "jztturl15", "jztturl16", "jztturl17", "jztturl18", "jztturl19", "jztturl20"],
-  "author": "@tom",
-  "settings": [{
-    "id": "jzttSuffix",
-    "name": "当前账号",
-    "val": "1",
-    "type": "number",
-    "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
-  }, {
-    "id": "jzttCount",
-    "name": "账号个数",
-    "val": "1",
-    "type": "number",
-    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-  }, {
-    "id": "jzttXH",
-    "name": "循环获取ck",
-    "val": "0",
-    "type": "number",
-    "desc": "0关闭，1打开，默认关闭"
-  }, {
-    "id": "jzttTXTX",
-    "name": "txtx",
-    "val": "0",
-    "type": "number",
-    "desc": "0关闭，1打开，默认关闭"
-  }, {
-    "id": "jzttSC",
-    "name": "sc",
-    "val": "0",
-    "type": "number",
-    "desc": "0关闭，1打开，默认关闭"
-  }, {
-    "id": "jzttnotifyttt",
-    "name": "推送控制",
-    "val": "1",
-    "type": "number",
-    "desc": "0关闭，1推送,默认12点以及23点推送"
-  }, {
-    "id": "jzttnotifyInterval",
-    "name": "通知控制",
-    "val": "2",
-    "type": "number",
-    "desc": "0关闭，1为 所有通知，2为 12，23 点通知，3为 6，12，18，23 点通知"
-  }, {
-    "id": "jzttMinutes",
-    "name": "推送-通知 分钟控制",
-    "val": "10",
-    "type": "number",
-    "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-  }],
-                        "repo": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js",
-                            "icons": ["https://gitee.com/the-eldest-is-xu/color/raw/master/jztt.jpg", "https://gitee.com/the-eldest-is-xu/color/raw/master/jztt.jpg"],
-                                "script": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js"
-  },
-  {
             "id":"fqctapp",
             "name":"番茄畅听",
             "keys":[
@@ -1509,43 +731,6 @@
             "script":"https://github.com/"
         },
         {
-            "id":"dzlapp",
-            "name":"多走路",
-            "keys":[
-                "dzlapp"	
-            ],
-            "settings": [
-	    {
-                "id": "dzluserck",
-                "name": "当前账号",
-                "val": "1",
-                "type": "number",
-                "desc": "当前账号对应"
-            },
-	    {
-                "id": "tguserid",
-                "name": "TG用户名",
-                "val": "1",
-                "type": "number",
-                "desc": "从机器人获得"
-            },
-            {
-                "id": "dzlactivecode",
-                "name": "授权码",
-                "val": "",
-                "type": "text",
-                "desc": "从机器人获得"
-            }
-	    ],
-            "author":"@David",
-            "repo":"https://github.com/bluesmallpig/scripts",
-            "icons":[
-                "https://gitee.com/the-eldest-is-xu/color/raw/master/dzl.jpg",
-                "https://gitee.com/the-eldest-is-xu/color/raw/master/dzl.jpg"
-            ],
-            "script":"https://github.com/"
-        },
-        {
             "id":"dyjsbapp",
             "name":"抖音极速版app",
             "keys":[
@@ -1582,145 +767,6 @@
             "script":"https://github.com/"
         },
         {
-            "id":"ydyyapp",
-            "name":"移动影院",
-            "keys":[
-                "ydyyapp"	
-            ],
-            "settings": [{
-                "id": "ydyyuserck",
-                "name": "当前账号",
-                "val": "1",
-                "type": "number",
-                "desc": "当前账号对应"
-            }],
-            "author":"@David",
-            "repo":"https://github.com/bluesmallpig/scripts",
-            "icons":[
-                "https://github.com/bluesmallpig/scripts/blob/main/img/ydyy-mini.png?raw=true",
-                "https://github.com/bluesmallpig/scripts/blob/main/img/ydyy.png?raw=true"
-            ],
-            "script":"https://github.com/"
-        },
-        {
-            "id":"dtwzgame",
-            "name":"答题王者",
-            "keys":[
-                "dtwzgame"	
-            ],
-            "settings": [{
-                "id": "dtwzuserck",
-                "name": "当前账号",
-                "val": "1",
-                "type": "number",
-                "desc": "当前账号对应"
-            }],
-            "author":"@David",
-            "repo":"https://github.com/bluesmallpig/scripts",
-            "icons":[
-                "https://github.com/bluesmallpig/scripts/blob/main/img/wzdt-mini.png?raw=true",
-                "https://github.com/bluesmallpig/scripts/blob/main/img/wzdt.png?raw=true"
-            ],
-            "script":"https://github.com/"
-        },
-        {
-            "id":"jjkdyapp",
-            "name":"进阶可达鸭",
-            "keys":[
-                "jjkdyapp"	
-            ],
-            "settings": [{
-                "id": "jjkdyuserck",
-                "name": "当前账号",
-                "val": "1",
-                "type": "number",
-                "desc": "当前账号对应"
-            },
-	    {
-                "id": "tguserid",
-                "name": "TG用户名",
-                "val": "1",
-                "type": "number",
-                "desc": "从机器人获得"
-            },
-            {
-                "id": "jjkdyactivecode",
-                "name": "授权码",
-                "val": "",
-                "type": "text",
-                "desc": "从机器人获得"
-            }
-	    ],
-            "author":"@David",
-            "repo":"https://github.com/bluesmallpig/scripts",
-            "icons":[
-                "https://github.com/bluesmallpig/scripts/blob/main/img/jjkdy-mini.png?raw=true",
-                "https://github.com/bluesmallpig/scripts/blob/main/img/jjkdy.png?raw=true"
-            ],
-            "script":"https://github.com/"
-        },
-        {
-            "id":"ddgy",
-            "name":"滴滴果园",
-            "keys":[
-                "ddgyurl",
-                "ddgyurl2",
-                "ddgyurl3",
-                "ddgyurl4",
-                "ddgyurl5"
-
-            ],
-            "settings": [{
-                "id": "ddgystatus",
-                "name": "当前账号",
-                "val": "1",
-                "type": "number",
-                "desc": "当前账号对应"
-            },
-            {
-                "id": "ddgycount",
-                "name": "账号个数",
-                "val": "1",
-                "type": "number",
-                "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-            }],
-            "author":"@",
-            "repo":"https://gitee.com/xiecoll/radish-script/blob/master/qqdgy.js",
-            "icons":[
-                "https://gitee.com/the-eldest-is-xu/color/raw/master/dd.jpg",
-                "https://gitee.com/the-eldest-is-xu/color/raw/master/dd.jpg"
-            ],
-            "script":"https://gitee.com"
-        },
-        {
-      "id": "didi_fruit",
-      "name": "滴滴橙心果园",
-      "keys": [
-        "ddtoken"
-      ],
-      "descs_html": [
-        "填写token,多账号用英文逗号(,)分开"
-      ],
-      "settings": [
-        {
-          "id": "ddtoken",
-          "name": "token",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 8,
-          "desc": "token"
-        }
-      ],
-      "icons": [
-        "https://gitee.com/passerby-b/javascript/raw/master/icon/didi.png",
-        "https://gitee.com/passerby-b/javascript/raw/master/icon/didi.png"
-      ],
-      "author": "@passerby-b",
-      "repo": "https://gitee.com/passerby-b/javascript/raw/master/JD/passerby-b.boxjs.json",
-      "script": "https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_fruit.js"
-    },
-    {
       "id": "ks_fruit",
       "name": "快手果园",
       "keys": [
@@ -1749,34 +795,6 @@
       "script": "https://raw.githubusercontent.com/passerby-b/ks_fruit/main/ks_fruit.js"
     },
     {
-      "id": "mt_fruit",
-      "name": "美团买菜果园",
-      "keys": [
-        "mt_cookies"
-      ],
-      "descs_html": [
-        "填写cookie,多账号用英文逗号(,)分开"
-      ],
-      "settings": [
-        {
-          "id": "mt_cookies",
-          "name": "mt_cookies",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 8,
-          "desc": "mt_cookies"
-        }
-      ],
-      "icons": [
-        "https://gitee.com/passerby-b/javascript/raw/master/icon/mtmall.png",
-        "https://gitee.com/passerby-b/javascript/raw/master/icon/mtmall.png"
-      ],
-      "author": "@passerby-b",
-      "repo": "https://gitee.com/passerby-b/javascript/raw/master/JD/passerby-b.boxjs.json",
-      "script": "https://raw.githubusercontent.com/passerby-b/mt_fruit/main/mt_fruit.js"
-    },
-        {
             "id":"jz",
             "name":"九章",
             "keys":[
@@ -1917,13 +935,13 @@
             "script":"https://github.com/"
         },
         {
-            "id":"fdxsapp",
-            "name":"疯读小说",
+            "id":"qqydapp",
+            "name":"QQ阅读",
             "keys":[
-                "fdxsapp"
+                "qqydapp"
             ],
             "settings": [{
-                "id": "fdxsuserck",
+                "id": "qqyduserck",
                 "name": "当前账号序号",
                 "val": "1",
                 "type": "number",
@@ -1937,7 +955,7 @@
                 "desc": "从机器人获得"
             },
             {
-                "id": "fdxsactivecode",
+                "id": "qqydactivecode",
                 "name": "授权码",
                 "val": "",
                 "type": "text",
@@ -1947,8 +965,352 @@
             "author":"@David",
             "repo":"https://github.com/bluesmallpig/scripts",
             "icons":[
-                "https://github.com/bluesmallpig/scripts/blob/main/img/fdxs-mini.png?raw=true",
-                "https://github.com/bluesmallpig/scripts/blob/main/img/fdxs.png?raw=true"
+                "https://github.com/bluesmallpig/scripts/blob/main/img/qqyd-mini.png?raw=true",
+                "https://github.com/bluesmallpig/scripts/blob/main/img/qqyd.png?raw=true"
+            ],
+            "script":"https://github.com/"
+        },
+        {
+            "id":"sjbapp",
+            "name":"睡觉宝",
+            "keys":[
+                "sjbapp"
+            ],
+            "settings": [{
+                "id": "sjbuserck",
+                "name": "当前账号序号",
+                "val": "1",
+                "type": "number",
+                "desc": "你要抓取第几个账号，就填几。"
+            },
+	    {
+                "id": "tguserid",
+                "name": "用户编号",
+                "val": "1",
+                "type": "number",
+                "desc": "从机器人获得"
+            },
+            {
+                "id": "sjbactivecode",
+                "name": "授权码",
+                "val": "",
+                "type": "text",
+                "desc": "从机器人获得"
+            }
+            ],
+            "author":"@David",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "https://github.com/bluesmallpig/scripts/blob/main/img/sjb-mini.png?raw=true",
+                "https://github.com/bluesmallpig/scripts/blob/main/img/sjb.png?raw=true"
+            ],
+            "script":"https://github.com/"
+        },
+        {
+            "id":"zssqapp",
+            "name":"追书神器",
+            "keys":[
+                "zssqapp"
+            ],
+            "settings": [{
+                "id": "zssquserck",
+                "name": "当前账号序号",
+                "val": "1",
+                "type": "number",
+                "desc": "你要抓取第几个账号，就填几。"
+            },
+	        {
+                "id": "tguserid",
+                "name": "用户编号",
+                "val": "1",
+                "type": "number",
+                "desc": "从机器人获得"
+            },
+            {
+                "id": "zssqactivecode",
+                "name": "授权码",
+                "val": "",
+                "type": "text",
+                "desc": "从机器人获得"
+            }
+            ],
+            "author":"@David",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "http://script.frp.aiuyo.com:8680/img/zssq-mini.png",
+                "http://script.frp.aiuyo.com:8680/img/zssq.png"
+            ],
+            "script":"https://github.com/"
+        },
+        {
+            "id":"wlkdapp",
+            "name":"文旅看点",
+            "keys":[
+                "wlkdapp"
+            ],
+            "settings": [{
+                "id": "wlkduserck",
+                "name": "当前账号序号",
+                "val": "1",
+                "type": "number",
+                "desc": "你要抓取第几个账号，就填几。"
+            },
+	        {
+                "id": "tguserid",
+                "name": "用户编号",
+                "val": "1",
+                "type": "number",
+                "desc": "从机器人获得"
+            },
+            {
+                "id": "wlkdactivecode",
+                "name": "授权码",
+                "val": "",
+                "type": "text",
+                "desc": "从机器人获得"
+            }
+            ],
+            "author":"@David",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "http://script.frp.aiuyo.com:8680/img/wlkd-mini.png",
+                "http://script.frp.aiuyo.com:8680/img/wlkd.png"
+            ],
+            "script":"https://github.com/"
+        },
+        {
+      "id": "qqqsk",
+      "name": "全球购骑士特权",
+      "keys": [
+        "blackJSON"
+      ],
+      "descs_html": [
+        "填写cookie,多账号用英文逗号(,)分开"
+      ],
+      "settings": [
+        {
+          "id": "blackJSON",
+          "name": "blackJSON",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "blackJSON"
+        }
+      ],
+      "icons": [
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/qsk.jpg",
+        "https://gitee.com/the-eldest-is-xu/color/raw/master/qsk.jpg"
+      ],
+      "author": "@",
+      "repo": "https://gitee.com/",
+      "script": "https://raw.githubusercontent.com/"
+    },
+    {
+            "id":"kkdapp",
+            "name":"快看点",
+            "keys":[
+                "kkdapp"
+            ],
+            "settings": [{
+                "id": "kkduserck",
+                "name": "当前账号序号",
+                "val": "1",
+                "type": "number",
+                "desc": "你要抓取第几个账号，就填几。"
+            },
+	        {
+                "id": "tguserid",
+                "name": "用户编号",
+                "val": "",
+                "type": "number",
+                "desc": "从机器人获得"
+            },
+            {
+                "id": "kkdactivecode",
+                "name": "授权码",
+                "val": "",
+                "type": "text",
+                "desc": "从机器人获得"
+            }
+            ],
+            "author":"@David",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "http://script.frp.aiuyo.com:8680/img/kkd-mini.png",
+                "http://script.frp.aiuyo.com:8680/img/kkd.png"
+            ],
+            "script":"https://github.com/"
+        },
+        {
+            "id":"jrttapp",
+            "name":"今日头条极速版",
+            "keys":[
+                "jrttapp"
+            ],
+            "settings": [{
+                "id": "jrttuserck",
+                "name": "当前账号序号",
+                "val": "1",
+                "type": "number",
+                "desc": "你要抓取第几个账号，就填几。"
+            },
+	        {
+                "id": "tguserid",
+                "name": "用户编号",
+                "val": "",
+                "type": "number",
+                "desc": "从机器人获得"
+            },
+            {
+                "id": "jrttactivecode",
+                "name": "授权码",
+                "val": "",
+                "type": "text",
+                "desc": "从机器人获得"
+            }
+            ],
+            "author":"@David",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "http://script.frp.aiuyo.com:8680/img/jrtt-mini.png",
+                "http://script.frp.aiuyo.com:8680/img/jrtt.png"
+            ],
+            "script":"https://github.com/"
+        },
+        {
+            "id":"ksapp",
+            "name":"快手短视频",
+            "keys":[
+                "ksapp"
+            ],
+            "settings": [{
+                "id": "ksuserck",
+                "name": "当前账号序号",
+                "val": "1",
+                "type": "number",
+                "desc": "你要抓取第几个账号，就填几。"
+            },
+	        {
+                "id": "tguserid",
+                "name": "用户编号",
+                "val": "",
+                "type": "number",
+                "desc": "从机器人获得"
+            },
+            {
+                "id": "ksactivecode",
+                "name": "授权码",
+                "val": "",
+                "type": "text",
+                "desc": "从机器人获得"
+            }
+            ],
+            "author":"@David",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "https://github.com/bluesmallpig/scripts/blob/main/img/ks-mini.png?raw=true",
+                "https://github.com/bluesmallpig/scripts/blob/main/img/ks.png?raw=true"
+            ],
+            "script":"https://github.com/"
+        },
+        {
+      "id": "didi_fruit",
+      "name": "滴滴橙心果园",
+      "keys": [
+        "ddtoken"
+      ],
+      "descs_html": [
+        "填写token,多账号用英文逗号(,)分开"
+      ],
+      "settings": [
+        {
+          "id": "ddtoken",
+          "name": "token",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "token"
+        }
+      ],
+      "icons": [
+        "https://gitee.com/passerby-b/javascript/raw/master/icon/didi.png",
+        "https://gitee.com/passerby-b/javascript/raw/master/icon/didi.png"
+      ],
+      "author": "@passerby-b",
+      "repo": "https://gitee.com/passerby-b/javascript/raw/master/JD/passerby-b.boxjs.json",
+      "script": "https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_fruit.js"
+    },
+    {
+            "id":"ksjsbapp",
+            "name":"快手极速版",
+            "keys":[
+                "ksjsbapp"
+            ],
+            "settings": [{
+                "id": "ksjsbuserck",
+                "name": "当前账号序号",
+                "val": "1",
+                "type": "number",
+                "desc": "你要抓取第几个账号，就填几。"
+            },
+	        {
+                "id": "tguserid",
+                "name": "用户编号",
+                "val": "",
+                "type": "number",
+                "desc": "从机器人获得"
+            },
+            {
+                "id": "ksjsbactivecode",
+                "name": "授权码",
+                "val": "",
+                "type": "text",
+                "desc": "从机器人获得"
+            }
+            ],
+            "author":"@David",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "http://script.frp.aiuyo.com:8680/img/ks-mini.png",
+                "http://script.frp.aiuyo.com:8680/img/ks.png"
+            ],
+            "script":"https://github.com/"
+        },
+        {
+            "id":"dyhsbapp",
+            "name":"抖音火山版",
+            "keys":[
+                "dyhsbapp"
+            ],
+            "settings": [{
+                "id": "dyhsbuserck",
+                "name": "当前账号序号",
+                "val": "1",
+                "type": "number",
+                "desc": "你要抓取第几个账号，就填几。"
+            },
+	        {
+                "id": "tguserid",
+                "name": "用户编号",
+                "val": "",
+                "type": "number",
+                "desc": "从机器人获得"
+            },
+            {
+                "id": "dyhsbactivecode",
+                "name": "授权码",
+                "val": "",
+                "type": "text",
+                "desc": "从机器人获得"
+            }
+            ],
+            "author":"@David",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "http://script.frp.aiuyo.com:8680/img/dyhsb-mini.png",
+                "http://script.frp.aiuyo.com:8680/img/dyhsb.png"
             ],
             "script":"https://github.com/"
         }
