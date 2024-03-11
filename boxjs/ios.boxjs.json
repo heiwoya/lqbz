@@ -1190,6 +1190,26 @@
                         "repo": "https://github.com/YaphetS0903/JStest/blob/main/qxq.js",
             "icons": ["https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg", "https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg"],
             "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/qxq.js"
-  }
+  },
+   ,
+   {
+	  "id": "pgsh",
+	  "name": "胖乖生活",
+	  "keys": ["pgshtoken","pgshck"],
+	  "settings": [
+	    {
+				"id": "elongcash",
+				"name": "Cookie数据",
+				"val": "",
+				"type": "textarea",
+				"desc": "JSON 格式"
+			}
+	  ],
+	  "author": "@cenbomin",
+	  "repo": ["https://raw.githubusercontent.com/CenBoMin/nio"],
+	  "script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELONGCASH/elongcash.js",
+	  "icons": ["https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELONGCASH/120.png", "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELONGCASH/120.png"
+	  ]
+	}
     ]
  }
